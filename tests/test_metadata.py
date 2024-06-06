@@ -12,43 +12,53 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from rapids_metadata.metadata import Metadata
+from unittest.mock import Mock, patch
+
+import pytest
+from rapids_metadata import metadata as md
 
 
-def test_inherit():
-    parent = Metadata()
-    parent.packages.update({"package-1", "package-2"})
-    parent.non_alpha_spec_packages.update({"package-1"})
-    parent.non_cuda_suffixed_packages.update({"package-2"})
+class TestRAPIDSVersion:
+    @pytest.fixture
+    def metadata(self):
+        return md.RAPIDSVersion(repositories={
+            "repo1": md.RAPIDSRepository(packages={
+                "package1": md.RAPIDSPackage(has_alpha_spec=True, has_cuda_suffix=True),
+                "package2": md.RAPIDSPackage(has_alpha_spec=True, has_cuda_suffix=False),
+            }),
+            "repo2": md.RAPIDSRepository(packages={
+                "package3": md.RAPIDSPackage(has_alpha_spec=False, has_cuda_suffix=True),
+                "package4": md.RAPIDSPackage(has_alpha_spec=False, has_cuda_suffix=False),
+            }),
+        })
 
-    metadata = Metadata(parent)
-    assert metadata.packages == {"package-1", "package-2"}
-    assert metadata.non_alpha_spec_packages == {"package-1"}
-    assert metadata.non_cuda_suffixed_packages == {"package-2"}
-    assert parent.packages == {"package-1", "package-2"}
-    assert parent.non_alpha_spec_packages == {"package-1"}
-    assert parent.non_cuda_suffixed_packages == {"package-2"}
+    def test_all_packages(self, metadata):
+        assert metadata.all_packages == {"package1", "package2", "package3", "package4"}
 
-    metadata.packages.update({"package-3"})
-    metadata.non_alpha_spec_packages.update({"package-3"})
-    metadata.non_cuda_suffixed_packages.update({"package-3"})
-    assert metadata.packages == {"package-1", "package-2", "package-3"}
-    assert metadata.non_alpha_spec_packages == {"package-1", "package-3"}
-    assert metadata.non_cuda_suffixed_packages == {"package-2", "package-3"}
-    assert parent.packages == {"package-1", "package-2"}
-    assert parent.non_alpha_spec_packages == {"package-1"}
-    assert parent.non_cuda_suffixed_packages == {"package-2"}
+    def test_alpha_spec_packages(self, metadata):
+        assert metadata.alpha_spec_packages == {"package1", "package2"}
 
-
-def test_alpha_spec_packages():
-    metadata = Metadata()
-    metadata.packages.update({"package-1", "package-2"})
-    metadata.non_alpha_spec_packages.update({"package-1"})
-    assert metadata.alpha_spec_packages == {"package-2"}
+    def test_cuda_suffixed_packages(self, metadata):
+        assert metadata.cuda_suffixed_packages == {"package1", "package3"}
 
 
-def test_cuda_suffixed_packages():
-    metadata = Metadata()
-    metadata.packages.update({"package-1", "package-2"})
-    metadata.non_cuda_suffixed_packages.update({"package-1"})
-    assert metadata.cuda_suffixed_packages == {"package-2"}
+class TestRAPIDSMetadata:
+    @pytest.fixture
+    def metadata(self):
+        return md.RAPIDSMetadata(versions={
+            "24.06": md.RAPIDSVersion(repositories={
+                "repo1": md.RAPIDSRepository(),
+            }),
+            "24.08": md.RAPIDSVersion(repositories={
+                "repo2": md.RAPIDSRepository(),
+            }),
+        })
+
+    @pytest.mark.parametrize("version", ["24.06", "24.08"])
+    def test_get_current_version(self, version, metadata):
+        with patch("rapids_metadata.metadata.get_rapids_version", Mock(return_value=version)):
+            current_version = metadata.get_current_version()
+        assert current_version == metadata.versions[version]
+        for v, m in metadata.versions.items():
+            if v != version:
+                assert m != current_version
