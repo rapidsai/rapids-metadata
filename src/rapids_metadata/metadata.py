@@ -45,16 +45,16 @@ class RAPIDSVersion:
     repositories: dict[Union[str, PseudoRepository], RAPIDSRepository] = field(default_factory=dict)
 
     @property
-    def all_packages(self):
-        return {package for _, repository_data in self.repositories.items() for package in repository_data.packages}
+    def all_packages(self) -> set[str]:
+        return {package for repository_data in self.repositories.values() for package in repository_data.packages}
 
     @property
-    def alpha_spec_packages(self):
-        return {package for _, repository_data in self.repositories.items() for package, package_data in repository_data.packages.items() if package_data.has_alpha_spec}
+    def alpha_spec_packages(self) -> set[str]:
+        return {package for repository_data in self.repositories.values() for package, package_data in repository_data.packages.items() if package_data.has_alpha_spec}
 
     @property
-    def cuda_suffixed_packages(self):
-        return {package for _, repository_data in self.repositories.items() for package, package_data in repository_data.packages.items() if package_data.has_cuda_suffix}
+    def cuda_suffixed_packages(self) -> set[str]:
+        return {package for repository_data in self.repositories.values() for package, package_data in repository_data.packages.items() if package_data.has_cuda_suffix}
 
 
 @dataclass
