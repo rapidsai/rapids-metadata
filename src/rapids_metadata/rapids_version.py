@@ -18,6 +18,9 @@ from os import PathLike
 from packaging.version import InvalidVersion, Version
 
 
+__all__ = ["get_rapids_version"]
+
+
 def get_rapids_version(directory: PathLike=None) -> str:
     if not directory:
         directory = os.getcwd()
