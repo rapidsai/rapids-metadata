@@ -15,6 +15,7 @@
 from unittest.mock import Mock, patch
 
 import pytest
+from packaging.version import InvalidVersion
 from rapids_metadata import metadata as md
 
 
@@ -54,11 +55,26 @@ class TestRAPIDSMetadata:
             }),
         })
 
-    @pytest.mark.parametrize("version", ["24.06", "24.08"])
-    def test_get_current_version(self, version, metadata):
-        with patch("rapids_metadata.metadata.get_rapids_version", Mock(return_value=version)):
-            current_version = metadata.get_current_version()
-        assert current_version == metadata.versions[version]
-        for v, m in metadata.versions.items():
-            if v != version:
-                assert m != current_version
+    @pytest.mark.parametrize(
+        ["current_version", "expected_version"],
+        [
+            ("24.05", KeyError),
+            ("24.06", "24.06"),
+            ("24.07", KeyError),
+            ("24.08", "24.08"),
+            ("24.09", "24.08"),
+            ("aaa", InvalidVersion),
+        ],
+    )
+    def test_get_current_version(self, current_version, expected_version, metadata):
+        if isinstance(expected_version, type) and issubclass(expected_version, BaseException):
+            with patch("rapids_metadata.metadata.get_rapids_version", Mock(return_value=current_version)):
+                with pytest.raises(expected_version):
+                    metadata.get_current_version()
+        else:
+            with patch("rapids_metadata.metadata.get_rapids_version", Mock(return_value=current_version)):
+                current_version = metadata.get_current_version()
+            assert current_version == metadata.versions[expected_version]
+            for v, m in metadata.versions.items():
+                if v != expected_version:
+                    assert m != current_version

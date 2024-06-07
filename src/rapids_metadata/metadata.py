@@ -17,6 +17,7 @@ from enum import Enum
 from os import PathLike
 from typing import Union
 
+from packaging.version import Version
 from .rapids_version import get_rapids_version
 
 __all__ = ["PseudoRepository", "RAPIDSMetadata", "RAPIDSPackage", "RAPIDSRepository", "RAPIDSVersion"]
@@ -62,4 +63,11 @@ class RAPIDSMetadata:
     versions: dict[str, RAPIDSVersion] = field(default_factory=dict)
 
     def get_current_version(self, directory: PathLike=None) -> RAPIDSVersion:
-        return self.versions[get_rapids_version(directory)]
+        current_version = get_rapids_version(directory)
+        try:
+            return self.versions[current_version]
+        except KeyError:
+            max_version, max_version_data = max(self.versions.items(), key=lambda item: Version(item[0]))
+            if Version(current_version) > Version(max_version):
+                return max_version_data
+            raise
