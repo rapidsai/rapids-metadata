@@ -62,7 +62,7 @@ class RAPIDSVersion:
 class RAPIDSMetadata:
     versions: dict[str, RAPIDSVersion] = field(default_factory=dict)
 
-    def get_current_version(self, directory: PathLike=None) -> RAPIDSVersion:
+    def get_current_version(self, directory: PathLike) -> RAPIDSVersion:
         current_version = get_rapids_version(directory)
         try:
             return self.versions[current_version]

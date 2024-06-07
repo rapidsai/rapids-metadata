@@ -19,16 +19,6 @@ import pytest
 from rapids_metadata import rapids_version
 
 
-@contextlib.contextmanager
-def set_cwd(cwd: os.PathLike):
-    old_cwd = os.getcwd()
-    os.chdir(cwd)
-    try:
-        yield
-    finally:
-        os.chdir(old_cwd)
-
-
 @pytest.mark.parametrize(
     ["dirname", "version"],
     [
@@ -49,10 +39,5 @@ def test_get_rapids_version(tmp_path, dirname, version):
     if isinstance(version, type) and issubclass(version, BaseException):
         with pytest.raises(version):
             rapids_version.get_rapids_version(abs_dir)
-        with set_cwd(abs_dir):
-            with pytest.raises(version):
-                rapids_version.get_rapids_version()
     else:
         assert rapids_version.get_rapids_version(abs_dir) == version
-        with set_cwd(abs_dir):
-            assert rapids_version.get_rapids_version() == version

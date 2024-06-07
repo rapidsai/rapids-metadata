@@ -70,10 +70,10 @@ class TestRAPIDSMetadata:
         if isinstance(expected_version, type) and issubclass(expected_version, BaseException):
             with patch("rapids_metadata.metadata.get_rapids_version", Mock(return_value=current_version)):
                 with pytest.raises(expected_version):
-                    metadata.get_current_version()
+                    metadata.get_current_version(".")
         else:
             with patch("rapids_metadata.metadata.get_rapids_version", Mock(return_value=current_version)):
-                current_version = metadata.get_current_version()
+                current_version = metadata.get_current_version(".")
             assert current_version == metadata.versions[expected_version]
             for v, m in metadata.versions.items():
                 if v != expected_version:
