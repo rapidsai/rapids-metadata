@@ -20,7 +20,13 @@ from typing import Union
 from packaging.version import Version
 from .rapids_version import get_rapids_version
 
-__all__ = ["PseudoRepository", "RAPIDSMetadata", "RAPIDSPackage", "RAPIDSRepository", "RAPIDSVersion"]
+__all__ = [
+    "PseudoRepository",
+    "RAPIDSMetadata",
+    "RAPIDSPackage",
+    "RAPIDSRepository",
+    "RAPIDSVersion",
+]
 
 
 class PseudoRepository(Enum):
@@ -43,19 +49,35 @@ class RAPIDSRepository:
 
 @dataclass
 class RAPIDSVersion:
-    repositories: dict[Union[str, PseudoRepository], RAPIDSRepository] = field(default_factory=dict)
+    repositories: dict[Union[str, PseudoRepository], RAPIDSRepository] = field(
+        default_factory=dict
+    )
 
     @property
     def all_packages(self) -> set[str]:
-        return {package for repository_data in self.repositories.values() for package in repository_data.packages}
+        return {
+            package
+            for repository_data in self.repositories.values()
+            for package in repository_data.packages
+        }
 
     @property
     def alpha_spec_packages(self) -> set[str]:
-        return {package for repository_data in self.repositories.values() for package, package_data in repository_data.packages.items() if package_data.has_alpha_spec}
+        return {
+            package
+            for repository_data in self.repositories.values()
+            for package, package_data in repository_data.packages.items()
+            if package_data.has_alpha_spec
+        }
 
     @property
     def cuda_suffixed_packages(self) -> set[str]:
-        return {package for repository_data in self.repositories.values() for package, package_data in repository_data.packages.items() if package_data.has_cuda_suffix}
+        return {
+            package
+            for repository_data in self.repositories.values()
+            for package, package_data in repository_data.packages.items()
+            if package_data.has_cuda_suffix
+        }
 
 
 @dataclass
@@ -67,7 +89,9 @@ class RAPIDSMetadata:
         try:
             return self.versions[current_version]
         except KeyError:
-            max_version, max_version_data = max(self.versions.items(), key=lambda item: Version(item[0]))
+            max_version, max_version_data = max(
+                self.versions.items(), key=lambda item: Version(item[0])
+            )
             if Version(current_version) > Version(max_version):
                 return max_version_data
             raise
