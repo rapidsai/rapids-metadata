@@ -21,14 +21,21 @@ from rapids_metadata import metadata as md
 
 @pytest.fixture
 def metadata():
-    return md.RAPIDSMetadata(versions={
-        "24.06": md.RAPIDSVersion(repositories={
-            "repo1": md.RAPIDSRepository(),
-        }),
-        "24.08": md.RAPIDSVersion(repositories={
-            "repo2": md.RAPIDSRepository(),
-        }),
-    })
+    return md.RAPIDSMetadata(
+        versions={
+            "24.06": md.RAPIDSVersion(
+                repositories={
+                    "repo1": md.RAPIDSRepository(),
+                }
+            ),
+            "24.08": md.RAPIDSVersion(
+                repositories={
+                    "repo2": md.RAPIDSRepository(),
+                }
+            ),
+        }
+    )
+
 
 @pytest.mark.parametrize(
     ["current_version", "expected_version"],
@@ -42,12 +49,20 @@ def metadata():
     ],
 )
 def test_get_current_version(current_version, expected_version, metadata):
-    if isinstance(expected_version, type) and issubclass(expected_version, BaseException):
-        with patch("rapids_metadata.metadata.get_rapids_version", Mock(return_value=current_version)):
+    if isinstance(expected_version, type) and issubclass(
+        expected_version, BaseException
+    ):
+        with patch(
+            "rapids_metadata.metadata.get_rapids_version",
+            Mock(return_value=current_version),
+        ):
             with pytest.raises(expected_version):
                 metadata.get_current_version(".")
     else:
-        with patch("rapids_metadata.metadata.get_rapids_version", Mock(return_value=current_version)):
+        with patch(
+            "rapids_metadata.metadata.get_rapids_version",
+            Mock(return_value=current_version),
+        ):
             current_version = metadata.get_current_version(".")
         assert current_version == metadata.versions[expected_version]
         for v, m in metadata.versions.items():
