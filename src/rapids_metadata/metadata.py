@@ -12,36 +12,62 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+from dataclasses import dataclass, field
+from enum import Enum
+from os import PathLike
 from typing import Union
 
+from packaging.version import Version
+from .rapids_version import get_rapids_version
 
-class Metadata:
-    def __init__(self, inherit: Union["Metadata", None]=None):
-        self._packages: set[str] = set()
-        self._non_alpha_spec_packages: set[str] = set()
-        self._non_cuda_suffixed_packages: set[str] = set()
+__all__ = ["PseudoRepository", "RAPIDSMetadata", "RAPIDSPackage", "RAPIDSRepository", "RAPIDSVersion"]
 
-        if inherit:
-            self._packages.update(inherit.packages)
-            self._non_alpha_spec_packages.update(inherit.non_alpha_spec_packages)
-            self._non_cuda_suffixed_packages.update(inherit.non_cuda_suffixed_packages)
+
+class PseudoRepository(Enum):
+    NVIDIA = "nvidia"
+
+    def __str__(self):
+        return f"_{self.value}"
+
+
+@dataclass
+class RAPIDSPackage:
+    has_alpha_spec: bool = field(default=True)
+    has_cuda_suffix: bool = field(default=True)
+
+
+@dataclass
+class RAPIDSRepository:
+    packages: dict[str, RAPIDSPackage] = field(default_factory=dict)
+
+
+@dataclass
+class RAPIDSVersion:
+    repositories: dict[Union[str, PseudoRepository], RAPIDSRepository] = field(default_factory=dict)
 
     @property
-    def packages(self) -> set[str]:
-        return self._packages
+    def all_packages(self) -> set[str]:
+        return {package for repository_data in self.repositories.values() for package in repository_data.packages}
 
     @property
-    def non_alpha_spec_packages(self) -> set[str]:
-        return self._non_alpha_spec_packages
+    def alpha_spec_packages(self) -> set[str]:
+        return {package for repository_data in self.repositories.values() for package, package_data in repository_data.packages.items() if package_data.has_alpha_spec}
 
     @property
-    def non_cuda_suffixed_packages(self) -> set[str]:
-        return self._non_cuda_suffixed_packages
+    def cuda_suffixed_packages(self) -> set[str]:
+        return {package for repository_data in self.repositories.values() for package, package_data in repository_data.packages.items() if package_data.has_cuda_suffix}
 
-    @property
-    def alpha_spec_packages(self) -> frozenset[str]:
-        return frozenset(self.packages - self.non_alpha_spec_packages)
 
-    @property
-    def cuda_suffixed_packages(self) -> frozenset[str]:
-        return frozenset(self.packages - self.non_cuda_suffixed_packages)
+@dataclass
+class RAPIDSMetadata:
+    versions: dict[str, RAPIDSVersion] = field(default_factory=dict)
+
+    def get_current_version(self, directory: PathLike) -> RAPIDSVersion:
+        current_version = get_rapids_version(directory)
+        try:
+            return self.versions[current_version]
+        except KeyError:
+            max_version, max_version_data = max(self.versions.items(), key=lambda item: Version(item[0]))
+            if Version(current_version) > Version(max_version):
+                return max_version_data
+            raise

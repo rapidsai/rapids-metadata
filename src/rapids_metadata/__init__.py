@@ -12,55 +12,90 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from os import PathLike
+from .metadata import (
+    PseudoRepository,
+    RAPIDSMetadata,
+    RAPIDSPackage,
+    RAPIDSRepository,
+    RAPIDSVersion,
+)
 
-from .metadata import Metadata
-from .rapids_version import get_rapids_version
+
+__all__ = ["rapids_metadata"]
 
 
-__all__ = ["get_metadata", "metadata"]
+rapids_metadata: RAPIDSMetadata = RAPIDSMetadata()
 
-def get_metadata(directory: PathLike=None) -> Metadata:
-    return metadata[get_rapids_version(directory)]
-
-metadata: dict[str, Metadata] = {}
-
-metadata["24.08"] = Metadata()
-metadata["24.08"].packages.update({
-    "cubinlinker",
-    "cucim",
-    "cudf",
-    "cugraph",
-    "cugraph-dgl",
-    "cugraph-equivariant",
-    "cugraph-pyg",
-    "cuml",
-    "cuproj",
-    "cuspatial",
-    "cuxfilter",
-    "dask-cuda",
-    "dask-cudf",
-    "distributed-ucxx",
-    "libcuml",
-    "libcuml-tests",
-    "libcumlprims",
-    "libraft",
-    "libraft-headers",
-    "librmm",
-    "libucx",
-    "nx-cugraph",
-    "ptxcompiler",
-    "pylibcugraph",
-    "pylibcugraphops",
-    "pylibraft",
-    "pylibwholegraph",
-    "pynvjitlink",
-    "raft-dask",
-    "rapids-dask-dependency",
-    "rmm",
-    "ucx-py",
-    "ucxx",
-})
-metadata["24.08"].non_cuda_suffixed_packages.update({
-    "dask-cuda",
+rapids_metadata.versions["24.08"] = RAPIDSVersion(repositories={
+    PseudoRepository.NVIDIA: RAPIDSRepository(packages={
+        "cubinlinker": RAPIDSPackage(),
+    }),
+    "cucim": RAPIDSRepository(packages={
+        "cucim": RAPIDSPackage(),
+    }),
+    "cudf": RAPIDSRepository(packages={
+        "cudf": RAPIDSPackage(),
+        "dask-cudf": RAPIDSPackage(),
+    }),
+    "cugraph": RAPIDSRepository(packages={
+        "cugraph": RAPIDSPackage(),
+        "cugraph-dgl": RAPIDSPackage(),
+        "cugraph-equivariant": RAPIDSPackage(),
+        "cugraph-pyg": RAPIDSPackage(),
+        "nx-cugraph": RAPIDSPackage(),
+        "pylibcugraph": RAPIDSPackage(),
+    }),
+    "cugraph-ops": RAPIDSRepository(packages={
+        "pylibcugraphops": RAPIDSPackage(),
+    }),
+    "cuml": RAPIDSRepository(packages={
+        "cuml": RAPIDSPackage(),
+        "libcuml": RAPIDSPackage(),
+        "libcuml-tests": RAPIDSPackage(),
+    }),
+    "cumlprims_mg": RAPIDSRepository(packages={
+        "libcumlprims": RAPIDSPackage(),
+    }),
+    "cuproj": RAPIDSRepository(packages={
+        "cuproj": RAPIDSPackage(),
+    }),
+    "cuspatial": RAPIDSRepository(packages={
+        "cuspatial": RAPIDSPackage(),
+    }),
+    "cuxfilter": RAPIDSRepository(packages={
+        "cuxfilter": RAPIDSPackage(),
+    }),
+    "dask-cuda": RAPIDSRepository(packages={
+        "dask-cuda": RAPIDSPackage(has_cuda_suffix=False),
+    }),
+    "ptxcompiler": RAPIDSRepository(packages={
+        "ptxcompiler": RAPIDSPackage(),
+    }),
+    "pynvjitlink": RAPIDSRepository(packages={
+        "pynvjitlink": RAPIDSPackage(),
+    }),
+    "raft": RAPIDSRepository(packages={
+        "libraft": RAPIDSPackage(),
+        "libraft-headers": RAPIDSPackage(),
+        "pylibraft": RAPIDSPackage(),
+        "raft-dask": RAPIDSPackage(),
+    }),
+    "rapids-dask-dependency": RAPIDSRepository(packages={
+        "rapids-dask-dependency": RAPIDSPackage(),
+    }),
+    "rmm": RAPIDSRepository(packages={
+        "librmm": RAPIDSPackage(),
+        "rmm": RAPIDSPackage(),
+    }),
+    "ucxx": RAPIDSRepository(packages={
+        "distributed-ucxx": RAPIDSPackage(),
+        "libucxx": RAPIDSPackage(),
+        "ucxx": RAPIDSPackage(),
+    }),
+    "ucx-py": RAPIDSRepository(packages={
+        "ucx-py": RAPIDSPackage(),
+    }),
+    "wholegraph": RAPIDSRepository(packages={
+        "pylibwholegraph": RAPIDSPackage(),
+    }),
 })

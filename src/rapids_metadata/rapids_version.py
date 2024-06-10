@@ -18,10 +18,10 @@ from os import PathLike
 from packaging.version import InvalidVersion, Version
 
 
-def get_rapids_version(directory: PathLike=None) -> str:
-    if not directory:
-        directory = os.getcwd()
+__all__ = ["get_rapids_version"]
 
+
+def get_rapids_version(directory: PathLike) -> str:
     while not os.path.samefile(directory, os.path.dirname(directory)):
         try:
             with open(os.path.join(directory, "VERSION")) as f:
