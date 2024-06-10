@@ -10,7 +10,6 @@ python -m build .
 
 for PKG in dist/*; do
   echo "$PKG"
-  pip uninstall -y rapids-metadata
-  pip install "$PKG[test]"
+  pip install --force-reinstall "$PKG[test]"
   pytest
 done
