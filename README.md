@@ -17,6 +17,21 @@ The motivating use case for this project is
 [`pre-commit-hooks`](https://github.com/rapidsai/pre-commit-hooks), but other
 projects may certainly use it too.
 
+This package can also output the metadata in JSON form for consumption by
+external programs, such as shell scripts and `jq`. To get JSON output, run:
+
+```
+rapids-metadata-json
+```
+
+This will print the metadata for the RAPIDS version specified by the `VERSION`
+file in the current directory or above. If you wish to get metadata for all
+RAPIDS versions instead, run:
+
+```
+rapids-metadata-json --all-versions
+```
+
 ## Justification
 
 `pre-commit-hooks` has to know things about the structure of the RAPIDS project
