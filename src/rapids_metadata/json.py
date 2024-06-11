@@ -30,12 +30,11 @@ from .rapids_version import get_rapids_version
 
 
 __all__ = [
-    "RAPIDSMetadataEncoder",
     "main",
 ]
 
 
-class RAPIDSMetadataEncoder(json.JSONEncoder):
+class _RAPIDSMetadataEncoder(json.JSONEncoder):
     def default(
         self, o: Union[RAPIDSMetadata, RAPIDSPackage, RAPIDSRepository, RAPIDSVersion]
     ) -> dict[str, Any]:
@@ -58,7 +57,7 @@ def main():
             }
         )
     )
-    json.dump(metadata, sys.stdout, cls=RAPIDSMetadataEncoder)
+    json.dump(metadata, sys.stdout, cls=_RAPIDSMetadataEncoder)
 
 
 if __name__ == "__main__":

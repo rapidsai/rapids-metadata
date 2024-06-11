@@ -133,7 +133,7 @@ def set_cwd(cwd: os.PathLike) -> Generator:
     ],
 )
 def test_metadata_encoder(unencoded, encoded):
-    assert rapids_json.RAPIDSMetadataEncoder().default(unencoded) == encoded
+    assert rapids_json._RAPIDSMetadataEncoder().default(unencoded) == encoded
 
 
 @pytest.mark.parametrize(
