@@ -19,7 +19,7 @@ import os
 import sys
 from typing import Any, Union
 
-from . import rapids_metadata
+from . import all_metadata
 from .metadata import (
     RAPIDSMetadata,
     RAPIDSPackage,
@@ -47,11 +47,11 @@ def main():
 
     parsed = parser.parse_args()
     metadata = (
-        rapids_metadata
+        all_metadata
         if parsed.all_versions
         else RAPIDSMetadata(
             versions={
-                get_rapids_version(os.getcwd()): rapids_metadata.get_current_version(
+                get_rapids_version(os.getcwd()): all_metadata.get_current_version(
                     os.getcwd()
                 )
             }
