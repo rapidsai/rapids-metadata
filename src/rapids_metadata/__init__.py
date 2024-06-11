@@ -13,7 +13,6 @@
 # limitations under the License.
 
 from .metadata import (
-    PseudoRepository,
     RAPIDSMetadata,
     RAPIDSPackage,
     RAPIDSRepository,
@@ -28,7 +27,7 @@ rapids_metadata: RAPIDSMetadata = RAPIDSMetadata()
 
 rapids_metadata.versions["24.08"] = RAPIDSVersion(
     repositories={
-        PseudoRepository.NVIDIA: RAPIDSRepository(
+        "_nvidia": RAPIDSRepository(
             packages={
                 "cubinlinker": RAPIDSPackage(),
             }

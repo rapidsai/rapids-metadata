@@ -13,27 +13,17 @@
 # limitations under the License.
 
 from dataclasses import dataclass, field
-from enum import Enum
 from os import PathLike
-from typing import Union
 
 from packaging.version import Version
 from .rapids_version import get_rapids_version
 
 __all__ = [
-    "PseudoRepository",
     "RAPIDSMetadata",
     "RAPIDSPackage",
     "RAPIDSRepository",
     "RAPIDSVersion",
 ]
-
-
-class PseudoRepository(Enum):
-    NVIDIA = "nvidia"
-
-    def __str__(self):
-        return f"_{self.value}"
 
 
 @dataclass
@@ -49,9 +39,7 @@ class RAPIDSRepository:
 
 @dataclass
 class RAPIDSVersion:
-    repositories: dict[Union[str, PseudoRepository], RAPIDSRepository] = field(
-        default_factory=dict
-    )
+    repositories: dict[str, RAPIDSRepository] = field(default_factory=dict)
 
     @property
     def all_packages(self) -> set[str]:
