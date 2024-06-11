@@ -181,6 +181,26 @@ def test_metadata_encoder(unencoded, encoded):
             },
         ),
         (
+            "24.12.00",
+            [],
+            {
+                "versions": {
+                    "24.12": {
+                        "repositories": {
+                            "repo2": {
+                                "packages": {
+                                    "package": {
+                                        "has_cuda_suffix": True,
+                                        "has_alpha_spec": True,
+                                    },
+                                },
+                            },
+                        },
+                    },
+                },
+            },
+        ),
+        (
             None,
             ["--all-versions"],
             {
