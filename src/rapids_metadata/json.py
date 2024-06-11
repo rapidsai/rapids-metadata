@@ -17,6 +17,7 @@ import dataclasses
 import json
 import os
 import sys
+from typing import Any, Union
 
 from . import rapids_metadata
 from .metadata import (
@@ -35,7 +36,9 @@ __all__ = [
 
 
 class RAPIDSMetadataEncoder(json.JSONEncoder):
-    def default(self, o):
+    def default(
+        self, o: Union[RAPIDSMetadata, RAPIDSPackage, RAPIDSRepository, RAPIDSVersion]
+    ) -> dict[str, Any]:
         def recurse(o):
             if o is None:
                 return None
