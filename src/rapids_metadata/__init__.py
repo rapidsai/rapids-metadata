@@ -20,12 +20,12 @@ from .metadata import (
 )
 
 
-__all__ = ["rapids_metadata"]
+__all__ = ["all_metadata"]
 
 
-rapids_metadata: RAPIDSMetadata = RAPIDSMetadata()
+all_metadata: RAPIDSMetadata = RAPIDSMetadata()
 
-rapids_metadata.versions["24.08"] = RAPIDSVersion(
+all_metadata.versions["24.08"] = RAPIDSVersion(
     repositories={
         "_nvidia": RAPIDSRepository(
             packages={

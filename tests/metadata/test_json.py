@@ -260,7 +260,7 @@ def test_main(capsys, tmp_path, version, args, expected_json):
         with open(os.path.join(tmp_path, "VERSION"), "w") as f:
             f.write(f"{version}\n")
     with set_cwd(tmp_path), patch("sys.argv", ["rapids-metadata-json", *args]), patch(
-        "rapids_metadata.json.rapids_metadata", mock_metadata
+        "rapids_metadata.json.all_metadata", mock_metadata
     ):
         rapids_json.main()
     captured = capsys.readouterr()
