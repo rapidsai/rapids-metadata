@@ -39,10 +39,7 @@ class RAPIDSMetadataEncoder(json.JSONEncoder):
     def default(
         self, o: Union[RAPIDSMetadata, RAPIDSPackage, RAPIDSRepository, RAPIDSVersion]
     ) -> dict[str, Any]:
-        for c in [RAPIDSMetadata, RAPIDSPackage, RAPIDSRepository, RAPIDSVersion]:
-            if isinstance(o, c):
-                return dataclasses.asdict(o)
-        return super().default(o)
+        return dataclasses.asdict(o)
 
 
 def main():
