@@ -27,6 +27,9 @@ classifiers = [
 ]
 requires-python = ">=3.9"
 
+[project.scripts]
+rapids-metadata-json = "rapids_metadata.json:main"
+
 [build-system]
 build-backend = "setuptools.build_meta"
 requires = [
