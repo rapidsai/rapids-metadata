@@ -21,7 +21,6 @@ from unittest.mock import patch
 import pytest
 from rapids_metadata import json as rapids_json
 from rapids_metadata.metadata import (
-    PseudoRepository,
     RAPIDSMetadata,
     RAPIDSPackage,
     RAPIDSRepository,
@@ -74,7 +73,7 @@ def set_cwd(cwd: os.PathLike) -> Generator:
                             "package": RAPIDSPackage(),
                         }
                     ),
-                    PseudoRepository.NVIDIA: RAPIDSRepository(
+                    "_nvidia": RAPIDSRepository(
                         packages={
                             "proprietary-package": RAPIDSPackage(),
                         }

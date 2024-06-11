@@ -39,34 +39,9 @@ class RAPIDSMetadataEncoder(json.JSONEncoder):
     def default(
         self, o: Union[RAPIDSMetadata, RAPIDSPackage, RAPIDSRepository, RAPIDSVersion]
     ) -> dict[str, Any]:
-        def recurse(o):
-            if o is None:
-                return None
-            for t in [bool, int, float, str]:
-                if isinstance(o, t):
-                    return o
-            if isinstance(o, dict):
-                return {key: recurse(value) for key, value in o.items()}
-            return self.default(o)
-
-        for c in [RAPIDSMetadata, RAPIDSPackage, RAPIDSRepository]:
+        for c in [RAPIDSMetadata, RAPIDSPackage, RAPIDSRepository, RAPIDSVersion]:
             if isinstance(o, c):
-                return {
-                    field.name: recurse(getattr(o, field.name))
-                    for field in dataclasses.fields(o)
-                }
-        if isinstance(o, RAPIDSVersion):
-            return {
-                "repositories": {
-                    str(repository): recurse(repository_data)
-                    for repository, repository_data in o.repositories.items()
-                },
-                **{
-                    field.name: recurse(getattr(o, field.name))
-                    for field in dataclasses.fields(o)
-                    if field.name != "repositories"
-                },
-            }
+                return dataclasses.asdict(o)
         return super().default(o)
 
 
