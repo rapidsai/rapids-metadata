@@ -41,24 +41,24 @@ def set_cwd(cwd: os.PathLike) -> Generator:
 @pytest.mark.parametrize(
     ["unencoded", "encoded"],
     [
-        (RAPIDSPackage(), {"has_alpha_spec": True, "has_cuda_suffix": True}),
+        (RAPIDSPackage(), {"has_nightly_builds": True, "has_cuda_suffix": True}),
         (
             RAPIDSRepository(
                 packages={
                     "package1": RAPIDSPackage(),
                     "package2": RAPIDSPackage(
-                        has_alpha_spec=False, has_cuda_suffix=False
+                        has_nightly_builds=False, has_cuda_suffix=False
                     ),
                 }
             ),
             {
                 "packages": {
                     "package1": {
-                        "has_alpha_spec": True,
+                        "has_nightly_builds": True,
                         "has_cuda_suffix": True,
                     },
                     "package2": {
-                        "has_alpha_spec": False,
+                        "has_nightly_builds": False,
                         "has_cuda_suffix": False,
                     },
                 },
@@ -88,7 +88,7 @@ def set_cwd(cwd: os.PathLike) -> Generator:
                     "repo2": {
                         "packages": {
                             "package": {
-                                "has_alpha_spec": True,
+                                "has_nightly_builds": True,
                                 "has_cuda_suffix": True,
                             },
                         },
@@ -96,7 +96,7 @@ def set_cwd(cwd: os.PathLike) -> Generator:
                     "_nvidia": {
                         "packages": {
                             "proprietary-package": {
-                                "has_alpha_spec": True,
+                                "has_nightly_builds": True,
                                 "has_cuda_suffix": True,
                             },
                         },
@@ -150,7 +150,7 @@ def test_metadata_encoder(unencoded, encoded):
                                 "packages": {
                                     "package": {
                                         "has_cuda_suffix": True,
-                                        "has_alpha_spec": True,
+                                        "has_nightly_builds": True,
                                     },
                                 },
                             },
@@ -170,7 +170,7 @@ def test_metadata_encoder(unencoded, encoded):
                                 "packages": {
                                     "package": {
                                         "has_cuda_suffix": True,
-                                        "has_alpha_spec": True,
+                                        "has_nightly_builds": True,
                                     },
                                 },
                             },
@@ -190,7 +190,7 @@ def test_metadata_encoder(unencoded, encoded):
                                 "packages": {
                                     "package": {
                                         "has_cuda_suffix": True,
-                                        "has_alpha_spec": True,
+                                        "has_nightly_builds": True,
                                     },
                                 },
                             },
@@ -210,7 +210,7 @@ def test_metadata_encoder(unencoded, encoded):
                                 "packages": {
                                     "package": {
                                         "has_cuda_suffix": True,
-                                        "has_alpha_spec": True,
+                                        "has_nightly_builds": True,
                                     },
                                 },
                             },
@@ -222,7 +222,7 @@ def test_metadata_encoder(unencoded, encoded):
                                 "packages": {
                                     "package": {
                                         "has_cuda_suffix": True,
-                                        "has_alpha_spec": True,
+                                        "has_nightly_builds": True,
                                     },
                                 },
                             },
