@@ -41,24 +41,24 @@ def set_cwd(cwd: os.PathLike) -> Generator:
 @pytest.mark.parametrize(
     ["unencoded", "encoded"],
     [
-        (RAPIDSPackage(), {"has_nightly_builds": True, "has_cuda_suffix": True}),
+        (RAPIDSPackage(), {"publishes_prereleases": True, "has_cuda_suffix": True}),
         (
             RAPIDSRepository(
                 packages={
                     "package1": RAPIDSPackage(),
                     "package2": RAPIDSPackage(
-                        has_nightly_builds=False, has_cuda_suffix=False
+                        publishes_prereleases=False, has_cuda_suffix=False
                     ),
                 }
             ),
             {
                 "packages": {
                     "package1": {
-                        "has_nightly_builds": True,
+                        "publishes_prereleases": True,
                         "has_cuda_suffix": True,
                     },
                     "package2": {
-                        "has_nightly_builds": False,
+                        "publishes_prereleases": False,
                         "has_cuda_suffix": False,
                     },
                 },
@@ -88,7 +88,7 @@ def set_cwd(cwd: os.PathLike) -> Generator:
                     "repo2": {
                         "packages": {
                             "package": {
-                                "has_nightly_builds": True,
+                                "publishes_prereleases": True,
                                 "has_cuda_suffix": True,
                             },
                         },
@@ -96,7 +96,7 @@ def set_cwd(cwd: os.PathLike) -> Generator:
                     "_nvidia": {
                         "packages": {
                             "proprietary-package": {
-                                "has_nightly_builds": True,
+                                "publishes_prereleases": True,
                                 "has_cuda_suffix": True,
                             },
                         },
@@ -150,7 +150,7 @@ def test_metadata_encoder(unencoded, encoded):
                                 "packages": {
                                     "package": {
                                         "has_cuda_suffix": True,
-                                        "has_nightly_builds": True,
+                                        "publishes_prereleases": True,
                                     },
                                 },
                             },
@@ -170,7 +170,7 @@ def test_metadata_encoder(unencoded, encoded):
                                 "packages": {
                                     "package": {
                                         "has_cuda_suffix": True,
-                                        "has_nightly_builds": True,
+                                        "publishes_prereleases": True,
                                     },
                                 },
                             },
@@ -190,7 +190,7 @@ def test_metadata_encoder(unencoded, encoded):
                                 "packages": {
                                     "package": {
                                         "has_cuda_suffix": True,
-                                        "has_nightly_builds": True,
+                                        "publishes_prereleases": True,
                                     },
                                 },
                             },
@@ -210,7 +210,7 @@ def test_metadata_encoder(unencoded, encoded):
                                 "packages": {
                                     "package": {
                                         "has_cuda_suffix": True,
-                                        "has_nightly_builds": True,
+                                        "publishes_prereleases": True,
                                     },
                                 },
                             },
@@ -222,7 +222,7 @@ def test_metadata_encoder(unencoded, encoded):
                                 "packages": {
                                     "package": {
                                         "has_cuda_suffix": True,
-                                        "has_nightly_builds": True,
+                                        "publishes_prereleases": True,
                                     },
                                 },
                             },

@@ -28,7 +28,7 @@ __all__ = [
 
 @dataclass
 class RAPIDSPackage:
-    has_nightly_builds: bool = field(default=True)
+    publishes_prereleases: bool = field(default=True)
     has_cuda_suffix: bool = field(default=True)
 
 
@@ -50,12 +50,12 @@ class RAPIDSVersion:
         }
 
     @property
-    def nightly_build_packages(self) -> set[str]:
+    def prerelease_packages(self) -> set[str]:
         return {
             package
             for repository_data in self.repositories.values()
             for package, package_data in repository_data.packages.items()
-            if package_data.has_nightly_builds
+            if package_data.publishes_prereleases
         }
 
     @property
