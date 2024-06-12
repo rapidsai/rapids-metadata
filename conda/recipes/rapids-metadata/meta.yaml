@@ -1,0 +1,39 @@
+# Copyright (c) 2024, NVIDIA CORPORATION.
+
+{% set pyproject_data = load_file_data("pyproject.toml") %}
+{% set version = pyproject_data["project"]["version"] %}
+{% set summary = pyproject_data["project"]["description"] %}
+
+package:
+  name: rapids-metadata
+  version: {{ version }}
+
+source:
+  path: ../../..
+
+build:
+  number: 0
+  noarch: python
+  script: python -m pip install . -vv --no-deps
+
+requirements:
+  host:
+    - pip
+    - python >=3.9
+    - conda-verify
+    {% for r in pyproject_data["build-system"]["requires"] %}
+    - {{ r }}
+    {% endfor %}
+
+about:
+  home: https://rapids.ai/
+  license: Apache-2.0
+  license_file: LICENSE
+  summary: {{ summary }}
+  description: |
+    This package contains metadata related to the structure of the RAPIDS
+    project itself. It contains information about what repositories are present
+    in the RAPIDS project, what packages are present in each repository, and
+    the properties of each package.
+  doc_url: https://docs.rapids.ai/
+  dev_url: https://github.com/rapidsai/rapids-metadata
