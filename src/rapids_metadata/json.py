@@ -57,7 +57,7 @@ def main():
             }
         )
     )
-    json.dump(metadata, sys.stdout, cls=_RAPIDSMetadataEncoder)
+    json.dump(metadata, sys.stdout, cls=_RAPIDSMetadataEncoder, sort_keys=True)
 
 
 if __name__ == "__main__":
