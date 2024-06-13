@@ -110,7 +110,7 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
         ),
         "rapids-dask-dependency": RAPIDSRepository(
             packages={
-                "rapids-dask-dependency": RAPIDSPackage(),
+                "rapids-dask-dependency": RAPIDSPackage(has_cuda_suffix=False),
             }
         ),
         "rmm": RAPIDSRepository(
