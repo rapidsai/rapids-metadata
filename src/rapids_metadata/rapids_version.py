@@ -14,14 +14,15 @@
 
 import os.path
 from os import PathLike
-
-from packaging.version import InvalidVersion, Version
+from typing import Union
 
 
 __all__ = ["get_rapids_version"]
 
 
-def get_rapids_version(directory: PathLike) -> str:
+def get_rapids_version(directory: Union[str, PathLike[str]]) -> str:
+    from packaging.version import InvalidVersion, Version
+
     while not os.path.samefile(directory, os.path.dirname(directory)):
         try:
             with open(os.path.join(directory, "VERSION")) as f:

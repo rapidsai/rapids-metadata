@@ -1,0 +1,216 @@
+{
+  "versions": {
+    "24.08": {
+      "repositories": {
+        "_nvidia": {
+          "packages": {
+            "cubinlinker": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "cucim": {
+          "packages": {
+            "cucim": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "cudf": {
+          "packages": {
+            "cudf": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
+            "dask-cudf": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "cugraph": {
+          "packages": {
+            "cugraph": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
+            "cugraph-dgl": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
+            "cugraph-equivariant": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
+            "cugraph-pyg": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
+            "nx-cugraph": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
+            "pylibcugraph": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "cugraph-ops": {
+          "packages": {
+            "pylibcugraphops": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "cuml": {
+          "packages": {
+            "cuml": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
+            "libcuml": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
+            "libcuml-tests": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "cumlprims_mg": {
+          "packages": {
+            "libcumlprims": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "cuproj": {
+          "packages": {
+            "cuproj": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "cuspatial": {
+          "packages": {
+            "cuspatial": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "cuxfilter": {
+          "packages": {
+            "cuxfilter": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "dask-cuda": {
+          "packages": {
+            "dask-cuda": {
+              "has_cuda_suffix": false,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "ptxcompiler": {
+          "packages": {
+            "ptxcompiler": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "pynvjitlink": {
+          "packages": {
+            "pynvjitlink": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "raft": {
+          "packages": {
+            "libraft": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
+            "libraft-headers": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
+            "pylibraft": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
+            "raft-dask": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "rapids-dask-dependency": {
+          "packages": {
+            "rapids-dask-dependency": {
+              "has_cuda_suffix": false,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "rmm": {
+          "packages": {
+            "librmm": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
+            "rmm": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "ucx-py": {
+          "packages": {
+            "ucx-py": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "ucxx": {
+          "packages": {
+            "distributed-ucxx": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
+            "libucxx": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
+            "ucxx": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "wholegraph": {
+          "packages": {
+            "pylibwholegraph": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

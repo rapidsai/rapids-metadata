@@ -41,11 +41,28 @@ class _RAPIDSMetadataEncoder(json.JSONEncoder):
         return dataclasses.asdict(o)
 
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--all-versions", action="store_true")
+def main(argv: Union[list[str], None] = None):
+    if argv is None:
+        argv = sys.argv[1:]
 
-    parsed = parser.parse_args()
+    parser = argparse.ArgumentParser()
+    parser.description = "Output RAPIDS metadata as a JSON document."
+    parser.add_argument(
+        "--all-versions",
+        action="store_true",
+        help="Output all versions, ignoring local VERSION file",
+    )
+    parser.add_argument(
+        "--pretty", action="store_true", help="Pretty-print JSON output"
+    )
+    parser.add_argument(
+        "-o",
+        "--output",
+        metavar="<output file>",
+        help="Write to a file instead of stdout",
+    )
+
+    parsed = parser.parse_args(argv)
     metadata = (
         all_metadata
         if parsed.all_versions
@@ -57,7 +74,24 @@ def main():
             }
         )
     )
-    json.dump(metadata, sys.stdout, cls=_RAPIDSMetadataEncoder)
+
+    def write_file(f):
+        json.dump(
+            metadata,
+            f,
+            cls=_RAPIDSMetadataEncoder,
+            sort_keys=True,
+            separators=(",", ": ") if parsed.pretty else (",", ":"),
+            indent="  " if parsed.pretty else None,
+        )
+        if parsed.pretty:
+            f.write("\n")
+
+    if parsed.output:
+        with open(parsed.output, "w") as f:
+            write_file(f)
+    else:
+        write_file(sys.stdout)
 
 
 if __name__ == "__main__":
