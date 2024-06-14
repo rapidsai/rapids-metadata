@@ -46,9 +46,21 @@ def main(argv: Union[list[str], None] = None):
         argv = sys.argv[1:]
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--all-versions", action="store_true")
-    parser.add_argument("--pretty", action="store_true")
-    parser.add_argument("-o", "--output")
+    parser.description = "Output RAPIDS metadata as a JSON document."
+    parser.add_argument(
+        "--all-versions",
+        action="store_true",
+        help="Output all versions, ignoring local VERSION file",
+    )
+    parser.add_argument(
+        "--pretty", action="store_true", help="Pretty-print JSON output"
+    )
+    parser.add_argument(
+        "-o",
+        "--output",
+        metavar="<output file>",
+        help="Write to a file instead of stdout",
+    )
 
     parsed = parser.parse_args(argv)
     metadata = (
