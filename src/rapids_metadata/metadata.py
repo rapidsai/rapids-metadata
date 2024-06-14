@@ -14,6 +14,7 @@
 
 from dataclasses import dataclass, field
 from os import PathLike
+from typing import Union
 
 from .rapids_version import get_rapids_version
 
@@ -71,7 +72,9 @@ class RAPIDSVersion:
 class RAPIDSMetadata:
     versions: dict[str, RAPIDSVersion] = field(default_factory=dict)
 
-    def get_current_version(self, directory: PathLike) -> RAPIDSVersion:
+    def get_current_version(
+        self, directory: Union[str, PathLike[str]]
+    ) -> RAPIDSVersion:
         from packaging.version import Version
 
         current_version = get_rapids_version(directory)

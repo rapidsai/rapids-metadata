@@ -13,8 +13,8 @@
 # limitations under the License.
 
 import contextlib
-import json
 import os.path
+from textwrap import dedent
 from typing import Generator
 from unittest.mock import patch
 
@@ -142,94 +142,118 @@ def test_metadata_encoder(unencoded, encoded):
         (
             "24.08.00",
             [],
-            {
-                "versions": {
-                    "24.08": {
-                        "repositories": {
-                            "repo1": {
-                                "packages": {
-                                    "package": {
-                                        "has_cuda_suffix": True,
-                                        "publishes_prereleases": True,
-                                    },
-                                },
-                            },
-                        },
-                    },
-                },
-            },
+            "{"
+            '"versions":{'
+            '"24.08":{'
+            '"repositories":{'
+            '"repo1":{'
+            '"packages":{'
+            '"package":{'
+            '"has_cuda_suffix":true,'
+            '"publishes_prereleases":true'
+            "}"
+            "}"
+            "}"
+            "}"
+            "}"
+            "}"
+            "}",
         ),
         (
             "24.10.00",
             [],
-            {
-                "versions": {
-                    "24.10": {
-                        "repositories": {
-                            "repo2": {
-                                "packages": {
-                                    "package": {
-                                        "has_cuda_suffix": True,
-                                        "publishes_prereleases": True,
-                                    },
-                                },
-                            },
-                        },
-                    },
-                },
-            },
+            "{"
+            '"versions":{'
+            '"24.10":{'
+            '"repositories":{'
+            '"repo2":{'
+            '"packages":{'
+            '"package":{'
+            '"has_cuda_suffix":true,'
+            '"publishes_prereleases":true'
+            "}"
+            "}"
+            "}"
+            "}"
+            "}"
+            "}"
+            "}",
         ),
         (
             "24.12.00",
             [],
-            {
-                "versions": {
-                    "24.12": {
-                        "repositories": {
-                            "repo2": {
-                                "packages": {
-                                    "package": {
-                                        "has_cuda_suffix": True,
-                                        "publishes_prereleases": True,
-                                    },
-                                },
-                            },
-                        },
-                    },
-                },
-            },
+            "{"
+            '"versions":{'
+            '"24.12":{'
+            '"repositories":{'
+            '"repo2":{'
+            '"packages":{'
+            '"package":{'
+            '"has_cuda_suffix":true,'
+            '"publishes_prereleases":true'
+            "}"
+            "}"
+            "}"
+            "}"
+            "}"
+            "}"
+            "}",
         ),
         (
             None,
             ["--all-versions"],
-            {
-                "versions": {
+            "{"
+            '"versions":{'
+            '"24.08":{'
+            '"repositories":{'
+            '"repo1":{'
+            '"packages":{'
+            '"package":{'
+            '"has_cuda_suffix":true,'
+            '"publishes_prereleases":true'
+            "}"
+            "}"
+            "}"
+            "}"
+            "},"
+            '"24.10":{'
+            '"repositories":{'
+            '"repo2":{'
+            '"packages":{'
+            '"package":{'
+            '"has_cuda_suffix":true,'
+            '"publishes_prereleases":true'
+            "}"
+            "}"
+            "}"
+            "}"
+            "}"
+            "}"
+            "}",
+        ),
+        (
+            "24.08.00",
+            ["--pretty"],
+            dedent(
+                """\
+                {
+                  "versions": {
                     "24.08": {
-                        "repositories": {
-                            "repo1": {
-                                "packages": {
-                                    "package": {
-                                        "has_cuda_suffix": True,
-                                        "publishes_prereleases": True,
-                                    },
-                                },
-                            },
-                        },
-                    },
-                    "24.10": {
-                        "repositories": {
-                            "repo2": {
-                                "packages": {
-                                    "package": {
-                                        "has_cuda_suffix": True,
-                                        "publishes_prereleases": True,
-                                    },
-                                },
-                            },
-                        },
-                    },
-                },
-            },
+                      "repositories": {
+                        "repo1": {
+                          "packages": {
+                            "package": {
+                              "has_cuda_suffix": true,
+                              "publishes_prereleases": true
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                """
+            ),
         ),
     ],
 )
@@ -259,9 +283,25 @@ def test_main(capsys, tmp_path, version, args, expected_json):
     if version is not None:
         with open(os.path.join(tmp_path, "VERSION"), "w") as f:
             f.write(f"{version}\n")
+
     with set_cwd(tmp_path), patch("sys.argv", ["rapids-metadata-json", *args]), patch(
         "rapids_metadata.json.all_metadata", mock_metadata
     ):
         rapids_json.main()
     captured = capsys.readouterr()
-    assert json.loads(captured.out) == expected_json
+    assert captured.out == expected_json
+
+    with set_cwd(tmp_path), patch("rapids_metadata.json.all_metadata", mock_metadata):
+        rapids_json.main(args)
+    captured = capsys.readouterr()
+    assert captured.out == expected_json
+
+    with set_cwd(tmp_path), patch(
+        "sys.argv", ["rapids-metadata-json", *args, "-o", "rapids-metadata.json"]
+    ), patch("rapids_metadata.json.all_metadata", mock_metadata):
+        rapids_json.main()
+        with open("rapids-metadata.json") as f:
+            written_json = f.read()
+    captured = capsys.readouterr()
+    assert captured.out == ""
+    assert written_json == expected_json

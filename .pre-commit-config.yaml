@@ -47,9 +47,8 @@ repos:
     hooks:
       - id: generate-json
         name: generate-json
-        entry: ./ci/generate_json.sh
-        language: script
-        files: src/rapids_metadata/__init__.py
+        entry: ./ci/generate_json.py
+        language: python
         pass_filenames: false
 
 default_language_version:
