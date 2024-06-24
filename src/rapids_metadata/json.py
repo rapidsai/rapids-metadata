@@ -13,32 +13,21 @@
 # limitations under the License.
 
 import argparse
-import dataclasses
 import json
 import os
 import sys
-from typing import Any, Union
+from typing import Union
+
+from pydantic import TypeAdapter
 
 from . import all_metadata
-from .metadata import (
-    RAPIDSMetadata,
-    RAPIDSPackage,
-    RAPIDSRepository,
-    RAPIDSVersion,
-)
+from .metadata import RAPIDSMetadata
 from .rapids_version import get_rapids_version
 
 
 __all__ = [
     "main",
 ]
-
-
-class _RAPIDSMetadataEncoder(json.JSONEncoder):
-    def default(
-        self, o: Union[RAPIDSMetadata, RAPIDSPackage, RAPIDSRepository, RAPIDSVersion]
-    ) -> dict[str, Any]:
-        return dataclasses.asdict(o)
 
 
 def main(argv: Union[list[str], None] = None):
@@ -77,9 +66,8 @@ def main(argv: Union[list[str], None] = None):
 
     def write_file(f):
         json.dump(
-            metadata,
+            TypeAdapter(RAPIDSMetadata).dump_python(metadata),
             f,
-            cls=_RAPIDSMetadataEncoder,
             sort_keys=True,
             separators=(",", ": ") if parsed.pretty else (",", ":"),
             indent="  " if parsed.pretty else None,

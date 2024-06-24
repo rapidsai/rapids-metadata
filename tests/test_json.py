@@ -19,6 +19,7 @@ from typing import Generator
 from unittest.mock import patch
 
 import pytest
+from pydantic import TypeAdapter
 from rapids_metadata import json as rapids_json
 from rapids_metadata.metadata import (
     RAPIDSMetadata,
@@ -133,7 +134,7 @@ def set_cwd(cwd: os.PathLike) -> Generator:
     ],
 )
 def test_metadata_encoder(unencoded, encoded):
-    assert rapids_json._RAPIDSMetadataEncoder().default(unencoded) == encoded
+    assert TypeAdapter(type(unencoded)).dump_python(unencoded) == encoded
 
 
 @pytest.mark.parametrize(
