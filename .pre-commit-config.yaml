@@ -43,6 +43,7 @@ repos:
         pass_filenames: false
         additional_dependencies:
           - packaging
+          - pydantic
   - repo: local
     hooks:
       - id: generate-json
@@ -50,6 +51,8 @@ repos:
         entry: ./ci/generate_json.py
         language: python
         pass_filenames: false
+        additional_dependencies:
+          - pydantic
 
 default_language_version:
       python: python3
