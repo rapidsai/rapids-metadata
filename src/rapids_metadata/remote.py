@@ -19,13 +19,15 @@ import pydantic
 from .metadata import RAPIDSMetadata
 
 
-GITHUB_METADATA_URL = "https://raw.githubusercontent.com/rapidsai/rapids-metadata/main/rapids-metadata.json"
+__all__ = ["fetch_latest"]
+
+_GITHUB_METADATA_URL = "https://raw.githubusercontent.com/rapidsai/rapids-metadata/main/rapids-metadata.json"
 
 
-def fetch_from_url(url: str) -> RAPIDSMetadata:
+def _fetch_from_url(url: str) -> RAPIDSMetadata:
     with urllib.request.urlopen(url) as f:
         return pydantic.TypeAdapter(RAPIDSMetadata).validate_json(f.read())
 
 
-def fetch_from_github() -> RAPIDSMetadata:
-    return fetch_from_url(GITHUB_METADATA_URL)
+def fetch_latest() -> RAPIDSMetadata:
+    return _fetch_from_url(_GITHUB_METADATA_URL)

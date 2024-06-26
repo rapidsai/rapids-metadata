@@ -17,7 +17,7 @@ from unittest.mock import patch
 from pytest_httpserver import HTTPServer
 from pydantic import TypeAdapter
 
-import rapids_metadata.http as rapids_http
+import rapids_metadata.remote as rapids_remote
 from rapids_metadata import all_metadata
 from rapids_metadata.metadata import RAPIDSMetadata
 
@@ -27,13 +27,13 @@ def test_fetch_from_url(httpserver: HTTPServer):
         TypeAdapter(RAPIDSMetadata).dump_python(all_metadata)
     )
     assert (
-        rapids_http.fetch_from_url(httpserver.url_for("/rapids-metadata.json"))
+        rapids_remote._fetch_from_url(httpserver.url_for("/rapids-metadata.json"))
         == all_metadata
     )
 
 
-def test_fetch_from_github():
-    with patch("rapids_metadata.http.fetch_from_url") as patch_fetch_from_url:
-        return_value = rapids_http.fetch_from_github()
-    patch_fetch_from_url.assert_called_once_with(rapids_http.GITHUB_METADATA_URL)
+def test_fetch_latest():
+    with patch("rapids_metadata.remote._fetch_from_url") as patch_fetch_from_url:
+        return_value = rapids_remote.fetch_latest()
+    patch_fetch_from_url.assert_called_once_with(rapids_remote._GITHUB_METADATA_URL)
     assert return_value == patch_fetch_from_url()
