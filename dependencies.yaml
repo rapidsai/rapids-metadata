@@ -67,3 +67,4 @@ dependencies:
       - output_types: [conda, requirements, pyproject]
         packages:
           - pytest
+          - pytest-httpserver
