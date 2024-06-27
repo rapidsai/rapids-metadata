@@ -299,7 +299,7 @@ def test_main(
         with open(os.path.join(tmp_path, "VERSION"), "w") as f:
             f.write(f"{version}\n")
 
-    def check_output(output):
+    def check_output(output: str):
         if isinstance(expected_json, re.Pattern):
             assert expected_json.search(output)
         else:
