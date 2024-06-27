@@ -13,8 +13,8 @@ if __name__ == "__main__":
     rapids_json.main(
         [
             "--output",
-            os.path.join(repo_root, "rapids-metadata.json"),
+            os.path.join(repo_root, "schemas/rapids-metadata-v1.json"),
             "--pretty",
-            "--all-versions",
+            "--schema",
         ]
     )

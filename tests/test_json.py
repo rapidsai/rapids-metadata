@@ -14,8 +14,9 @@
 
 import contextlib
 import os.path
+import re
 from textwrap import dedent
-from typing import Generator
+from typing import Generator, Union
 from unittest.mock import patch
 
 import pytest
@@ -256,9 +257,22 @@ def test_metadata_encoder(unencoded, encoded):
                 """
             ),
         ),
+        (
+            None,
+            ["--schema"],
+            re.compile(
+                r'"\$id":"https://raw.githubusercontent.com/rapidsai/rapids-metadata/main/schemas/rapids-metadata-v1.json"'
+            ),
+        ),
     ],
 )
-def test_main(capsys, tmp_path, version, args, expected_json):
+def test_main(
+    capsys: pytest.CaptureFixture[str],
+    tmp_path: str,
+    version: Union[str, None],
+    args: list[str],
+    expected_json: Union[str, re.Pattern],
+):
     mock_metadata = RAPIDSMetadata(
         versions={
             "24.08": RAPIDSVersion(
@@ -285,17 +299,23 @@ def test_main(capsys, tmp_path, version, args, expected_json):
         with open(os.path.join(tmp_path, "VERSION"), "w") as f:
             f.write(f"{version}\n")
 
+    def check_output(output: str):
+        if isinstance(expected_json, re.Pattern):
+            assert expected_json.search(output)
+        else:
+            assert output == expected_json
+
     with set_cwd(tmp_path), patch("sys.argv", ["rapids-metadata-json", *args]), patch(
         "rapids_metadata.json.all_metadata", mock_metadata
     ):
         rapids_json.main()
     captured = capsys.readouterr()
-    assert captured.out == expected_json
+    check_output(captured.out)
 
     with set_cwd(tmp_path), patch("rapids_metadata.json.all_metadata", mock_metadata):
         rapids_json.main(args)
     captured = capsys.readouterr()
-    assert captured.out == expected_json
+    check_output(captured.out)
 
     with set_cwd(tmp_path), patch(
         "sys.argv", ["rapids-metadata-json", *args, "-o", "rapids-metadata.json"]
@@ -305,4 +325,4 @@ def test_main(capsys, tmp_path, version, args, expected_json):
             written_json = f.read()
     captured = capsys.readouterr()
     assert captured.out == ""
-    assert written_json == expected_json
+    check_output(written_json)

@@ -1,0 +1,67 @@
+{
+  "$defs": {
+    "RAPIDSPackage": {
+      "description": "Package published by a RAPIDS repository. Includes both Python packages and Conda packages.",
+      "properties": {
+        "has_cuda_suffix": {
+          "default": true,
+          "description": "Whether or not the package has a CUDA suffix.",
+          "title": "Has Cuda Suffix",
+          "type": "boolean"
+        },
+        "publishes_prereleases": {
+          "default": true,
+          "description": "Whether or not the package publishes prereleases.",
+          "title": "Publishes Prereleases",
+          "type": "boolean"
+        }
+      },
+      "title": "RAPIDSPackage",
+      "type": "object"
+    },
+    "RAPIDSRepository": {
+      "description": "RAPIDS Git repository. Can publish more than one package.",
+      "properties": {
+        "packages": {
+          "additionalProperties": {
+            "$ref": "#/$defs/RAPIDSPackage"
+          },
+          "description": "Dictionary of packages in this repository by name.",
+          "title": "Packages",
+          "type": "object"
+        }
+      },
+      "title": "RAPIDSRepository",
+      "type": "object"
+    },
+    "RAPIDSVersion": {
+      "description": "Version of RAPIDS, which contains many Git repositories.",
+      "properties": {
+        "repositories": {
+          "additionalProperties": {
+            "$ref": "#/$defs/RAPIDSRepository"
+          },
+          "description": "Dictionary of repositories in this version by name.",
+          "title": "Repositories",
+          "type": "object"
+        }
+      },
+      "title": "RAPIDSVersion",
+      "type": "object"
+    }
+  },
+  "$id": "https://raw.githubusercontent.com/rapidsai/rapids-metadata/main/schemas/rapids-metadata-v1.json",
+  "description": "All RAPIDS metadata.",
+  "properties": {
+    "versions": {
+      "additionalProperties": {
+        "$ref": "#/$defs/RAPIDSVersion"
+      },
+      "description": "Dictionary of RAPIDS versions by <major>.<minor> version string.",
+      "title": "Versions",
+      "type": "object"
+    }
+  },
+  "title": "RAPIDSMetadata",
+  "type": "object"
+}
