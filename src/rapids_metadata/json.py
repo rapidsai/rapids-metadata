@@ -16,7 +16,7 @@ import argparse
 import json
 import os
 import sys
-from typing import Union
+from typing import Any, TextIO, Union
 
 from pydantic import TypeAdapter
 
@@ -42,6 +42,11 @@ def main(argv: Union[list[str], None] = None):
         help="Output all versions, ignoring local VERSION file",
     )
     parser.add_argument(
+        "--schema",
+        action="store_true",
+        help="Output a JSON schema for the data instead of the data itself",
+    )
+    parser.add_argument(
         "--pretty", action="store_true", help="Pretty-print JSON output"
     )
     parser.add_argument(
@@ -52,21 +57,10 @@ def main(argv: Union[list[str], None] = None):
     )
 
     parsed = parser.parse_args(argv)
-    metadata = (
-        all_metadata
-        if parsed.all_versions
-        else RAPIDSMetadata(
-            versions={
-                get_rapids_version(os.getcwd()): all_metadata.get_current_version(
-                    os.getcwd()
-                )
-            }
-        )
-    )
 
-    def write_file(f):
+    def write_file(data: dict[str, Any], f: TextIO):
         json.dump(
-            TypeAdapter(RAPIDSMetadata).dump_python(metadata),
+            data,
             f,
             sort_keys=True,
             separators=(",", ": ") if parsed.pretty else (",", ":"),
@@ -75,11 +69,28 @@ def main(argv: Union[list[str], None] = None):
         if parsed.pretty:
             f.write("\n")
 
+    type_adapter = TypeAdapter(RAPIDSMetadata)
+    if parsed.schema:
+        data = type_adapter.json_schema()
+    else:
+        metadata = (
+            all_metadata
+            if parsed.all_versions
+            else RAPIDSMetadata(
+                versions={
+                    get_rapids_version(os.getcwd()): all_metadata.get_current_version(
+                        os.getcwd()
+                    )
+                }
+            )
+        )
+        data = type_adapter.dump_python(metadata)
+
     if parsed.output:
         with open(parsed.output, "w") as f:
-            write_file(f)
+            write_file(data, f)
     else:
-        write_file(sys.stdout)
+        write_file(data, sys.stdout)
 
 
 if __name__ == "__main__":

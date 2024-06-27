@@ -12,9 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from dataclasses import dataclass, field
 from os import PathLike
 from typing import Union
+
+from pydantic import ConfigDict, Field
+from pydantic.dataclasses import dataclass
 
 from .rapids_version import get_rapids_version
 
@@ -28,18 +30,40 @@ __all__ = [
 
 @dataclass
 class RAPIDSPackage:
-    publishes_prereleases: bool = field(default=True)
-    has_cuda_suffix: bool = field(default=True)
+    (
+        """Package published by a RAPIDS repository. Includes both Python packages """
+        """and Conda packages."""
+    )
+
+    publishes_prereleases: bool = Field(
+        default=True,
+        description="""Whether or not the package publishes prereleases.""",
+    )
+
+    has_cuda_suffix: bool = Field(
+        default=True,
+        description="""Whether or not the package has a CUDA suffix.""",
+    )
 
 
 @dataclass
 class RAPIDSRepository:
-    packages: dict[str, RAPIDSPackage] = field(default_factory=dict)
+    """RAPIDS Git repository. Can publish more than one package."""
+
+    packages: dict[str, RAPIDSPackage] = Field(
+        default_factory=dict,
+        description="""Dictionary of packages in this repository by name.""",
+    )
 
 
 @dataclass
 class RAPIDSVersion:
-    repositories: dict[str, RAPIDSRepository] = field(default_factory=dict)
+    """Version of RAPIDS, which contains many Git repositories."""
+
+    repositories: dict[str, RAPIDSRepository] = Field(
+        default_factory=dict,
+        description="""Dictionary of repositories in this version by name.""",
+    )
 
     @property
     def all_packages(self) -> set[str]:
@@ -68,9 +92,23 @@ class RAPIDSVersion:
         }
 
 
-@dataclass
+@dataclass(
+    config=ConfigDict(
+        json_schema_extra={
+            "$id": "https://raw.githubusercontent.com/rapidsai/rapids-metadata/main/schemas/rapids-metadata-v1.json",
+        },
+    )
+)
 class RAPIDSMetadata:
-    versions: dict[str, RAPIDSVersion] = field(default_factory=dict)
+    """All RAPIDS metadata."""
+
+    versions: dict[str, RAPIDSVersion] = Field(
+        default_factory=dict,
+        description=(
+            """Dictionary of RAPIDS versions by <major>.<minor> """
+            """version string."""
+        ),
+    )
 
     def get_current_version(
         self, directory: Union[str, PathLike[str]]

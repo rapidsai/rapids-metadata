@@ -7,11 +7,13 @@ repos:
       - id: trailing-whitespace
         exclude: |
           (?x)
-              rapids-metadata[.]json$
+              rapids-metadata[.]json$|
+              schemas/rapids-metadata-v[0-9]+[.]json$
       - id: end-of-file-fixer
         exclude: |
           (?x)
-              rapids-metadata[.]json$
+              rapids-metadata[.]json$|
+              schemas/rapids-metadata-v[0-9]+[.]json$
   - repo: https://github.com/rapidsai/dependency-file-generator
     rev: v1.13.11
     hooks:
@@ -49,6 +51,13 @@ repos:
       - id: generate-json
         name: generate-json
         entry: ./ci/generate_json.py
+        language: python
+        pass_filenames: false
+        additional_dependencies:
+          - pydantic
+      - id: generate-json-schema
+        name: generate-json-schema
+        entry: ./ci/generate_json_schema.py
         language: python
         pass_filenames: false
         additional_dependencies:
