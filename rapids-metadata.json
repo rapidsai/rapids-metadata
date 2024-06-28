@@ -27,6 +27,10 @@
             "dask-cudf": {
               "has_cuda_suffix": true,
               "publishes_prereleases": true
+            },
+            "libcudf": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
             }
           }
         },
@@ -118,6 +122,18 @@
           "packages": {
             "dask-cuda": {
               "has_cuda_suffix": false,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "kvikio": {
+          "packages": {
+            "kvikio": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
+            "libkvikio": {
+              "has_cuda_suffix": true,
               "publishes_prereleases": true
             }
           }

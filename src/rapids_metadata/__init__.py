@@ -40,6 +40,7 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
         "cudf": RAPIDSRepository(
             packages={
                 "cudf": RAPIDSPackage(),
+                "libcudf": RAPIDSPackage(),
                 "dask-cudf": RAPIDSPackage(),
             }
         ),
@@ -88,6 +89,12 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
         "dask-cuda": RAPIDSRepository(
             packages={
                 "dask-cuda": RAPIDSPackage(has_cuda_suffix=False),
+            }
+        ),
+        "kvikio": RAPIDSRepository(
+            packages={
+                "libkvikio": RAPIDSPackage(),
+                "kvikio": RAPIDSPackage(),
             }
         ),
         "ptxcompiler": RAPIDSRepository(
