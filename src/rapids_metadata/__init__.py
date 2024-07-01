@@ -29,7 +29,7 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
     repositories={
         "_nvidia": RAPIDSRepository(
             packages={
-                "cubinlinker": RAPIDSPackage(),
+                "cubinlinker": RAPIDSPackage(publishes_prereleases=False),
             }
         ),
         "cucim": RAPIDSRepository(
@@ -99,7 +99,7 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
         ),
         "ptxcompiler": RAPIDSRepository(
             packages={
-                "ptxcompiler": RAPIDSPackage(),
+                "ptxcompiler": RAPIDSPackage(publishes_prereleases=False),
             }
         ),
         "pynvjitlink": RAPIDSRepository(
