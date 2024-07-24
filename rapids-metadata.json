@@ -24,6 +24,10 @@
               "has_cuda_suffix": true,
               "publishes_prereleases": true
             },
+            "cudf-polars": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
             "dask-cudf": {
               "has_cuda_suffix": true,
               "publishes_prereleases": true
@@ -249,6 +253,10 @@
         "cudf": {
           "packages": {
             "cudf": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
+            "cudf-polars": {
               "has_cuda_suffix": true,
               "publishes_prereleases": true
             },
