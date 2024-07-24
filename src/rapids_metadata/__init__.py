@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+from copy import deepcopy
+
 from .metadata import (
     RAPIDSMetadata,
     RAPIDSPackage,
@@ -145,3 +147,5 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
         ),
     }
 )
+
+all_metadata.versions["24.10"] = deepcopy(all_metadata.versions["24.08"])
