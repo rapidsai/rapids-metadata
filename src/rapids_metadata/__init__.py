@@ -42,9 +42,10 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
         "cudf": RAPIDSRepository(
             packages={
                 "cudf": RAPIDSPackage(),
-                "libcudf": RAPIDSPackage(),
-                "dask-cudf": RAPIDSPackage(),
                 "cudf-polars": RAPIDSPackage(),
+                "cudf_kafka": RAPIDSPackage(),
+                "dask-cudf": RAPIDSPackage(),
+                "libcudf": RAPIDSPackage(),
             }
         ),
         "cugraph": RAPIDSRepository(
