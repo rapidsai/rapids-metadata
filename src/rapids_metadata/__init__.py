@@ -54,12 +54,15 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
                 "cugraph-dgl": RAPIDSPackage(),
                 "cugraph-equivariant": RAPIDSPackage(),
                 "cugraph-pyg": RAPIDSPackage(),
+                "cugraph-service-client": RAPIDSPackage(has_cuda_suffix=False),
+                "cugraph-service-server": RAPIDSPackage(),
                 "nx-cugraph": RAPIDSPackage(),
                 "pylibcugraph": RAPIDSPackage(),
             }
         ),
         "cugraph-ops": RAPIDSRepository(
             packages={
+                "libcugraphops": RAPIDSPackage(),
                 "pylibcugraphops": RAPIDSPackage(),
             }
         ),
@@ -83,6 +86,8 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
         "cuspatial": RAPIDSRepository(
             packages={
                 "cuspatial": RAPIDSPackage(),
+                "libcuspatial": RAPIDSPackage(),
+                "libcuspatial-tests": RAPIDSPackage(),
             }
         ),
         "cuxfilter": RAPIDSRepository(
