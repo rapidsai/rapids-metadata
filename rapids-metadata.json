@@ -60,6 +60,14 @@
               "has_cuda_suffix": true,
               "publishes_prereleases": true
             },
+            "cugraph-service-client": {
+              "has_cuda_suffix": false,
+              "publishes_prereleases": true
+            },
+            "cugraph-service-server": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
             "nx-cugraph": {
               "has_cuda_suffix": true,
               "publishes_prereleases": true
@@ -72,6 +80,10 @@
         },
         "cugraph-ops": {
           "packages": {
+            "libcugraphops": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
             "pylibcugraphops": {
               "has_cuda_suffix": true,
               "publishes_prereleases": true
@@ -113,6 +125,14 @@
         "cuspatial": {
           "packages": {
             "cuspatial": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
+            "libcuspatial": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
+            "libcuspatial-tests": {
               "has_cuda_suffix": true,
               "publishes_prereleases": true
             }
@@ -296,6 +316,14 @@
               "has_cuda_suffix": true,
               "publishes_prereleases": true
             },
+            "cugraph-service-client": {
+              "has_cuda_suffix": false,
+              "publishes_prereleases": true
+            },
+            "cugraph-service-server": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
             "nx-cugraph": {
               "has_cuda_suffix": true,
               "publishes_prereleases": true
@@ -308,6 +336,10 @@
         },
         "cugraph-ops": {
           "packages": {
+            "libcugraphops": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
             "pylibcugraphops": {
               "has_cuda_suffix": true,
               "publishes_prereleases": true
@@ -349,6 +381,14 @@
         "cuspatial": {
           "packages": {
             "cuspatial": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
+            "libcuspatial": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
+            "libcuspatial-tests": {
               "has_cuda_suffix": true,
               "publishes_prereleases": true
             }
