@@ -156,3 +156,5 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
 )
 
 all_metadata.versions["24.10"] = deepcopy(all_metadata.versions["24.08"])
+
+all_metadata.versions["24.12"] = deepcopy(all_metadata.versions["24.10"])
