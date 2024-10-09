@@ -156,5 +156,14 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
 )
 
 all_metadata.versions["24.10"] = deepcopy(all_metadata.versions["24.08"])
+all_metadata.versions["24.10"].repositories["cudf"].packages["pylibcudf"] = (
+    RAPIDSPackage()
+)
+all_metadata.versions["24.10"].repositories["cuvs"] = RAPIDSRepository(
+    packages={
+        "cuvs": RAPIDSPackage(),
+        "libcuvs": RAPIDSPackage(),
+    }
+)
 
 all_metadata.versions["24.12"] = deepcopy(all_metadata.versions["24.10"])

@@ -295,6 +295,10 @@
             "libcudf": {
               "has_cuda_suffix": true,
               "publishes_prereleases": true
+            },
+            "pylibcudf": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
             }
           }
         },
@@ -389,6 +393,18 @@
               "publishes_prereleases": true
             },
             "libcuspatial-tests": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "cuvs": {
+          "packages": {
+            "cuvs": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
+            "libcuvs": {
               "has_cuda_suffix": true,
               "publishes_prereleases": true
             }
@@ -551,6 +567,10 @@
             "libcudf": {
               "has_cuda_suffix": true,
               "publishes_prereleases": true
+            },
+            "pylibcudf": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
             }
           }
         },
@@ -645,6 +665,18 @@
               "publishes_prereleases": true
             },
             "libcuspatial-tests": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "cuvs": {
+          "packages": {
+            "cuvs": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
+            "libcuvs": {
               "has_cuda_suffix": true,
               "publishes_prereleases": true
             }
