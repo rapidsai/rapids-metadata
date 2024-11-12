@@ -580,15 +580,7 @@
               "has_cuda_suffix": true,
               "publishes_prereleases": true
             },
-            "cugraph-dgl": {
-              "has_cuda_suffix": true,
-              "publishes_prereleases": true
-            },
             "cugraph-equivariant": {
-              "has_cuda_suffix": true,
-              "publishes_prereleases": true
-            },
-            "cugraph-pyg": {
               "has_cuda_suffix": true,
               "publishes_prereleases": true
             },
@@ -605,6 +597,22 @@
               "publishes_prereleases": true
             },
             "pylibcugraph": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "cugraph-gnn": {
+          "packages": {
+            "cugraph-dgl": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
+            "cugraph-pyg": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            },
+            "pylibwholegraph": {
               "has_cuda_suffix": true,
               "publishes_prereleases": true
             }
@@ -785,14 +793,6 @@
               "publishes_prereleases": true
             },
             "ucxx": {
-              "has_cuda_suffix": true,
-              "publishes_prereleases": true
-            }
-          }
-        },
-        "wholegraph": {
-          "packages": {
-            "pylibwholegraph": {
               "has_cuda_suffix": true,
               "publishes_prereleases": true
             }
