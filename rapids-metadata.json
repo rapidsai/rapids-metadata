@@ -600,10 +600,6 @@
               "has_cuda_suffix": true,
               "publishes_prereleases": true
             },
-            "nx-cugraph": {
-              "has_cuda_suffix": true,
-              "publishes_prereleases": true
-            },
             "pylibcugraph": {
               "has_cuda_suffix": true,
               "publishes_prereleases": true
@@ -705,6 +701,14 @@
               "publishes_prereleases": true
             },
             "libkvikio": {
+              "has_cuda_suffix": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "nx-cugraph": {
+          "packages": {
+            "nx-cugraph": {
               "has_cuda_suffix": true,
               "publishes_prereleases": true
             }

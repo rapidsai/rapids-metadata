@@ -167,3 +167,10 @@ all_metadata.versions["24.10"].repositories["cuvs"] = RAPIDSRepository(
 )
 
 all_metadata.versions["24.12"] = deepcopy(all_metadata.versions["24.10"])
+
+del all_metadata.versions["24.12"].repositories["cugraph"].packages["nx-cugraph"]
+all_metadata.versions["24.12"].repositories["nx-cugraph"] = RAPIDSRepository(
+    packages={
+        "nx-cugraph": RAPIDSPackage(),
+    }
+)
