@@ -580,10 +580,6 @@
               "has_cuda_suffix": true,
               "publishes_prereleases": true
             },
-            "cugraph-equivariant": {
-              "has_cuda_suffix": true,
-              "publishes_prereleases": true
-            },
             "cugraph-service-client": {
               "has_cuda_suffix": false,
               "publishes_prereleases": true
@@ -853,10 +849,6 @@
         "cugraph": {
           "packages": {
             "cugraph": {
-              "has_cuda_suffix": true,
-              "publishes_prereleases": true
-            },
-            "cugraph-equivariant": {
               "has_cuda_suffix": true,
               "publishes_prereleases": true
             },

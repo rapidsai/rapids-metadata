@@ -168,10 +168,13 @@ all_metadata.versions["24.10"].repositories["cuvs"] = RAPIDSRepository(
 
 all_metadata.versions["24.12"] = deepcopy(all_metadata.versions["24.10"])
 
+# fmt: off
 del all_metadata.versions["24.12"].repositories["cugraph"].packages["cugraph-dgl"]
+del all_metadata.versions["24.12"].repositories["cugraph"].packages["cugraph-equivariant"]
 del all_metadata.versions["24.12"].repositories["cugraph"].packages["cugraph-pyg"]
 del all_metadata.versions["24.12"].repositories["cugraph"].packages["nx-cugraph"]
 del all_metadata.versions["24.12"].repositories["wholegraph"]
+# fmt: on
 
 all_metadata.versions["24.12"].repositories["cugraph-gnn"] = RAPIDSRepository(
     packages={
