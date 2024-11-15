@@ -168,7 +168,19 @@ all_metadata.versions["24.10"].repositories["cuvs"] = RAPIDSRepository(
 
 all_metadata.versions["24.12"] = deepcopy(all_metadata.versions["24.10"])
 
+del all_metadata.versions["24.12"].repositories["cugraph"].packages["cugraph-dgl"]
+del all_metadata.versions["24.12"].repositories["cugraph"].packages["cugraph-pyg"]
 del all_metadata.versions["24.12"].repositories["cugraph"].packages["nx-cugraph"]
+del all_metadata.versions["24.12"].repositories["wholegraph"]
+
+all_metadata.versions["24.12"].repositories["cugraph-gnn"] = RAPIDSRepository(
+    packages={
+        "cugraph-dgl": RAPIDSPackage(),
+        "cugraph-pyg": RAPIDSPackage(),
+        "pylibwholegraph": RAPIDSPackage(),
+    }
+)
+
 all_metadata.versions["24.12"].repositories["nx-cugraph"] = RAPIDSRepository(
     packages={
         "nx-cugraph": RAPIDSPackage(),
