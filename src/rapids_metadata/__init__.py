@@ -37,6 +37,7 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
         "cucim": RAPIDSRepository(
             packages={
                 "cucim": RAPIDSPackage(),
+                "libcucim": RAPIDSPackage(is_conda_only=True),
             }
         ),
         "cudf": RAPIDSRepository(
@@ -44,8 +45,10 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
                 "cudf": RAPIDSPackage(),
                 "cudf-polars": RAPIDSPackage(),
                 "cudf_kafka": RAPIDSPackage(),
+                "custreamz": RAPIDSPackage(is_conda_only=True),
                 "dask-cudf": RAPIDSPackage(),
                 "libcudf": RAPIDSPackage(),
+                "libcudf_kafka": RAPIDSPackage(is_conda_only=True),
             }
         ),
         "cugraph": RAPIDSRepository(
@@ -54,8 +57,12 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
                 "cugraph-dgl": RAPIDSPackage(),
                 "cugraph-equivariant": RAPIDSPackage(),
                 "cugraph-pyg": RAPIDSPackage(),
-                "cugraph-service-client": RAPIDSPackage(has_cuda_suffix=False),
-                "cugraph-service-server": RAPIDSPackage(),
+                "cugraph-service-client": RAPIDSPackage(
+                    has_cuda_suffix=False, is_conda_only=True
+                ),
+                "cugraph-service-server": RAPIDSPackage(is_conda_only=True),
+                "libcugraph": RAPIDSPackage(is_conda_only=True),
+                "libcugraph_etl": RAPIDSPackage(is_conda_only=True),
                 "nx-cugraph": RAPIDSPackage(),
                 "pylibcugraph": RAPIDSPackage(),
             }
@@ -69,8 +76,9 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
         "cuml": RAPIDSRepository(
             packages={
                 "cuml": RAPIDSPackage(),
-                "libcuml": RAPIDSPackage(),
-                "libcuml-tests": RAPIDSPackage(),
+                "cuml-cpu": RAPIDSPackage(is_conda_only=True),
+                "libcuml": RAPIDSPackage(is_conda_only=True),
+                "libcuml-tests": RAPIDSPackage(is_conda_only=True),
             }
         ),
         "cumlprims_mg": RAPIDSRepository(
@@ -87,7 +95,7 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
             packages={
                 "cuspatial": RAPIDSPackage(),
                 "libcuspatial": RAPIDSPackage(),
-                "libcuspatial-tests": RAPIDSPackage(),
+                "libcuspatial-tests": RAPIDSPackage(is_conda_only=True),
             }
         ),
         "cuxfilter": RAPIDSRepository(
@@ -120,7 +128,11 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
             packages={
                 "libraft": RAPIDSPackage(),
                 "libraft-headers": RAPIDSPackage(),
+                "libraft-headers-only": RAPIDSPackage(is_conda_only=True),
+                "libraft-static": RAPIDSPackage(is_conda_only=True),
                 "pylibraft": RAPIDSPackage(),
+                "raft-ann-bench": RAPIDSPackage(is_conda_only=True),
+                "raft-ann-bench-cpu": RAPIDSPackage(is_conda_only=True),
                 "raft-dask": RAPIDSPackage(),
             }
         ),
@@ -150,6 +162,7 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
         "wholegraph": RAPIDSRepository(
             packages={
                 "pylibwholegraph": RAPIDSPackage(),
+                "libwholegraph": RAPIDSPackage(is_conda_only=True),
             }
         ),
     }
@@ -162,7 +175,7 @@ all_metadata.versions["24.10"].repositories["cudf"].packages["pylibcudf"] = (
 all_metadata.versions["24.10"].repositories["cuvs"] = RAPIDSRepository(
     packages={
         "cuvs": RAPIDSPackage(),
-        "libcuvs": RAPIDSPackage(),
+        "libcuvs": RAPIDSPackage(is_conda_only=True),
     }
 )
 
@@ -174,6 +187,8 @@ del all_metadata.versions["24.12"].repositories["cugraph"].packages["cugraph-equ
 del all_metadata.versions["24.12"].repositories["cugraph"].packages["cugraph-pyg"]
 del all_metadata.versions["24.12"].repositories["cugraph"].packages["nx-cugraph"]
 del all_metadata.versions["24.12"].repositories["wholegraph"]
+del all_metadata.versions["24.12"].repositories["raft"].packages["raft-ann-bench"]
+del all_metadata.versions["24.12"].repositories["raft"].packages["raft-ann-bench-cpu"]
 # fmt: on
 
 all_metadata.versions["24.12"].repositories["cugraph-gnn"] = RAPIDSRepository(
@@ -181,6 +196,7 @@ all_metadata.versions["24.12"].repositories["cugraph-gnn"] = RAPIDSRepository(
         "cugraph-dgl": RAPIDSPackage(),
         "cugraph-pyg": RAPIDSPackage(),
         "pylibwholegraph": RAPIDSPackage(),
+        "libwholegraph": RAPIDSPackage(is_conda_only=True),
     }
 )
 
@@ -188,6 +204,16 @@ all_metadata.versions["24.12"].repositories["nx-cugraph"] = RAPIDSRepository(
     packages={
         "nx-cugraph": RAPIDSPackage(),
     }
+)
+
+all_metadata.versions["24.12"].repositories["cuvs"].packages["cuvs-bench"] = (
+    RAPIDSPackage(is_conda_only=True)
+)
+all_metadata.versions["24.12"].repositories["cuvs"].packages["cuvs-bench-cpu"] = (
+    RAPIDSPackage(is_conda_only=True)
+)
+all_metadata.versions["24.12"].repositories["cuvs"].packages["libcuvs-static"] = (
+    RAPIDSPackage(is_conda_only=True)
 )
 
 all_metadata.versions["25.02"] = deepcopy(all_metadata.versions["24.12"])

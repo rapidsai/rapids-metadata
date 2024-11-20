@@ -17,6 +17,11 @@
               "has_cuda_suffix": true,
               "is_conda_only": false,
               "publishes_prereleases": true
+            },
+            "libcucim": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
             }
           }
         },
@@ -37,6 +42,11 @@
               "is_conda_only": false,
               "publishes_prereleases": true
             },
+            "custreamz": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
             "dask-cudf": {
               "has_cuda_suffix": true,
               "is_conda_only": false,
@@ -45,6 +55,11 @@
             "libcudf": {
               "has_cuda_suffix": true,
               "is_conda_only": false,
+              "publishes_prereleases": true
+            },
+            "libcudf_kafka": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
               "publishes_prereleases": true
             }
           }
@@ -73,12 +88,22 @@
             },
             "cugraph-service-client": {
               "has_cuda_suffix": false,
-              "is_conda_only": false,
+              "is_conda_only": true,
               "publishes_prereleases": true
             },
             "cugraph-service-server": {
               "has_cuda_suffix": true,
-              "is_conda_only": false,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
+            "libcugraph": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
+            "libcugraph_etl": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
               "publishes_prereleases": true
             },
             "nx-cugraph": {
@@ -114,14 +139,19 @@
               "is_conda_only": false,
               "publishes_prereleases": true
             },
+            "cuml-cpu": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
             "libcuml": {
               "has_cuda_suffix": true,
-              "is_conda_only": false,
+              "is_conda_only": true,
               "publishes_prereleases": true
             },
             "libcuml-tests": {
               "has_cuda_suffix": true,
-              "is_conda_only": false,
+              "is_conda_only": true,
               "publishes_prereleases": true
             }
           }
@@ -158,7 +188,7 @@
             },
             "libcuspatial-tests": {
               "has_cuda_suffix": true,
-              "is_conda_only": false,
+              "is_conda_only": true,
               "publishes_prereleases": true
             }
           }
@@ -225,9 +255,29 @@
               "is_conda_only": false,
               "publishes_prereleases": true
             },
+            "libraft-headers-only": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
+            "libraft-static": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
             "pylibraft": {
               "has_cuda_suffix": true,
               "is_conda_only": false,
+              "publishes_prereleases": true
+            },
+            "raft-ann-bench": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
+            "raft-ann-bench-cpu": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
               "publishes_prereleases": true
             },
             "raft-dask": {
@@ -290,6 +340,11 @@
         },
         "wholegraph": {
           "packages": {
+            "libwholegraph": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
             "pylibwholegraph": {
               "has_cuda_suffix": true,
               "is_conda_only": false,
@@ -316,6 +371,11 @@
               "has_cuda_suffix": true,
               "is_conda_only": false,
               "publishes_prereleases": true
+            },
+            "libcucim": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
             }
           }
         },
@@ -336,6 +396,11 @@
               "is_conda_only": false,
               "publishes_prereleases": true
             },
+            "custreamz": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
             "dask-cudf": {
               "has_cuda_suffix": true,
               "is_conda_only": false,
@@ -344,6 +409,11 @@
             "libcudf": {
               "has_cuda_suffix": true,
               "is_conda_only": false,
+              "publishes_prereleases": true
+            },
+            "libcudf_kafka": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
               "publishes_prereleases": true
             },
             "pylibcudf": {
@@ -377,12 +447,22 @@
             },
             "cugraph-service-client": {
               "has_cuda_suffix": false,
-              "is_conda_only": false,
+              "is_conda_only": true,
               "publishes_prereleases": true
             },
             "cugraph-service-server": {
               "has_cuda_suffix": true,
-              "is_conda_only": false,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
+            "libcugraph": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
+            "libcugraph_etl": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
               "publishes_prereleases": true
             },
             "nx-cugraph": {
@@ -418,14 +498,19 @@
               "is_conda_only": false,
               "publishes_prereleases": true
             },
+            "cuml-cpu": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
             "libcuml": {
               "has_cuda_suffix": true,
-              "is_conda_only": false,
+              "is_conda_only": true,
               "publishes_prereleases": true
             },
             "libcuml-tests": {
               "has_cuda_suffix": true,
-              "is_conda_only": false,
+              "is_conda_only": true,
               "publishes_prereleases": true
             }
           }
@@ -462,7 +547,7 @@
             },
             "libcuspatial-tests": {
               "has_cuda_suffix": true,
-              "is_conda_only": false,
+              "is_conda_only": true,
               "publishes_prereleases": true
             }
           }
@@ -476,7 +561,7 @@
             },
             "libcuvs": {
               "has_cuda_suffix": true,
-              "is_conda_only": false,
+              "is_conda_only": true,
               "publishes_prereleases": true
             }
           }
@@ -543,9 +628,29 @@
               "is_conda_only": false,
               "publishes_prereleases": true
             },
+            "libraft-headers-only": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
+            "libraft-static": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
             "pylibraft": {
               "has_cuda_suffix": true,
               "is_conda_only": false,
+              "publishes_prereleases": true
+            },
+            "raft-ann-bench": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
+            "raft-ann-bench-cpu": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
               "publishes_prereleases": true
             },
             "raft-dask": {
@@ -608,6 +713,11 @@
         },
         "wholegraph": {
           "packages": {
+            "libwholegraph": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
             "pylibwholegraph": {
               "has_cuda_suffix": true,
               "is_conda_only": false,
@@ -634,6 +744,11 @@
               "has_cuda_suffix": true,
               "is_conda_only": false,
               "publishes_prereleases": true
+            },
+            "libcucim": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
             }
           }
         },
@@ -654,6 +769,11 @@
               "is_conda_only": false,
               "publishes_prereleases": true
             },
+            "custreamz": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
             "dask-cudf": {
               "has_cuda_suffix": true,
               "is_conda_only": false,
@@ -662,6 +782,11 @@
             "libcudf": {
               "has_cuda_suffix": true,
               "is_conda_only": false,
+              "publishes_prereleases": true
+            },
+            "libcudf_kafka": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
               "publishes_prereleases": true
             },
             "pylibcudf": {
@@ -680,12 +805,22 @@
             },
             "cugraph-service-client": {
               "has_cuda_suffix": false,
-              "is_conda_only": false,
+              "is_conda_only": true,
               "publishes_prereleases": true
             },
             "cugraph-service-server": {
               "has_cuda_suffix": true,
-              "is_conda_only": false,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
+            "libcugraph": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
+            "libcugraph_etl": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
               "publishes_prereleases": true
             },
             "pylibcugraph": {
@@ -705,6 +840,11 @@
             "cugraph-pyg": {
               "has_cuda_suffix": true,
               "is_conda_only": false,
+              "publishes_prereleases": true
+            },
+            "libwholegraph": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
               "publishes_prereleases": true
             },
             "pylibwholegraph": {
@@ -735,14 +875,19 @@
               "is_conda_only": false,
               "publishes_prereleases": true
             },
+            "cuml-cpu": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
             "libcuml": {
               "has_cuda_suffix": true,
-              "is_conda_only": false,
+              "is_conda_only": true,
               "publishes_prereleases": true
             },
             "libcuml-tests": {
               "has_cuda_suffix": true,
-              "is_conda_only": false,
+              "is_conda_only": true,
               "publishes_prereleases": true
             }
           }
@@ -779,7 +924,7 @@
             },
             "libcuspatial-tests": {
               "has_cuda_suffix": true,
-              "is_conda_only": false,
+              "is_conda_only": true,
               "publishes_prereleases": true
             }
           }
@@ -791,9 +936,24 @@
               "is_conda_only": false,
               "publishes_prereleases": true
             },
+            "cuvs-bench": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
+            "cuvs-bench-cpu": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
             "libcuvs": {
               "has_cuda_suffix": true,
-              "is_conda_only": false,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
+            "libcuvs-static": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
               "publishes_prereleases": true
             }
           }
@@ -867,6 +1027,16 @@
             "libraft-headers": {
               "has_cuda_suffix": true,
               "is_conda_only": false,
+              "publishes_prereleases": true
+            },
+            "libraft-headers-only": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
+            "libraft-static": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
               "publishes_prereleases": true
             },
             "pylibraft": {
@@ -951,6 +1121,11 @@
               "has_cuda_suffix": true,
               "is_conda_only": false,
               "publishes_prereleases": true
+            },
+            "libcucim": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
             }
           }
         },
@@ -971,6 +1146,11 @@
               "is_conda_only": false,
               "publishes_prereleases": true
             },
+            "custreamz": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
             "dask-cudf": {
               "has_cuda_suffix": true,
               "is_conda_only": false,
@@ -979,6 +1159,11 @@
             "libcudf": {
               "has_cuda_suffix": true,
               "is_conda_only": false,
+              "publishes_prereleases": true
+            },
+            "libcudf_kafka": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
               "publishes_prereleases": true
             },
             "pylibcudf": {
@@ -997,12 +1182,22 @@
             },
             "cugraph-service-client": {
               "has_cuda_suffix": false,
-              "is_conda_only": false,
+              "is_conda_only": true,
               "publishes_prereleases": true
             },
             "cugraph-service-server": {
               "has_cuda_suffix": true,
-              "is_conda_only": false,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
+            "libcugraph": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
+            "libcugraph_etl": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
               "publishes_prereleases": true
             },
             "pylibcugraph": {
@@ -1022,6 +1217,11 @@
             "cugraph-pyg": {
               "has_cuda_suffix": true,
               "is_conda_only": false,
+              "publishes_prereleases": true
+            },
+            "libwholegraph": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
               "publishes_prereleases": true
             },
             "pylibwholegraph": {
@@ -1052,14 +1252,19 @@
               "is_conda_only": false,
               "publishes_prereleases": true
             },
+            "cuml-cpu": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
             "libcuml": {
               "has_cuda_suffix": true,
-              "is_conda_only": false,
+              "is_conda_only": true,
               "publishes_prereleases": true
             },
             "libcuml-tests": {
               "has_cuda_suffix": true,
-              "is_conda_only": false,
+              "is_conda_only": true,
               "publishes_prereleases": true
             }
           }
@@ -1096,7 +1301,7 @@
             },
             "libcuspatial-tests": {
               "has_cuda_suffix": true,
-              "is_conda_only": false,
+              "is_conda_only": true,
               "publishes_prereleases": true
             }
           }
@@ -1108,9 +1313,24 @@
               "is_conda_only": false,
               "publishes_prereleases": true
             },
+            "cuvs-bench": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
+            "cuvs-bench-cpu": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
             "libcuvs": {
               "has_cuda_suffix": true,
-              "is_conda_only": false,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
+            "libcuvs-static": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
               "publishes_prereleases": true
             }
           }
@@ -1184,6 +1404,16 @@
             "libraft-headers": {
               "has_cuda_suffix": true,
               "is_conda_only": false,
+              "publishes_prereleases": true
+            },
+            "libraft-headers-only": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
+              "publishes_prereleases": true
+            },
+            "libraft-static": {
+              "has_cuda_suffix": true,
+              "is_conda_only": true,
               "publishes_prereleases": true
             },
             "pylibraft": {
