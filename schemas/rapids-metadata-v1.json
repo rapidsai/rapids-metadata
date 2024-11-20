@@ -9,6 +9,12 @@
           "title": "Has Cuda Suffix",
           "type": "boolean"
         },
+        "is_conda_only": {
+          "default": false,
+          "description": "Whether or not the package exists only as a conda package.",
+          "title": "Is Conda Only",
+          "type": "boolean"
+        },
         "publishes_prereleases": {
           "default": true,
           "description": "Whether or not the package publishes prereleases.",
