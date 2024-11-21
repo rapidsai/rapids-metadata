@@ -43,9 +43,33 @@ def set_cwd(cwd: os.PathLike) -> Generator:
 @pytest.mark.parametrize(
     ["unencoded", "encoded"],
     [
-        (RAPIDSPackage(), {"publishes_prereleases": True, "has_cuda_suffix": True, "has_conda_package": True, "has_wheel_package": True}),
-        (RAPIDSPackage(has_conda_package=False), {"publishes_prereleases": True, "has_cuda_suffix": True, "has_conda_package": False, "has_wheel_package": True}),
-        (RAPIDSPackage(has_wheel_package=False), {"publishes_prereleases": True, "has_cuda_suffix": True, "has_conda_package": True, "has_wheel_package": False}),
+        (
+            RAPIDSPackage(),
+            {
+                "publishes_prereleases": True,
+                "has_cuda_suffix": True,
+                "has_conda_package": True,
+                "has_wheel_package": True,
+            },
+        ),
+        (
+            RAPIDSPackage(has_conda_package=False),
+            {
+                "publishes_prereleases": True,
+                "has_cuda_suffix": True,
+                "has_conda_package": False,
+                "has_wheel_package": True,
+            },
+        ),
+        (
+            RAPIDSPackage(has_wheel_package=False),
+            {
+                "publishes_prereleases": True,
+                "has_cuda_suffix": True,
+                "has_conda_package": True,
+                "has_wheel_package": False,
+            },
+        ),
         (
             RAPIDSRepository(
                 packages={
@@ -61,13 +85,13 @@ def set_cwd(cwd: os.PathLike) -> Generator:
                         "publishes_prereleases": True,
                         "has_cuda_suffix": True,
                         "has_conda_package": True,
-                        "has_wheel_package": True
+                        "has_wheel_package": True,
                     },
                     "package2": {
                         "publishes_prereleases": False,
                         "has_cuda_suffix": False,
                         "has_conda_package": True,
-                        "has_wheel_package": True
+                        "has_wheel_package": True,
                     },
                 },
             },
@@ -99,7 +123,7 @@ def set_cwd(cwd: os.PathLike) -> Generator:
                                 "publishes_prereleases": True,
                                 "has_cuda_suffix": True,
                                 "has_conda_package": True,
-                                "has_wheel_package": True
+                                "has_wheel_package": True,
                             },
                         },
                     },
@@ -109,7 +133,7 @@ def set_cwd(cwd: os.PathLike) -> Generator:
                                 "publishes_prereleases": True,
                                 "has_cuda_suffix": True,
                                 "has_conda_package": True,
-                                "has_wheel_package": True
+                                "has_wheel_package": True,
                             },
                         },
                     },
