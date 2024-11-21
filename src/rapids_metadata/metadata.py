@@ -45,6 +45,16 @@ class RAPIDSPackage:
         description="""Whether or not the package has a CUDA suffix.""",
     )
 
+    has_conda_package: bool = Field(
+        default=True,
+        description="""Whether or not the package exists as a conda package.""",
+    )
+
+    has_wheel_package: bool = Field(
+        default=True,
+        description="""Whether or not the package exists as a wheel package.""",
+    )
+
 
 @dataclass
 class RAPIDSRepository:

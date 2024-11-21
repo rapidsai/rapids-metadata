@@ -3,10 +3,22 @@
     "RAPIDSPackage": {
       "description": "Package published by a RAPIDS repository. Includes both Python packages and Conda packages.",
       "properties": {
+        "has_conda_package": {
+          "default": true,
+          "description": "Whether or not the package exists as a conda package.",
+          "title": "Has Conda Package",
+          "type": "boolean"
+        },
         "has_cuda_suffix": {
           "default": true,
           "description": "Whether or not the package has a CUDA suffix.",
           "title": "Has Cuda Suffix",
+          "type": "boolean"
+        },
+        "has_wheel_package": {
+          "default": true,
+          "description": "Whether or not the package exists as a wheel package.",
+          "title": "Has Wheel Package",
           "type": "boolean"
         },
         "publishes_prereleases": {

@@ -43,7 +43,33 @@ def set_cwd(cwd: os.PathLike) -> Generator:
 @pytest.mark.parametrize(
     ["unencoded", "encoded"],
     [
-        (RAPIDSPackage(), {"publishes_prereleases": True, "has_cuda_suffix": True}),
+        (
+            RAPIDSPackage(),
+            {
+                "publishes_prereleases": True,
+                "has_cuda_suffix": True,
+                "has_conda_package": True,
+                "has_wheel_package": True,
+            },
+        ),
+        (
+            RAPIDSPackage(has_conda_package=False),
+            {
+                "publishes_prereleases": True,
+                "has_cuda_suffix": True,
+                "has_conda_package": False,
+                "has_wheel_package": True,
+            },
+        ),
+        (
+            RAPIDSPackage(has_wheel_package=False),
+            {
+                "publishes_prereleases": True,
+                "has_cuda_suffix": True,
+                "has_conda_package": True,
+                "has_wheel_package": False,
+            },
+        ),
         (
             RAPIDSRepository(
                 packages={
@@ -58,10 +84,14 @@ def set_cwd(cwd: os.PathLike) -> Generator:
                     "package1": {
                         "publishes_prereleases": True,
                         "has_cuda_suffix": True,
+                        "has_conda_package": True,
+                        "has_wheel_package": True,
                     },
                     "package2": {
                         "publishes_prereleases": False,
                         "has_cuda_suffix": False,
+                        "has_conda_package": True,
+                        "has_wheel_package": True,
                     },
                 },
             },
@@ -92,6 +122,8 @@ def set_cwd(cwd: os.PathLike) -> Generator:
                             "package": {
                                 "publishes_prereleases": True,
                                 "has_cuda_suffix": True,
+                                "has_conda_package": True,
+                                "has_wheel_package": True,
                             },
                         },
                     },
@@ -100,6 +132,8 @@ def set_cwd(cwd: os.PathLike) -> Generator:
                             "proprietary-package": {
                                 "publishes_prereleases": True,
                                 "has_cuda_suffix": True,
+                                "has_conda_package": True,
+                                "has_wheel_package": True,
                             },
                         },
                     },
@@ -151,7 +185,9 @@ def test_metadata_encoder(unencoded, encoded):
             '"repo1":{'
             '"packages":{'
             '"package":{'
+            '"has_conda_package":true,'
             '"has_cuda_suffix":true,'
+            '"has_wheel_package":true,'
             '"publishes_prereleases":true'
             "}"
             "}"
@@ -171,7 +207,9 @@ def test_metadata_encoder(unencoded, encoded):
             '"repo2":{'
             '"packages":{'
             '"package":{'
+            '"has_conda_package":true,'
             '"has_cuda_suffix":true,'
+            '"has_wheel_package":true,'
             '"publishes_prereleases":true'
             "}"
             "}"
@@ -191,7 +229,9 @@ def test_metadata_encoder(unencoded, encoded):
             '"repo2":{'
             '"packages":{'
             '"package":{'
+            '"has_conda_package":true,'
             '"has_cuda_suffix":true,'
+            '"has_wheel_package":true,'
             '"publishes_prereleases":true'
             "}"
             "}"
@@ -211,7 +251,9 @@ def test_metadata_encoder(unencoded, encoded):
             '"repo1":{'
             '"packages":{'
             '"package":{'
+            '"has_conda_package":true,'
             '"has_cuda_suffix":true,'
+            '"has_wheel_package":true,'
             '"publishes_prereleases":true'
             "}"
             "}"
@@ -223,7 +265,9 @@ def test_metadata_encoder(unencoded, encoded):
             '"repo2":{'
             '"packages":{'
             '"package":{'
+            '"has_conda_package":true,'
             '"has_cuda_suffix":true,'
+            '"has_wheel_package":true,'
             '"publishes_prereleases":true'
             "}"
             "}"
@@ -245,7 +289,9 @@ def test_metadata_encoder(unencoded, encoded):
                         "repo1": {
                           "packages": {
                             "package": {
+                              "has_conda_package": true,
                               "has_cuda_suffix": true,
+                              "has_wheel_package": true,
                               "publishes_prereleases": true
                             }
                           }
