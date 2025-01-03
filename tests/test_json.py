@@ -1,4 +1,4 @@
-# Copyright (c) 2024, NVIDIA CORPORATION.
+# Copyright (c) 2024-2025, NVIDIA CORPORATION.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -351,8 +351,10 @@ def test_main(
         else:
             assert output == expected_json
 
-    with set_cwd(tmp_path), patch("sys.argv", ["rapids-metadata-json", *args]), patch(
-        "rapids_metadata.json.all_metadata", mock_metadata
+    with (
+        set_cwd(tmp_path),
+        patch("sys.argv", ["rapids-metadata-json", *args]),
+        patch("rapids_metadata.json.all_metadata", mock_metadata),
     ):
         rapids_json.main()
     captured = capsys.readouterr()
@@ -363,9 +365,13 @@ def test_main(
     captured = capsys.readouterr()
     check_output(captured.out)
 
-    with set_cwd(tmp_path), patch(
-        "sys.argv", ["rapids-metadata-json", *args, "-o", "rapids-metadata.json"]
-    ), patch("rapids_metadata.json.all_metadata", mock_metadata):
+    with (
+        set_cwd(tmp_path),
+        patch(
+            "sys.argv", ["rapids-metadata-json", *args, "-o", "rapids-metadata.json"]
+        ),
+        patch("rapids_metadata.json.all_metadata", mock_metadata),
+    ):
         rapids_json.main()
         with open("rapids-metadata.json") as f:
             written_json = f.read()
