@@ -1,4 +1,4 @@
-# Copyright (c) 2024, NVIDIA CORPORATION.
+# Copyright (c) 2024-2025, NVIDIA CORPORATION.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -217,3 +217,6 @@ all_metadata.versions["24.12"].repositories["cuvs"].packages["libcuvs-static"] =
 )
 
 all_metadata.versions["25.02"] = deepcopy(all_metadata.versions["24.12"])
+all_metadata.versions["25.02"].repositories["cugraph-docs"] = RAPIDSRepository(
+    packages={}
+)
