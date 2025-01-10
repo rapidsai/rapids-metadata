@@ -220,3 +220,4 @@ all_metadata.versions["25.02"] = deepcopy(all_metadata.versions["24.12"])
 all_metadata.versions["25.02"].repositories["cugraph-docs"] = RAPIDSRepository(
     packages=dict()
 )
+del all_metadata.versions["25.02"].repositories["cugraph-ops"]
