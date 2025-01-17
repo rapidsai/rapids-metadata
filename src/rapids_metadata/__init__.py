@@ -126,7 +126,7 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
         ),
         "raft": RAPIDSRepository(
             packages={
-                "libraft": RAPIDSPackage(),
+                "libraft": RAPIDSPackage(has_wheel_package=False),
                 "libraft-headers": RAPIDSPackage(),
                 "libraft-headers-only": RAPIDSPackage(has_wheel_package=False),
                 "libraft-static": RAPIDSPackage(has_wheel_package=False),
@@ -219,4 +219,8 @@ all_metadata.versions["24.12"].repositories["cuvs"].packages["libcuvs-static"] =
 all_metadata.versions["25.02"] = deepcopy(all_metadata.versions["24.12"])
 all_metadata.versions["25.02"].repositories["cugraph-docs"] = RAPIDSRepository(
     packages=dict()
+)
+del all_metadata.versions["25.02"].repositories["cugraph-ops"]
+all_metadata.versions["25.02"].repositories["raft"].packages["libraft"] = RAPIDSPackage(
+    has_wheel_package=True
 )
