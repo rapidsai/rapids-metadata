@@ -285,7 +285,7 @@
             "libraft": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "libraft-headers": {
@@ -715,7 +715,7 @@
             "libraft": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "libraft-headers": {
@@ -1177,7 +1177,7 @@
             "libraft": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "libraft-headers": {
@@ -1416,22 +1416,6 @@
               "publishes_prereleases": true
             },
             "pylibwholegraph": {
-              "has_conda_package": true,
-              "has_cuda_suffix": true,
-              "has_wheel_package": true,
-              "publishes_prereleases": true
-            }
-          }
-        },
-        "cugraph-ops": {
-          "packages": {
-            "libcugraphops": {
-              "has_conda_package": true,
-              "has_cuda_suffix": true,
-              "has_wheel_package": true,
-              "publishes_prereleases": true
-            },
-            "pylibcugraphops": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
