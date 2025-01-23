@@ -224,3 +224,5 @@ del all_metadata.versions["25.02"].repositories["cugraph-ops"]
 all_metadata.versions["25.02"].repositories["raft"].packages["libraft"] = RAPIDSPackage(
     has_wheel_package=True
 )
+
+all_metadata.versions["25.04"] = deepcopy(all_metadata.versions["25.02"])
