@@ -233,3 +233,5 @@ all_metadata.versions["25.02"].repositories["cuvs"].packages["libcuvs"] = RAPIDS
 all_metadata.versions["25.02"].repositories["raft"].packages["libraft"] = RAPIDSPackage(
     has_wheel_package=True
 )
+
+all_metadata.versions["25.04"] = deepcopy(all_metadata.versions["25.02"])
