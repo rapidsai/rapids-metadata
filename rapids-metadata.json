@@ -1375,7 +1375,7 @@
             "libcugraph": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": false,
+              "has_wheel_package": true,
               "publishes_prereleases": true
             },
             "libcugraph_etl": {
@@ -1440,7 +1440,7 @@
             "libcuml": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": false,
+              "has_wheel_package": true,
               "publishes_prereleases": true
             },
             "libcuml-tests": {
@@ -1516,7 +1516,7 @@
             "libcuvs": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": false,
+              "has_wheel_package": true,
               "publishes_prereleases": true
             },
             "libcuvs-static": {
@@ -1796,7 +1796,7 @@
             "libcugraph": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": false,
+              "has_wheel_package": true,
               "publishes_prereleases": true
             },
             "libcugraph_etl": {
@@ -1861,7 +1861,7 @@
             "libcuml": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": false,
+              "has_wheel_package": true,
               "publishes_prereleases": true
             },
             "libcuml-tests": {
@@ -1937,7 +1937,7 @@
             "libcuvs": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": false,
+              "has_wheel_package": true,
               "publishes_prereleases": true
             },
             "libcuvs-static": {
