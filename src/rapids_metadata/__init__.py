@@ -224,6 +224,9 @@ del all_metadata.versions["25.02"].repositories["cugraph-ops"]
 all_metadata.versions["25.02"].repositories["cugraph"].packages["libcugraph"] = (
     RAPIDSPackage(has_wheel_package=True)
 )
+all_metadata.versions["25.02"].repositories["cuml"].packages["libcuml"] = RAPIDSPackage(
+    has_wheel_package=True
+)
 all_metadata.versions["25.02"].repositories["cuvs"].packages["libcuvs"] = RAPIDSPackage(
     has_wheel_package=True
 )
