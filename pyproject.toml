@@ -18,7 +18,6 @@ version = "0.3.1"
 authors = [
     { name = "RAPIDS Development Team", email = "pypi@rapids.ai" }
 ]
-urls = { homepage = "https://github.com/rapidsai/rapids-metadata" }
 description = "metadata for structure of RAPIDS projects"
 license = { text = "Apache-2.0" }
 classifiers = [
@@ -33,6 +32,11 @@ dependencies = [
 
 [project.scripts]
 rapids-metadata-json = "rapids_metadata.json:main"
+
+[project.urls]
+Homepage = "https://github.com/rapidsai/rapids-metadata"
+Documentation = "https://docs.rapids.ai/"
+Source = "https://github.com/rapidsai/rapids-metadata"
 
 [build-system]
 build-backend = "setuptools.build_meta"
