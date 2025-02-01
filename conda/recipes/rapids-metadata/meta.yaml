@@ -2,7 +2,20 @@
 
 {% set pyproject_data = load_file_data("pyproject.toml") %}
 {% set version = pyproject_data["project"]["version"] %}
+
+# Load `requirements` metadata
+{% set python_version = pyproject_data["project"]["requires-python"] %}
+{% set requirements_host = pyproject_data["build-system"]["requires"] %}
+{% set requirements_run = pyproject_data["project"]["dependencies"] %}
+
+# Load `about` metadata
+{% set home = pyproject_data["project"]["urls"]["Homepage"] %}
+{% set license = pyproject_data["project"]["license"]["text"] %}
+{% set license_files = pyproject_data["tool"]["setuptools"]["license-files"] %}
 {% set summary = pyproject_data["project"]["description"] %}
+{% set dev_url = pyproject_data["project"]["urls"]["Source"] %}
+{% set doc_url = pyproject_data["project"]["urls"]["Documentation"] %}
+
 
 package:
   name: rapids-metadata
@@ -19,26 +32,29 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python {{ python_version }}
     - conda-verify
-    {% for r in pyproject_data["build-system"]["requires"] %}
+    {% for r in requirements_host %}
     - {{ r }}
     {% endfor %}
   run:
-    - python >=3.9
-    {% for r in pyproject_data["project"]["dependencies"] %}
+    - python {{ python_version }}
+    {% for r in requirements_run %}
     - {{ r }}
     {% endfor %}
 
 about:
-  home: https://rapids.ai/
-  license: Apache-2.0
-  license_file: LICENSE
+  home: {{ home }}
+  license: {{ license }}
+  license_file:
+    {% for e in license_files %}
+    - ../../../{{ e }}
+    {% endfor %}
   summary: {{ summary }}
+  dev_url: {{ dev_url }}
+  doc_url: {{ doc_url }}
   description: |
     This package contains metadata related to the structure of the RAPIDS
     project itself. It contains information about what repositories are present
     in the RAPIDS project, what packages are present in each repository, and
     the properties of each package.
-  doc_url: https://docs.rapids.ai/
-  dev_url: https://github.com/rapidsai/rapids-metadata
