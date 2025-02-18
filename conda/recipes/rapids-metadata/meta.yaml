@@ -33,7 +33,6 @@ requirements:
   host:
     - pip
     - python {{ python_version }}
-    - conda-verify
     {% for r in requirements_host %}
     - {{ r }}
     {% endfor %}
