@@ -2113,6 +2113,427 @@
           }
         }
       }
+    },
+    "25.06": {
+      "repositories": {
+        "_nvidia": {
+          "packages": {
+            "cubinlinker": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": false
+            }
+          }
+        },
+        "cucim": {
+          "packages": {
+            "cucim": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "libcucim": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "cudf": {
+          "packages": {
+            "cudf": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "cudf-polars": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "cudf_kafka": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "custreamz": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
+            "dask-cudf": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "libcudf": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "libcudf_kafka": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
+            "pylibcudf": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "cugraph": {
+          "packages": {
+            "cugraph": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "cugraph-service-client": {
+              "has_conda_package": true,
+              "has_cuda_suffix": false,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
+            "cugraph-service-server": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
+            "libcugraph": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "libcugraph_etl": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
+            "pylibcugraph": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "cugraph-docs": {
+          "packages": {}
+        },
+        "cugraph-gnn": {
+          "packages": {
+            "cugraph-dgl": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "cugraph-pyg": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "libwholegraph": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
+            "pylibwholegraph": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "cuml": {
+          "packages": {
+            "cuml": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "cuml-cpu": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
+            "libcuml": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "libcuml-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "cumlprims_mg": {
+          "packages": {
+            "libcumlprims": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "cuproj": {
+          "packages": {
+            "cuproj": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "cuspatial": {
+          "packages": {
+            "cuspatial": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "libcuspatial": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "libcuspatial-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "cuvs": {
+          "packages": {
+            "cuvs": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "cuvs-bench": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
+            "cuvs-bench-cpu": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
+            "libcuvs": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "libcuvs-static": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "cuxfilter": {
+          "packages": {
+            "cuxfilter": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "dask-cuda": {
+          "packages": {
+            "dask-cuda": {
+              "has_conda_package": true,
+              "has_cuda_suffix": false,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "kvikio": {
+          "packages": {
+            "kvikio": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "libkvikio": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "nx-cugraph": {
+          "packages": {
+            "nx-cugraph": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "ptxcompiler": {
+          "packages": {
+            "ptxcompiler": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": false
+            }
+          }
+        },
+        "pynvjitlink": {
+          "packages": {
+            "pynvjitlink": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "raft": {
+          "packages": {
+            "libraft": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "libraft-headers": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "libraft-headers-only": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
+            "libraft-static": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
+            "pylibraft": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "raft-dask": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "rapids-dask-dependency": {
+          "packages": {
+            "rapids-dask-dependency": {
+              "has_conda_package": true,
+              "has_cuda_suffix": false,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "rmm": {
+          "packages": {
+            "librmm": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "rmm": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "ucx-py": {
+          "packages": {
+            "ucx-py": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "ucxx": {
+          "packages": {
+            "distributed-ucxx": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "libucxx": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "ucxx": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            }
+          }
+        }
+      }
     }
   }
 }
