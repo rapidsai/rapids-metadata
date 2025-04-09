@@ -2064,6 +2064,16 @@
             }
           }
         },
+        "rapids-logger": {
+          "packages": {
+            "rapids-logger": {
+              "has_conda_package": true,
+              "has_cuda_suffix": false,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
         "rmm": {
           "packages": {
             "librmm": {
@@ -2478,6 +2488,16 @@
         "rapids-dask-dependency": {
           "packages": {
             "rapids-dask-dependency": {
+              "has_conda_package": true,
+              "has_cuda_suffix": false,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
+        "rapids-logger": {
+          "packages": {
+            "rapids-logger": {
               "has_conda_package": true,
               "has_cuda_suffix": false,
               "has_wheel_package": true,
