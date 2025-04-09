@@ -235,5 +235,8 @@ all_metadata.versions["25.02"].repositories["raft"].packages["libraft"] = RAPIDS
 )
 
 all_metadata.versions["25.04"] = deepcopy(all_metadata.versions["25.02"])
+all_metadata.versions["25.04"].repositories["rapids-logger"] = RAPIDSRepository(
+    packages={"rapids-logger": RAPIDSPackage(has_cuda_suffix=False)}
+)
 
 all_metadata.versions["25.06"] = deepcopy(all_metadata.versions["25.04"])
