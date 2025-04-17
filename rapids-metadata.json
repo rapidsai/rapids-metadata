@@ -2505,6 +2505,22 @@
             }
           }
         },
+        "rapidsmpf": {
+          "packages": {
+            "librapidsmpf": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "rapidsmpf": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
         "rmm": {
           "packages": {
             "librmm": {
