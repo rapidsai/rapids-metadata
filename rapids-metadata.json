@@ -395,7 +395,7 @@
             "libwholegraph": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": false,
+              "has_wheel_package": true,
               "publishes_prereleases": true
             },
             "pylibwholegraph": {
