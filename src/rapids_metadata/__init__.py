@@ -248,5 +248,9 @@ all_metadata.versions["25.06"].repositories["rapidsmpf"] = RAPIDSRepository(
         "librapidsmpf": RAPIDSPackage(),
     }
 )
+del all_metadata.versions["25.06"].repositories["cuspatial"]
+del all_metadata.versions["25.06"].repositories["cuml"].packages["cuml-cpu"]
 
 all_metadata.versions["25.08"] = deepcopy(all_metadata.versions["25.06"])
+del all_metadata.versions["25.08"].repositories["ptxcompiler"]
+del all_metadata.versions["25.08"].repositories["cugraph-gnn"].packages["cugraph-dgl"]

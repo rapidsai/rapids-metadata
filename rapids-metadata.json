@@ -2283,12 +2283,6 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
-            "cuml-cpu": {
-              "has_conda_package": true,
-              "has_cuda_suffix": true,
-              "has_wheel_package": false,
-              "publishes_prereleases": true
-            },
             "libcuml": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -2319,28 +2313,6 @@
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
-              "publishes_prereleases": true
-            }
-          }
-        },
-        "cuspatial": {
-          "packages": {
-            "cuspatial": {
-              "has_conda_package": true,
-              "has_cuda_suffix": true,
-              "has_wheel_package": true,
-              "publishes_prereleases": true
-            },
-            "libcuspatial": {
-              "has_conda_package": true,
-              "has_cuda_suffix": true,
-              "has_wheel_package": true,
-              "publishes_prereleases": true
-            },
-            "libcuspatial-tests": {
-              "has_conda_package": true,
-              "has_cuda_suffix": true,
-              "has_wheel_package": false,
               "publishes_prereleases": true
             }
           }
@@ -2696,12 +2668,6 @@
         },
         "cugraph-gnn": {
           "packages": {
-            "cugraph-dgl": {
-              "has_conda_package": true,
-              "has_cuda_suffix": true,
-              "has_wheel_package": true,
-              "publishes_prereleases": true
-            },
             "cugraph-pyg": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -2728,12 +2694,6 @@
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
-              "publishes_prereleases": true
-            },
-            "cuml-cpu": {
-              "has_conda_package": true,
-              "has_cuda_suffix": true,
-              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "libcuml": {
@@ -2766,28 +2726,6 @@
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
-              "publishes_prereleases": true
-            }
-          }
-        },
-        "cuspatial": {
-          "packages": {
-            "cuspatial": {
-              "has_conda_package": true,
-              "has_cuda_suffix": true,
-              "has_wheel_package": true,
-              "publishes_prereleases": true
-            },
-            "libcuspatial": {
-              "has_conda_package": true,
-              "has_cuda_suffix": true,
-              "has_wheel_package": true,
-              "publishes_prereleases": true
-            },
-            "libcuspatial-tests": {
-              "has_conda_package": true,
-              "has_cuda_suffix": true,
-              "has_wheel_package": false,
               "publishes_prereleases": true
             }
           }
@@ -2869,16 +2807,6 @@
               "has_cuda_suffix": true,
               "has_wheel_package": true,
               "publishes_prereleases": true
-            }
-          }
-        },
-        "ptxcompiler": {
-          "packages": {
-            "ptxcompiler": {
-              "has_conda_package": true,
-              "has_cuda_suffix": true,
-              "has_wheel_package": true,
-              "publishes_prereleases": false
             }
           }
         },
