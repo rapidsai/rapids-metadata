@@ -248,3 +248,5 @@ all_metadata.versions["25.06"].repositories["rapidsmpf"] = RAPIDSRepository(
         "librapidsmpf": RAPIDSPackage(),
     }
 )
+
+all_metadata.versions["25.08"] = deepcopy(all_metadata.versions["25.06"])
