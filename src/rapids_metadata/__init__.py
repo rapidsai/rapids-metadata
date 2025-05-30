@@ -242,6 +242,14 @@ all_metadata.versions["25.06"] = deepcopy(all_metadata.versions["25.04"])
 all_metadata.versions["25.06"].repositories["cugraph-gnn"].packages["libwholegraph"] = (
     RAPIDSPackage(has_wheel_package=True)
 )
+all_metadata.versions["25.06"].repositories["rapids-cli"] = RAPIDSRepository(
+    packages={
+        "rapids-cli": RAPIDSPackage(
+            publishes_prereleases=False,
+            has_cuda_suffix=False,
+        ),
+    }
+)
 all_metadata.versions["25.06"].repositories["rapidsmpf"] = RAPIDSRepository(
     packages={
         "rapidsmpf": RAPIDSPackage(),
