@@ -15,16 +15,16 @@ repos:
               rapids-metadata[.]json$|
               schemas/rapids-metadata-v[0-9]+[.]json$
   - repo: https://github.com/rapidsai/dependency-file-generator
-    rev: v1.17.0
+    rev: v1.18.1
     hooks:
       - id: rapids-dependency-file-generator
         args: ["--clean"]
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.3.0
+    rev: v2.4.1
     hooks:
       - id: codespell
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.8.5
+    rev: v0.11.12
     hooks:
       - id: ruff
         args: ["--fix"]
@@ -35,12 +35,12 @@ repos:
       - id: shellcheck
         args: ["--severity=warning"]
   - repo: https://github.com/rapidsai/pre-commit-hooks
-    rev: v0.4.0
+    rev: v0.6.0
     hooks:
       - id: verify-copyright
         args: [--fix, --main-branch=main]
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: 'v1.14.1'
+    rev: 'v1.16.0'
     hooks:
       - id: mypy
         args: [
