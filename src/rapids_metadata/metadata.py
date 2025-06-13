@@ -118,11 +118,13 @@ class RAPIDSMetadata:
     )
 
     def get_current_version(
-        self, directory: Union[str, PathLike[str]]
+        self,
+        directory: Union[str, PathLike[str]],
+        version_file: Union[str, PathLike[str]] = "VERSION",
     ) -> RAPIDSVersion:
         from packaging.version import Version
 
-        current_version = get_rapids_version(directory)
+        current_version = get_rapids_version(directory, version_file)
         try:
             return self.versions[current_version]
         except KeyError:
