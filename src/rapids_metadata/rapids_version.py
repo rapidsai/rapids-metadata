@@ -1,4 +1,4 @@
-# Copyright (c) 2024, NVIDIA CORPORATION.
+# Copyright (c) 2024-2025, NVIDIA CORPORATION.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,12 +20,15 @@ from typing import Union
 __all__ = ["get_rapids_version"]
 
 
-def get_rapids_version(directory: Union[str, PathLike[str]]) -> str:
+def get_rapids_version(
+    directory: Union[str, PathLike[str]],
+    version_file: Union[str, PathLike[str]] = "VERSION",
+) -> str:
     from packaging.version import InvalidVersion, Version
 
     while not os.path.samefile(directory, os.path.dirname(directory)):
         try:
-            with open(os.path.join(directory, "VERSION")) as f:
+            with open(os.path.join(directory, version_file)) as f:
                 version = Version(f.read())
         except (FileNotFoundError, InvalidVersion):
             directory = os.path.dirname(directory)
