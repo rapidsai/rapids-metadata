@@ -45,7 +45,7 @@
             "cudf_kafka": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "custreamz": {
@@ -291,7 +291,7 @@
             "libraft-headers": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "libraft-headers-only": {
@@ -453,7 +453,7 @@
             "cudf_kafka": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "custreamz": {
@@ -721,7 +721,7 @@
             "libraft-headers": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "libraft-headers-only": {
@@ -883,7 +883,7 @@
             "cudf_kafka": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "custreamz": {
@@ -1183,7 +1183,7 @@
             "libraft-headers": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "libraft-headers-only": {
@@ -1317,7 +1317,7 @@
             "cudf_kafka": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "custreamz": {
@@ -1604,7 +1604,7 @@
             "libraft-headers": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "libraft-headers-only": {
@@ -1738,7 +1738,7 @@
             "cudf_kafka": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "custreamz": {
@@ -2025,7 +2025,7 @@
             "libraft-headers": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "libraft-headers-only": {
@@ -2169,7 +2169,7 @@
             "cudf_kafka": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "custreamz": {
@@ -2428,7 +2428,7 @@
             "libraft-headers": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "libraft-headers-only": {
@@ -2556,14 +2556,7 @@
     "25.08": {
       "repositories": {
         "_nvidia": {
-          "packages": {
-            "cubinlinker": {
-              "has_conda_package": true,
-              "has_cuda_suffix": true,
-              "has_wheel_package": true,
-              "publishes_prereleases": false
-            }
-          }
+          "packages": {}
         },
         "cucim": {
           "packages": {
@@ -2598,7 +2591,7 @@
             "cudf_kafka": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "custreamz": {
@@ -2841,7 +2834,7 @@
             "libraft-headers": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "libraft-headers-only": {
