@@ -43,7 +43,7 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
             packages={
                 "cudf": RAPIDSPackage(),
                 "cudf-polars": RAPIDSPackage(),
-                "cudf_kafka": RAPIDSPackage(),
+                "cudf_kafka": RAPIDSPackage(has_wheel_package=False),
                 "custreamz": RAPIDSPackage(has_wheel_package=False),
                 "dask-cudf": RAPIDSPackage(),
                 "libcudf": RAPIDSPackage(),
@@ -126,7 +126,7 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
         "raft": RAPIDSRepository(
             packages={
                 "libraft": RAPIDSPackage(has_wheel_package=False),
-                "libraft-headers": RAPIDSPackage(),
+                "libraft-headers": RAPIDSPackage(has_wheel_package=False),
                 "libraft-headers-only": RAPIDSPackage(has_wheel_package=False),
                 "libraft-static": RAPIDSPackage(has_wheel_package=False),
                 "pylibraft": RAPIDSPackage(),
@@ -262,5 +262,9 @@ del all_metadata.versions["25.06"].repositories["cuml"].packages["cuml-cpu"]
 all_metadata.versions["25.08"] = deepcopy(all_metadata.versions["25.06"])
 del all_metadata.versions["25.08"].repositories["ptxcompiler"]
 del all_metadata.versions["25.08"].repositories["cugraph-gnn"].packages["cugraph-dgl"]
+del all_metadata.versions["25.08"].repositories["_nvidia"].packages["cubinlinker"]
 
 all_metadata.versions["25.10"] = deepcopy(all_metadata.versions["25.08"])
+del all_metadata.versions["25.10"].repositories["ucx-py"]
+del all_metadata.versions["25.10"].repositories["cuproj"]
+

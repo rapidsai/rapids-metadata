@@ -2969,14 +2969,7 @@
     "25.10": {
       "repositories": {
         "_nvidia": {
-          "packages": {
-            "cubinlinker": {
-              "has_conda_package": true,
-              "has_cuda_suffix": true,
-              "has_wheel_package": true,
-              "publishes_prereleases": false
-            }
-          }
+          "packages": {}
         },
         "cucim": {
           "packages": {
@@ -3011,7 +3004,7 @@
             "cudf_kafka": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "custreamz": {
@@ -3143,16 +3136,6 @@
             }
           }
         },
-        "cuproj": {
-          "packages": {
-            "cuproj": {
-              "has_conda_package": true,
-              "has_cuda_suffix": true,
-              "has_wheel_package": true,
-              "publishes_prereleases": true
-            }
-          }
-        },
         "cuvs": {
           "packages": {
             "cuvs": {
@@ -3254,7 +3237,7 @@
             "libraft-headers": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "libraft-headers-only": {
@@ -3338,16 +3321,6 @@
               "publishes_prereleases": true
             },
             "rmm": {
-              "has_conda_package": true,
-              "has_cuda_suffix": true,
-              "has_wheel_package": true,
-              "publishes_prereleases": true
-            }
-          }
-        },
-        "ucx-py": {
-          "packages": {
-            "ucx-py": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
