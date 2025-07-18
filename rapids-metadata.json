@@ -187,7 +187,7 @@
             "libcumlprims": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             }
           }
@@ -601,7 +601,7 @@
             "libcumlprims": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             }
           }
@@ -1035,7 +1035,7 @@
             "libcumlprims": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             }
           }
@@ -1456,7 +1456,7 @@
             "libcumlprims": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             }
           }
@@ -1877,7 +1877,7 @@
             "libcumlprims": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             }
           }
@@ -2302,7 +2302,7 @@
             "libcumlprims": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             }
           }
@@ -2718,7 +2718,7 @@
             "libcumlprims": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             }
           }
@@ -3124,7 +3124,7 @@
             "libcumlprims": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
-              "has_wheel_package": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             }
           }

@@ -82,7 +82,7 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
         ),
         "cumlprims_mg": RAPIDSRepository(
             packages={
-                "libcumlprims": RAPIDSPackage(),
+                "libcumlprims": RAPIDSPackage(has_wheel_package=False),
             }
         ),
         "cuproj": RAPIDSRepository(
