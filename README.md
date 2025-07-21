@@ -9,7 +9,7 @@ The information currently provided by this package consists of:
 
 - Which RAPIDS repositories are available
 - Which RAPIDS packages are available
-- Which RAPIDS packages require a CUDA suffix (`-cu11`, `-cu12`, etc.)
+- Which RAPIDS packages require a CUDA suffix (`-cu12`, etc.)
 - Which RAPIDS packages require an alpha spec (`>=0.0.0a0`) due to publishing
   nightly binaries
 
