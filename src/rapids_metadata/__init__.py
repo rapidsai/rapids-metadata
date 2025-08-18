@@ -265,5 +265,6 @@ del all_metadata.versions["25.08"].repositories["cugraph-gnn"].packages["cugraph
 del all_metadata.versions["25.08"].repositories["_nvidia"].packages["cubinlinker"]
 
 all_metadata.versions["25.10"] = deepcopy(all_metadata.versions["25.08"])
-del all_metadata.versions["25.10"].repositories["ucx-py"]
 del all_metadata.versions["25.10"].repositories["cuproj"]
+del all_metadata.versions["25.10"].repositories["pynvjitlink"]
+del all_metadata.versions["25.10"].repositories["ucx-py"]
