@@ -15,7 +15,7 @@ repos:
               rapids-metadata[.]json$|
               schemas/rapids-metadata-v[0-9]+[.]json$
   - repo: https://github.com/rapidsai/dependency-file-generator
-    rev: v1.18.1
+    rev: v1.20.0
     hooks:
       - id: rapids-dependency-file-generator
         args: ["--clean"]
