@@ -3651,7 +3651,7 @@
               "has_conda_package": true,
               "has_cuda_suffix": false,
               "has_wheel_package": true,
-              "publishes_prereleases": true
+              "publishes_prereleases": false
             }
           }
         },
