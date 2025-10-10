@@ -85,16 +85,12 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
                 "libcumlprims": RAPIDSPackage(has_wheel_package=False),
             }
         ),
-        "cuproj": RAPIDSRepository(
-            packages={
-                "cuproj": RAPIDSPackage(),
-            }
-        ),
         "cuspatial": RAPIDSRepository(
             packages={
                 "cuspatial": RAPIDSPackage(),
                 "libcuspatial": RAPIDSPackage(),
                 "libcuspatial-tests": RAPIDSPackage(has_wheel_package=False),
+                "cuproj": RAPIDSPackage(),
             }
         ),
         "cuxfilter": RAPIDSRepository(
@@ -262,10 +258,9 @@ del all_metadata.versions["25.06"].repositories["cuml"].packages["cuml-cpu"]
 all_metadata.versions["25.08"] = deepcopy(all_metadata.versions["25.06"])
 del all_metadata.versions["25.08"].repositories["ptxcompiler"]
 del all_metadata.versions["25.08"].repositories["cugraph-gnn"].packages["cugraph-dgl"]
-del all_metadata.versions["25.08"].repositories["_nvidia"].packages["cubinlinker"]
+del all_metadata.versions["25.08"].repositories["_nvidia"]  # Only cubinlinker
 
 all_metadata.versions["25.10"] = deepcopy(all_metadata.versions["25.08"])
-del all_metadata.versions["25.10"].repositories["cuproj"]
 del all_metadata.versions["25.10"].repositories["pynvjitlink"]
 del all_metadata.versions["25.10"].repositories["ucx-py"]
 
