@@ -192,18 +192,14 @@
             }
           }
         },
-        "cuproj": {
+        "cuspatial": {
           "packages": {
             "cuproj": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
               "publishes_prereleases": true
-            }
-          }
-        },
-        "cuspatial": {
-          "packages": {
+            },
             "cuspatial": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -606,18 +602,14 @@
             }
           }
         },
-        "cuproj": {
+        "cuspatial": {
           "packages": {
             "cuproj": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
               "publishes_prereleases": true
-            }
-          }
-        },
-        "cuspatial": {
-          "packages": {
+            },
             "cuspatial": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -1040,18 +1032,14 @@
             }
           }
         },
-        "cuproj": {
+        "cuspatial": {
           "packages": {
             "cuproj": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
               "publishes_prereleases": true
-            }
-          }
-        },
-        "cuspatial": {
-          "packages": {
+            },
             "cuspatial": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -1461,18 +1449,14 @@
             }
           }
         },
-        "cuproj": {
+        "cuspatial": {
           "packages": {
             "cuproj": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
               "publishes_prereleases": true
-            }
-          }
-        },
-        "cuspatial": {
-          "packages": {
+            },
             "cuspatial": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -1882,18 +1866,14 @@
             }
           }
         },
-        "cuproj": {
+        "cuspatial": {
           "packages": {
             "cuproj": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
               "publishes_prereleases": true
-            }
-          }
-        },
-        "cuspatial": {
-          "packages": {
+            },
             "cuspatial": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -2307,16 +2287,6 @@
             }
           }
         },
-        "cuproj": {
-          "packages": {
-            "cuproj": {
-              "has_conda_package": true,
-              "has_cuda_suffix": true,
-              "has_wheel_package": true,
-              "publishes_prereleases": true
-            }
-          }
-        },
         "cuvs": {
           "packages": {
             "cuvs": {
@@ -2555,9 +2525,6 @@
     },
     "25.08": {
       "repositories": {
-        "_nvidia": {
-          "packages": {}
-        },
         "cucim": {
           "packages": {
             "cucim": {
@@ -2719,16 +2686,6 @@
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": false,
-              "publishes_prereleases": true
-            }
-          }
-        },
-        "cuproj": {
-          "packages": {
-            "cuproj": {
-              "has_conda_package": true,
-              "has_cuda_suffix": true,
-              "has_wheel_package": true,
               "publishes_prereleases": true
             }
           }
@@ -2961,9 +2918,6 @@
     },
     "25.10": {
       "repositories": {
-        "_nvidia": {
-          "packages": {}
-        },
         "cucim": {
           "packages": {
             "cucim": {
@@ -3337,9 +3291,6 @@
     },
     "25.12": {
       "repositories": {
-        "_nvidia": {
-          "packages": {}
-        },
         "cucim": {
           "packages": {
             "cucim": {
