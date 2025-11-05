@@ -265,3 +265,5 @@ del all_metadata.versions["25.10"].repositories["pynvjitlink"]
 del all_metadata.versions["25.10"].repositories["ucx-py"]
 
 all_metadata.versions["25.12"] = deepcopy(all_metadata.versions["25.10"])
+
+all_metadata.versions["26.02"] = deepcopy(all_metadata.versions["25.12"])
