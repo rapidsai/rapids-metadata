@@ -266,12 +266,12 @@ del all_metadata.versions["25.10"].repositories["ucx-py"]
 
 all_metadata.versions["25.12"] = deepcopy(all_metadata.versions["25.10"])
 del (
-    all_metadata.versions["25.10"]
+    all_metadata.versions["25.12"]
     .repositories["cugraph"]
     .packages["cugraph-service-client"]
 )
 del (
-    all_metadata.versions["25.10"]
+    all_metadata.versions["25.12"]
     .repositories["cugraph"]
     .packages["cugraph-service-server"]
 )
