@@ -2994,18 +2994,6 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
-            "cugraph-service-client": {
-              "has_conda_package": true,
-              "has_cuda_suffix": false,
-              "has_wheel_package": false,
-              "publishes_prereleases": true
-            },
-            "cugraph-service-server": {
-              "has_conda_package": true,
-              "has_cuda_suffix": true,
-              "has_wheel_package": false,
-              "publishes_prereleases": true
-            },
             "libcugraph": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
