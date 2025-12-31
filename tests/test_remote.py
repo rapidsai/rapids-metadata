@@ -1,4 +1,4 @@
-# Copyright (c) 2024, NVIDIA CORPORATION.
+# Copyright (c) 2024-2025, NVIDIA CORPORATION.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,10 +14,9 @@
 
 from unittest.mock import patch
 
-from pytest_httpserver import HTTPServer
-from pydantic import TypeAdapter
-
 import rapids_metadata.remote as rapids_remote
+from pydantic import TypeAdapter
+from pytest_httpserver import HTTPServer
 from rapids_metadata import all_metadata
 from rapids_metadata.metadata import RAPIDSMetadata
 

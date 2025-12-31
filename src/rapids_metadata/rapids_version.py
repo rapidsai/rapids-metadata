@@ -14,15 +14,13 @@
 
 import os.path
 from os import PathLike
-from typing import Union
-
 
 __all__ = ["get_rapids_version"]
 
 
 def get_rapids_version(
-    directory: Union[str, PathLike[str]],
-    version_file: Union[str, PathLike[str]] = "VERSION",
+    directory: str | PathLike[str],
+    version_file: str | PathLike[str] = "VERSION",
 ) -> str:
     from packaging.version import InvalidVersion, Version
 
