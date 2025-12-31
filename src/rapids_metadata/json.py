@@ -1,4 +1,4 @@
-# Copyright (c) 2024, NVIDIA CORPORATION.
+# Copyright (c) 2024-2025, NVIDIA CORPORATION.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@ import argparse
 import json
 import os
 import sys
-from typing import Any, TextIO, Union
+from typing import Any, TextIO
 
 from pydantic import TypeAdapter
 
@@ -24,13 +24,12 @@ from . import all_metadata
 from .metadata import RAPIDSMetadata
 from .rapids_version import get_rapids_version
 
-
 __all__ = [
     "main",
 ]
 
 
-def main(argv: Union[list[str], None] = None):
+def main(argv: list[str] | None = None):
     if argv is None:
         argv = sys.argv[1:]
 

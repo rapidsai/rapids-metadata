@@ -15,8 +15,8 @@
 import contextlib
 import os.path
 import re
+from collections.abc import Generator
 from textwrap import dedent
-from typing import Generator, Union
 from unittest.mock import patch
 
 import pytest
@@ -315,9 +315,9 @@ def test_metadata_encoder(unencoded, encoded):
 def test_main(
     capsys: pytest.CaptureFixture[str],
     tmp_path: str,
-    version: Union[str, None],
+    version: str | None,
     args: list[str],
-    expected_json: Union[str, re.Pattern],
+    expected_json: str | re.Pattern,
 ):
     mock_metadata = RAPIDSMetadata(
         versions={
