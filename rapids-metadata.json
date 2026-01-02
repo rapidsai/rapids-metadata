@@ -3795,16 +3795,6 @@
             }
           }
         },
-        "cumlprims_mg": {
-          "packages": {
-            "libcumlprims": {
-              "has_conda_package": true,
-              "has_cuda_suffix": true,
-              "has_wheel_package": false,
-              "publishes_prereleases": true
-            }
-          }
-        },
         "cuvs": {
           "packages": {
             "cuvs": {

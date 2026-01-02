@@ -1,4 +1,4 @@
-# Copyright (c) 2024-2025, NVIDIA CORPORATION.
+# Copyright (c) 2024-2026, NVIDIA CORPORATION.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -277,3 +277,4 @@ del (
 )
 
 all_metadata.versions["26.02"] = deepcopy(all_metadata.versions["25.12"])
+del all_metadata.versions["26.02"].repositories["cumlprims_mg"]
