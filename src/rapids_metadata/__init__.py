@@ -278,3 +278,5 @@ del (
 
 all_metadata.versions["26.02"] = deepcopy(all_metadata.versions["25.12"])
 del all_metadata.versions["26.02"].repositories["cumlprims_mg"]
+
+all_metadata.versions["26.04"] = deepcopy(all_metadata.versions["26.02"])
