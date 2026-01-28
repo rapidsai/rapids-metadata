@@ -24,7 +24,7 @@ repos:
     hooks:
       - id: codespell
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.14.10
+    rev: v0.14.14
     hooks:
       - id: ruff
         args: ["--fix"]
@@ -35,10 +35,11 @@ repos:
       - id: shellcheck
         args: ["--severity=warning"]
   - repo: https://github.com/rapidsai/pre-commit-hooks
-    rev: v1.2.1
+    rev: v1.3.3
     hooks:
       - id: verify-copyright
         args: [--fix, --main-branch=main]
+      - id: verify-pyproject-license
   - repo: https://github.com/pre-commit/mirrors-mypy
     rev: 'v1.19.1'
     hooks:
