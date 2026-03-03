@@ -4216,6 +4216,22 @@
             }
           }
         },
+        "nvforest": {
+          "packages": {
+            "libnvforest": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "nvforest": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            }
+          }
+        },
         "nx-cugraph": {
           "packages": {
             "nx-cugraph": {

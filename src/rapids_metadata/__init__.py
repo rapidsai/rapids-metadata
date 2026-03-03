@@ -280,3 +280,19 @@ all_metadata.versions["26.02"] = deepcopy(all_metadata.versions["25.12"])
 del all_metadata.versions["26.02"].repositories["cumlprims_mg"]
 
 all_metadata.versions["26.04"] = deepcopy(all_metadata.versions["26.02"])
+all_metadata.versions["26.04"].repositories["nvforest"] = RAPIDSRepository(
+    packages={
+        "libnvforest": RAPIDSPackage(
+            publishes_prereleases=True,
+            has_cuda_suffix=True,
+            has_conda_package=True,
+            has_wheel_package=True,
+        ),
+        "nvforest": RAPIDSPackage(
+            publishes_prereleases=True,
+            has_cuda_suffix=True,
+            has_conda_package=True,
+            has_wheel_package=True,
+        ),
+    }
+)
