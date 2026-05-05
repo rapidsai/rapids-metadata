@@ -298,3 +298,5 @@ all_metadata.versions["26.04"].repositories["nvforest"] = RAPIDSRepository(
 )
 
 all_metadata.versions["26.06"] = deepcopy(all_metadata.versions["26.04"])
+
+all_metadata.versions["26.08"] = deepcopy(all_metadata.versions["26.06"])

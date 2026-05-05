@@ -42,6 +42,7 @@ dependencies:
     common:
       - output_types: [conda, requirements]
         packages:
+          - identify>=2.6.13
           - pre-commit
   py_version:
     specific:
