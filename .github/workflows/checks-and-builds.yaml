@@ -1,5 +1,4 @@
 name: checks
-
 on:
   workflow_call:
     inputs:
@@ -7,7 +6,7 @@ on:
         type: string
       publish:
         type: boolean
-
+permissions: {}
 jobs:
   check-style:
     runs-on: ubuntu-latest
@@ -28,6 +27,12 @@ jobs:
       script: "ci/build_python.sh"
       # Select only the build with the minimum Python version and the maximum CUDA version
       matrix_filter: '[map(select(.ARCH == "amd64")) | min_by((.PY_VER | split(".") | map(tonumber)), (.CUDA_VER | split(".") | map(-tonumber)))]'
+    permissions:
+      actions: read
+      contents: read
+      id-token: write
+      packages: read
+      pull-requests: read
   build-wheel:
     needs: check-style
     uses: rapidsai/shared-workflows/.github/workflows/wheels-build.yaml@main
@@ -39,6 +44,12 @@ jobs:
       package-name: rapids-metadata
       package-type: python
       append-cuda-suffix: false
+    permissions:
+      actions: read
+      contents: read
+      id-token: write
+      packages: read
+      pull-requests: read
   publish-wheels:
     needs:
       - build-wheel
@@ -49,6 +60,12 @@ jobs:
       package-name: rapids-metadata
       publish_to_pypi: true
     if: ${{ inputs.publish }}
+    permissions:
+      actions: read
+      contents: read
+      id-token: write
+      packages: read
+      pull-requests: read
   publish-conda:
     needs:
       - build-conda
@@ -57,3 +74,9 @@ jobs:
     with:
       build_type: ${{ inputs.build_type }}
     if: ${{ inputs.publish }}
+    permissions:
+      actions: read
+      contents: read
+      id-token: write
+      packages: read
+      pull-requests: read
