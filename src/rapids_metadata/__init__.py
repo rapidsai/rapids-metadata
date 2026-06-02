@@ -264,6 +264,17 @@ all_metadata.versions["25.10"] = deepcopy(all_metadata.versions["25.08"])
 del all_metadata.versions["25.10"].repositories["pynvjitlink"]
 del all_metadata.versions["25.10"].repositories["ucx-py"]
 
+all_metadata.versions["25.10"].repositories["cuvs-lucene"] = RAPIDSRepository(
+    packages={
+        "cuvs-lucene": RAPIDSPackage(
+            publishes_prereleases=False,
+            has_cuda_suffix=False,
+            has_conda_package=False,
+            has_wheel_package=False,
+        ),
+    }
+)
+
 all_metadata.versions["25.12"] = deepcopy(all_metadata.versions["25.10"])
 del (
     all_metadata.versions["25.12"]
