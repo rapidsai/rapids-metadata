@@ -1,4 +1,4 @@
-# Copyright (c) 2024-2026, NVIDIA CORPORATION.
+# Copyright (c) 2024-2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -311,3 +311,4 @@ all_metadata.versions["26.04"].repositories["nvforest"] = RAPIDSRepository(
 all_metadata.versions["26.06"] = deepcopy(all_metadata.versions["26.04"])
 
 all_metadata.versions["26.08"] = deepcopy(all_metadata.versions["26.06"])
+del all_metadata.versions["26.08"].repositories["cuxfilter"]
