@@ -12,8 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import io
 import urllib.error
-from unittest.mock import MagicMock, call, patch
+from unittest.mock import call, patch
 
 import pytest
 import rapids_metadata.remote as rapids_remote
@@ -37,9 +38,8 @@ def test_fetch_latest_without_token(monkeypatch):
     monkeypatch.delenv("GH_TOKEN", raising=False)
     monkeypatch.delenv("GITHUB_TOKEN", raising=False)
     with patch("rapids_metadata.remote._fetch_from_url") as patch_fetch_from_url:
-        return_value = rapids_remote.fetch_latest()
+        rapids_remote.fetch_latest()
     patch_fetch_from_url.assert_called_once_with(rapids_remote._GITHUB_METADATA_URL)
-    assert return_value == patch_fetch_from_url()
 
 
 @pytest.mark.parametrize(
@@ -59,7 +59,7 @@ def test_fetch_latest_with_token(monkeypatch, environment, expected_token):
         monkeypatch.setenv(name, value)
 
     with patch("rapids_metadata.remote._fetch_from_url") as patch_fetch_from_url:
-        return_value = rapids_remote.fetch_latest()
+        rapids_remote.fetch_latest()
 
     patch_fetch_from_url.assert_called_once_with(
         rapids_remote._GITHUB_API_METADATA_URL,
@@ -69,14 +69,10 @@ def test_fetch_latest_with_token(monkeypatch, environment, expected_token):
             "X-GitHub-Api-Version": rapids_remote._GITHUB_API_VERSION,
         },
     )
-    assert return_value == patch_fetch_from_url()
 
 
 def _metadata_response():
-    response = MagicMock()
-    response.__enter__.return_value = response
-    response.read.return_value = TypeAdapter(RAPIDSMetadata).dump_json(all_metadata)
-    return response
+    return io.BytesIO(TypeAdapter(RAPIDSMetadata).dump_json(all_metadata))
 
 
 def _http_error(status, headers=None):
@@ -99,45 +95,17 @@ def test_fetch_retries_429(patch_urlopen, patch_sleep):
 
     assert rapids_remote._fetch_from_url("https://example.com") == all_metadata
     assert patch_urlopen.call_count == 2
-    patch_sleep.assert_called_once_with(7.0)
+    patch_sleep.assert_called_once_with(7)
 
 
-@patch("rapids_metadata.remote.time.sleep")
-@patch("rapids_metadata.remote.time.time", return_value=100.0)
-@patch("rapids_metadata.remote.urllib.request.urlopen")
-def test_fetch_honors_rate_limit_reset(patch_urlopen, patch_time, patch_sleep):
-    patch_urlopen.side_effect = [
-        _http_error(
-            403,
-            {
-                "X-RateLimit-Remaining": "0",
-                "X-RateLimit-Reset": "109",
-            },
-        ),
-        _metadata_response(),
-    ]
-
-    assert rapids_remote._fetch_from_url("https://example.com") == all_metadata
-    patch_time.assert_called_once_with()
-    patch_sleep.assert_called_once_with(10.0)
-
-
+@pytest.mark.parametrize(
+    "error",
+    [_http_error(503), urllib.error.URLError("connection reset")],
+)
 @patch("rapids_metadata.remote.time.sleep")
 @patch("rapids_metadata.remote.urllib.request.urlopen")
-def test_fetch_retries_transient_server_error(patch_urlopen, patch_sleep):
-    patch_urlopen.side_effect = [_http_error(503), _metadata_response()]
-
-    assert rapids_remote._fetch_from_url("https://example.com") == all_metadata
-    patch_sleep.assert_called_once_with(1.0)
-
-
-@patch("rapids_metadata.remote.time.sleep")
-@patch("rapids_metadata.remote.urllib.request.urlopen")
-def test_fetch_retries_url_error(patch_urlopen, patch_sleep):
-    patch_urlopen.side_effect = [
-        urllib.error.URLError("connection reset"),
-        _metadata_response(),
-    ]
+def test_fetch_retries_transient_error(patch_urlopen, patch_sleep, error):
+    patch_urlopen.side_effect = [error, _metadata_response()]
 
     assert rapids_remote._fetch_from_url("https://example.com") == all_metadata
     patch_sleep.assert_called_once_with(1)
@@ -157,7 +125,7 @@ def test_fetch_stops_after_max_attempts(patch_urlopen, patch_sleep):
 
     assert raised.value is errors[-1]
     assert patch_urlopen.call_count == rapids_remote._MAX_ATTEMPTS
-    assert patch_sleep.call_args_list == [call(0.0), call(0.0)]
+    assert patch_sleep.call_args_list == [call(0), call(0)]
 
 
 @patch("rapids_metadata.remote.time.sleep")

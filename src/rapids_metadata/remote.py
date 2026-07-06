@@ -12,12 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import math
 import os
 import time
 import urllib.error
 import urllib.request
-from collections.abc import Mapping
 from typing import Optional
 
 import pydantic
@@ -31,58 +29,29 @@ _GITHUB_API_METADATA_URL = "https://api.github.com/repos/rapidsai/rapids-metadat
 _GITHUB_API_VERSION = "2026-03-10"
 _MAX_ATTEMPTS = 3
 _RETRYABLE_HTTP_STATUS_CODES = {408, 429, 500, 502, 503, 504}
-_RATE_LIMIT_RETRY_SECONDS = 60.0
-
-
-def _header_as_float(error: urllib.error.HTTPError, name: str) -> Optional[float]:
-    try:
-        value = float(error.headers[name])
-    except (KeyError, TypeError, ValueError):
-        return None
-    return value if math.isfinite(value) else None
-
-
-def _retry_delay(error: urllib.error.HTTPError, attempt: int) -> float:
-    if (retry_after := _header_as_float(error, "Retry-After")) is not None:
-        return max(0.0, retry_after)
-
-    if (
-        error.headers.get("X-RateLimit-Remaining") == "0"
-        and (reset_at := _header_as_float(error, "X-RateLimit-Reset")) is not None
-    ):
-        return max(0.0, reset_at - time.time()) + 1.0
-
-    if error.code in {403, 429}:
-        return _RATE_LIMIT_RETRY_SECONDS * 2**attempt
-    return float(2**attempt)
-
-
-def _is_retryable(error: urllib.error.HTTPError) -> bool:
-    return error.code in _RETRYABLE_HTTP_STATUS_CODES or (
-        error.code == 403
-        and (
-            "Retry-After" in error.headers
-            or error.headers.get("X-RateLimit-Remaining") == "0"
-        )
-    )
 
 
 def _fetch_from_url(
-    url: str, *, headers: Optional[Mapping[str, str]] = None
+    url: str, *, headers: Optional[dict[str, str]] = None
 ) -> RAPIDSMetadata:
-    request = urllib.request.Request(url, headers=dict(headers or {}))
+    request = urllib.request.Request(url, headers=headers or {})
     for attempt in range(_MAX_ATTEMPTS):
         try:
             with urllib.request.urlopen(request) as f:
                 return pydantic.TypeAdapter(RAPIDSMetadata).validate_json(f.read())
         except urllib.error.HTTPError as error:
-            if attempt == _MAX_ATTEMPTS - 1 or not _is_retryable(error):
+            if (
+                attempt == _MAX_ATTEMPTS - 1
+                or error.code not in _RETRYABLE_HTTP_STATUS_CODES
+            ):
                 raise
-            time.sleep(_retry_delay(error, attempt))
+            default_delay = (60 if error.code == 429 else 1) * 2**attempt
+            delay = max(0, int(error.headers.get("Retry-After", default_delay)))
         except urllib.error.URLError:
             if attempt == _MAX_ATTEMPTS - 1:
                 raise
-            time.sleep(2**attempt)
+            delay = 2**attempt
+        time.sleep(delay)
 
     raise AssertionError("unreachable")
 
