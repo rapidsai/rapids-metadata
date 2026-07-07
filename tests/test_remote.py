@@ -85,58 +85,58 @@ def _http_error(status, headers=None):
     )
 
 
-@patch("rapids_metadata.remote.time.sleep")
-@patch("rapids_metadata.remote.urllib.request.urlopen")
-def test_fetch_retries_429(patch_urlopen, patch_sleep):
-    patch_urlopen.side_effect = [
-        _http_error(429, {"Retry-After": "7"}),
-        _metadata_response(),
-    ]
+def test_fetch_retries_429():
+    with patch("rapids_metadata.remote.urllib.request.urlopen") as patch_urlopen:
+        with patch("rapids_metadata.remote.time.sleep") as patch_sleep:
+            patch_urlopen.side_effect = [
+                _http_error(429, {"Retry-After": "7"}),
+                _metadata_response(),
+            ]
 
-    assert rapids_remote._fetch_from_url("https://example.com") == all_metadata
-    assert patch_urlopen.call_count == 2
-    patch_sleep.assert_called_once_with(7)
+            assert rapids_remote._fetch_from_url("https://example.com") == all_metadata
+            assert patch_urlopen.call_count == 2
+            patch_sleep.assert_called_once_with(7)
 
 
 @pytest.mark.parametrize(
     "error",
     [_http_error(503), urllib.error.URLError("connection reset")],
 )
-@patch("rapids_metadata.remote.time.sleep")
-@patch("rapids_metadata.remote.urllib.request.urlopen")
-def test_fetch_retries_transient_error(patch_urlopen, patch_sleep, error):
-    patch_urlopen.side_effect = [error, _metadata_response()]
+def test_fetch_retries_transient_error(error):
+    with patch("rapids_metadata.remote.urllib.request.urlopen") as patch_urlopen:
+        with patch("rapids_metadata.remote.time.sleep") as patch_sleep:
+            patch_urlopen.side_effect = [error, _metadata_response()]
 
-    assert rapids_remote._fetch_from_url("https://example.com") == all_metadata
-    patch_sleep.assert_called_once_with(1)
+            assert rapids_remote._fetch_from_url("https://example.com") == all_metadata
+            patch_sleep.assert_called_once_with(1)
 
 
-@patch("rapids_metadata.remote.time.sleep")
-@patch("rapids_metadata.remote.urllib.request.urlopen")
-def test_fetch_stops_after_max_attempts(patch_urlopen, patch_sleep):
+def test_fetch_stops_after_max_attempts():
     errors = [
         _http_error(429, {"Retry-After": "0"})
         for _ in range(rapids_remote._MAX_ATTEMPTS)
     ]
-    patch_urlopen.side_effect = errors
+    with patch("rapids_metadata.remote.urllib.request.urlopen") as patch_urlopen:
+        with patch("rapids_metadata.remote.time.sleep") as patch_sleep:
+            patch_urlopen.side_effect = errors
 
-    with pytest.raises(urllib.error.HTTPError) as raised:
-        rapids_remote._fetch_from_url("https://example.com")
+            with pytest.raises(urllib.error.HTTPError) as raised:
+                rapids_remote._fetch_from_url("https://example.com")
 
-    assert raised.value is errors[-1]
-    assert patch_urlopen.call_count == rapids_remote._MAX_ATTEMPTS
-    assert patch_sleep.call_args_list == [call(0), call(0)]
+            assert raised.value is errors[-1]
+            assert patch_urlopen.call_count == rapids_remote._MAX_ATTEMPTS
+            assert patch_sleep.call_args_list == [call(0), call(0)]
 
 
-@patch("rapids_metadata.remote.time.sleep")
-@patch("rapids_metadata.remote.urllib.request.urlopen")
-def test_fetch_does_not_retry_nonretryable_error(patch_urlopen, patch_sleep):
+def test_fetch_does_not_retry_nonretryable_error():
     error = _http_error(404)
-    patch_urlopen.side_effect = error
+    with patch("rapids_metadata.remote.urllib.request.urlopen") as patch_urlopen:
+        with patch("rapids_metadata.remote.time.sleep") as patch_sleep:
+            patch_urlopen.side_effect = error
 
-    with pytest.raises(urllib.error.HTTPError) as raised:
-        rapids_remote._fetch_from_url("https://example.com")
+            with pytest.raises(urllib.error.HTTPError) as raised:
+                rapids_remote._fetch_from_url("https://example.com")
 
-    assert raised.value is error
-    patch_urlopen.assert_called_once()
-    patch_sleep.assert_not_called()
+            assert raised.value is error
+            patch_urlopen.assert_called_once()
+            patch_sleep.assert_not_called()
