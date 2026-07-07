@@ -9,6 +9,12 @@ concurrency:
 permissions: {}
 jobs:
   run-checks:
+    permissions:
+      actions: read
+      contents: read
+      id-token: write
+      packages: read
+      pull-requests: read
     uses: ./.github/workflows/checks-and-builds.yaml
     with:
       build_type: branch
