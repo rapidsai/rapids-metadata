@@ -4817,6 +4817,12 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "cudf-streaming": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
             "cudf_kafka": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -4841,6 +4847,12 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "libcudf-streaming": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
             "libcudf_kafka": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -4848,18 +4860,6 @@
               "publishes_prereleases": true
             },
             "pylibcudf": {
-              "has_conda_package": true,
-              "has_cuda_suffix": true,
-              "has_wheel_package": true,
-              "publishes_prereleases": true
-            },
-            "libcudf-streaming": {
-              "has_conda_package": true,
-              "has_cuda_suffix": true,
-              "has_wheel_package": true,
-              "publishes_prereleases": true
-            },
-            "cudf-streaming": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
@@ -5196,6 +5196,12 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "cudf-streaming": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
             "cudf_kafka": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -5220,6 +5226,12 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "libcudf-streaming": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
             "libcudf_kafka": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -5227,18 +5239,6 @@
               "publishes_prereleases": true
             },
             "pylibcudf": {
-              "has_conda_package": true,
-              "has_cuda_suffix": true,
-              "has_wheel_package": true,
-              "publishes_prereleases": true
-            },
-            "libcudf-streaming": {
-              "has_conda_package": true,
-              "has_cuda_suffix": true,
-              "has_wheel_package": true,
-              "publishes_prereleases": true
-            },
-            "cudf-streaming": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,

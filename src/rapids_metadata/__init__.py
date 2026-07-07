@@ -313,4 +313,10 @@ all_metadata.versions["26.06"] = deepcopy(all_metadata.versions["26.04"])
 all_metadata.versions["26.08"] = deepcopy(all_metadata.versions["26.06"])
 del all_metadata.versions["26.08"].repositories["cuxfilter"]
 
+all_metadata.versions["26.08"].repositories["cudf"].packages["libcudf-streaming"] = (
+    RAPIDSPackage()
+)
+all_metadata.versions["26.08"].repositories["cudf"].packages["cudf-streaming"] = (
+    RAPIDSPackage()
+)
 all_metadata.versions["26.10"] = deepcopy(all_metadata.versions["26.08"])
