@@ -8,6 +8,16 @@ concurrency:
   cancel-in-progress: true
 permissions: {}
 jobs:
+  # Please keep pr-builder as the top job here
+  pr-builder:
+    needs:
+      - run-checks
+    uses: rapidsai/shared-workflows/.github/workflows/pr-builder.yaml@main
+    permissions:
+      contents: read
+    if: always()
+    with:
+      needs: ${{ toJSON(needs) }}
   run-checks:
     permissions:
       actions: read
