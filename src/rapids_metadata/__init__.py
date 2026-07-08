@@ -305,10 +305,105 @@ all_metadata.versions["26.04"].repositories["nvforest"] = RAPIDSRepository(
             has_conda_package=True,
             has_wheel_package=True,
         ),
+        "libnvforest-tests": RAPIDSPackage(
+            publishes_prereleases=True,
+            has_cuda_suffix=True,
+            has_conda_package=True,
+            has_wheel_package=False,
+        ),
     }
 )
 
+all_metadata.versions["26.04"].repositories["cugraph"].packages["libcugraph-tests"] = (
+    RAPIDSPackage(
+        publishes_prereleases=True,
+        has_cuda_suffix=True,
+        has_conda_package=True,
+        has_wheel_package=False,
+    )
+)
+
+all_metadata.versions["26.04"].repositories["cuvs"].packages["libcuvs-tests"] = (
+    RAPIDSPackage(
+        publishes_prereleases=True,
+        has_cuda_suffix=True,
+        has_conda_package=True,
+        has_wheel_package=False,
+    )
+)
+
+all_metadata.versions["26.04"].repositories["kvikio"].packages["libkvikio-tests"] = (
+    RAPIDSPackage(
+        publishes_prereleases=True,
+        has_cuda_suffix=True,
+        has_conda_package=True,
+        has_wheel_package=False,
+    )
+)
+
+all_metadata.versions["26.04"].repositories["raft"].packages["libraft-tests"] = (
+    RAPIDSPackage(
+        publishes_prereleases=True,
+        has_cuda_suffix=True,
+        has_conda_package=True,
+        has_wheel_package=False,
+    )
+)
+
+all_metadata.versions["26.04"].repositories["rapidsmpf"].packages[
+    "librapidsmpf-tests"
+] = RAPIDSPackage(
+    publishes_prereleases=True,
+    has_cuda_suffix=True,
+    has_conda_package=True,
+    has_wheel_package=False,
+)
+
+all_metadata.versions["26.04"].repositories["rmm"].packages["librmm-tests"] = (
+    RAPIDSPackage(
+        publishes_prereleases=True,
+        has_cuda_suffix=True,
+        has_conda_package=True,
+        has_wheel_package=False,
+    )
+)
+
+all_metadata.versions["26.04"].repositories["cugraph-gnn"].packages[
+    "libwholegraph-tests"
+] = RAPIDSPackage(
+    publishes_prereleases=True,
+    has_cuda_suffix=True,
+    has_conda_package=True,
+    has_wheel_package=False,
+)
+
 all_metadata.versions["26.06"] = deepcopy(all_metadata.versions["26.04"])
+all_metadata.versions["26.06"].repositories["cudf"].packages["libcudf-tests"] = (
+    RAPIDSPackage(
+        publishes_prereleases=True,
+        has_cuda_suffix=True,
+        has_conda_package=True,
+        has_wheel_package=False,
+    )
+)
+
+all_metadata.versions["26.06"].repositories["ucxx"].packages["libucxx-tests"] = (
+    RAPIDSPackage(
+        publishes_prereleases=True,
+        has_cuda_suffix=True,
+        has_conda_package=True,
+        has_wheel_package=False,
+    )
+)
+
+all_metadata.versions["26.06"].repositories["ucxx"].packages["ucxx-tests"] = (
+    RAPIDSPackage(
+        publishes_prereleases=True,
+        has_cuda_suffix=True,
+        has_conda_package=True,
+        has_wheel_package=False,
+    )
+)
 
 all_metadata.versions["26.08"] = deepcopy(all_metadata.versions["26.06"])
 del all_metadata.versions["26.08"].repositories["cuxfilter"]
@@ -321,6 +416,15 @@ all_metadata.versions["26.08"].repositories["cudf"].packages["libcudf-streaming"
         has_wheel_package=True,
     )
 )
+all_metadata.versions["26.08"].repositories["cudf"].packages[
+    "libcudf-streaming-tests"
+] = RAPIDSPackage(
+    publishes_prereleases=True,
+    has_cuda_suffix=True,
+    has_conda_package=True,
+    has_wheel_package=False,
+)
+
 all_metadata.versions["26.08"].repositories["cudf"].packages["cudf-streaming"] = (
     RAPIDSPackage(
         publishes_prereleases=True,
