@@ -1326,6 +1326,12 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "libcudf-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "libcudf_kafka": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -1366,6 +1372,12 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "libcugraph-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "libcugraph_etl": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -1398,6 +1410,12 @@
               "publishes_prereleases": true
             },
             "libwholegraph": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
+            "libwholegraph-tests": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": false,
@@ -1508,6 +1526,12 @@
               "has_cuda_suffix": true,
               "has_wheel_package": false,
               "publishes_prereleases": true
+            },
+            "libcuvs-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
             }
           }
         },
@@ -1543,6 +1567,12 @@
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "libkvikio-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             }
           }
@@ -1603,6 +1633,12 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
+            "libraft-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "pylibraft": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -1635,6 +1671,12 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "librmm-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "rmm": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -1665,6 +1707,12 @@
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "libucxx-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "ucxx": {
@@ -1743,6 +1791,12 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "libcudf-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "libcudf_kafka": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -1783,6 +1837,12 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "libcugraph-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "libcugraph_etl": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -1815,6 +1875,12 @@
               "publishes_prereleases": true
             },
             "libwholegraph": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
+            "libwholegraph-tests": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": false,
@@ -1925,6 +1991,12 @@
               "has_cuda_suffix": true,
               "has_wheel_package": false,
               "publishes_prereleases": true
+            },
+            "libcuvs-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
             }
           }
         },
@@ -1960,6 +2032,12 @@
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "libkvikio-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             }
           }
@@ -2020,6 +2098,12 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
+            "libraft-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "pylibraft": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -2062,6 +2146,12 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "librmm-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "rmm": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -2094,10 +2184,22 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "libucxx-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "ucxx": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "ucxx-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             }
           }
@@ -2170,6 +2272,12 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "libcudf-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "libcudf_kafka": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -2210,6 +2318,12 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "libcugraph-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "libcugraph_etl": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -2245,6 +2359,12 @@
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "libwholegraph-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "pylibwholegraph": {
@@ -2318,6 +2438,12 @@
               "has_cuda_suffix": true,
               "has_wheel_package": false,
               "publishes_prereleases": true
+            },
+            "libcuvs-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
             }
           }
         },
@@ -2353,6 +2479,12 @@
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "libkvikio-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             }
           }
@@ -2413,6 +2545,12 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
+            "libraft-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "pylibraft": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -2465,6 +2603,12 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "librapidsmpf-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "rapidsmpf": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -2479,6 +2623,12 @@
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "librmm-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "rmm": {
@@ -2513,10 +2663,22 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "libucxx-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "ucxx": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "ucxx-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             }
           }
@@ -2579,6 +2741,12 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "libcudf-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "libcudf_kafka": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -2619,6 +2787,12 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "libcugraph-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "libcugraph_etl": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -2648,6 +2822,12 @@
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "libwholegraph-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "pylibwholegraph": {
@@ -2721,6 +2901,12 @@
               "has_cuda_suffix": true,
               "has_wheel_package": false,
               "publishes_prereleases": true
+            },
+            "libcuvs-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
             }
           }
         },
@@ -2756,6 +2942,12 @@
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "libkvikio-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             }
           }
@@ -2801,6 +2993,12 @@
               "publishes_prereleases": true
             },
             "libraft-static": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
+            "libraft-tests": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": false,
@@ -2858,6 +3056,12 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "librapidsmpf-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "rapidsmpf": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -2872,6 +3076,12 @@
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "librmm-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "rmm": {
@@ -2906,10 +3116,22 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "libucxx-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "ucxx": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "ucxx-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             }
           }
@@ -2972,6 +3194,12 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "libcudf-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "libcudf_kafka": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -3012,6 +3240,12 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "libcugraph-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "libcugraph_etl": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -3041,6 +3275,12 @@
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "libwholegraph-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "pylibwholegraph": {
@@ -3114,6 +3354,12 @@
               "has_cuda_suffix": true,
               "has_wheel_package": false,
               "publishes_prereleases": true
+            },
+            "libcuvs-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
             }
           }
         },
@@ -3160,6 +3406,12 @@
               "has_cuda_suffix": true,
               "has_wheel_package": true,
               "publishes_prereleases": true
+            },
+            "libkvikio-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
             }
           }
         },
@@ -3194,6 +3446,12 @@
               "publishes_prereleases": true
             },
             "libraft-static": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
+            "libraft-tests": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": false,
@@ -3251,6 +3509,12 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "librapidsmpf-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "rapidsmpf": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -3265,6 +3529,12 @@
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "librmm-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "rmm": {
@@ -3289,10 +3559,22 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "libucxx-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "ucxx": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "ucxx-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             }
           }
@@ -3355,6 +3637,12 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "libcudf-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "libcudf_kafka": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -3381,6 +3669,12 @@
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "libcugraph-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "libcugraph_etl": {
@@ -3412,6 +3706,12 @@
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "libwholegraph-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "pylibwholegraph": {
@@ -3485,6 +3785,12 @@
               "has_cuda_suffix": true,
               "has_wheel_package": false,
               "publishes_prereleases": true
+            },
+            "libcuvs-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
             }
           }
         },
@@ -3531,6 +3837,12 @@
               "has_cuda_suffix": true,
               "has_wheel_package": true,
               "publishes_prereleases": true
+            },
+            "libkvikio-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
             }
           }
         },
@@ -3565,6 +3877,12 @@
               "publishes_prereleases": true
             },
             "libraft-static": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
+            "libraft-tests": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": false,
@@ -3622,6 +3940,12 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "librapidsmpf-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "rapidsmpf": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -3636,6 +3960,12 @@
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "librmm-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "rmm": {
@@ -3660,10 +3990,22 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "libucxx-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "ucxx": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "ucxx-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             }
           }
@@ -3726,6 +4068,12 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "libcudf-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "libcudf_kafka": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -3752,6 +4100,12 @@
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "libcugraph-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "libcugraph_etl": {
@@ -3783,6 +4137,12 @@
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "libwholegraph-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "pylibwholegraph": {
@@ -3846,6 +4206,12 @@
               "has_cuda_suffix": true,
               "has_wheel_package": false,
               "publishes_prereleases": true
+            },
+            "libcuvs-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
             }
           }
         },
@@ -3892,6 +4258,12 @@
               "has_cuda_suffix": true,
               "has_wheel_package": true,
               "publishes_prereleases": true
+            },
+            "libkvikio-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
             }
           }
         },
@@ -3926,6 +4298,12 @@
               "publishes_prereleases": true
             },
             "libraft-static": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
+            "libraft-tests": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": false,
@@ -3983,6 +4361,12 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "librapidsmpf-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "rapidsmpf": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -3997,6 +4381,12 @@
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "librmm-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "rmm": {
@@ -4021,10 +4411,22 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "libucxx-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "ucxx": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "ucxx-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             }
           }
@@ -4085,6 +4487,12 @@
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "libcudf-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             },
             "libcudf_kafka": {
@@ -4446,10 +4854,22 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             },
+            "libucxx-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
+              "publishes_prereleases": true
+            },
             "ucxx": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
               "has_wheel_package": true,
+              "publishes_prereleases": true
+            },
+            "ucxx-tests": {
+              "has_conda_package": true,
+              "has_cuda_suffix": true,
+              "has_wheel_package": false,
               "publishes_prereleases": true
             }
           }
