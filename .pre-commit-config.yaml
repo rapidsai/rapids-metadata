@@ -52,6 +52,15 @@ repos:
         additional_dependencies:
           - packaging
           - pydantic
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.38.0
+    hooks:
+      - id: yamllint
+        additional_dependencies: [pyyaml]
+        exclude: |
+          (?x)^(
+            conda/recipes/rapids-metadata/meta.yaml$
+          )
   - repo: https://github.com/zizmorcore/zizmor-pre-commit
     rev: v1.26.1
     hooks:
@@ -74,4 +83,4 @@ repos:
           - pydantic
 
 default_language_version:
-      python: python3
+  python: python3
