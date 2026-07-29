@@ -43,11 +43,15 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
             packages={
                 "cudf": RAPIDSPackage(),
                 "cudf-polars": RAPIDSPackage(),
-                "cudf_kafka": RAPIDSPackage(has_wheel_package=False),
+                "cudf_kafka": RAPIDSPackage(
+                    has_wheel_package=False, has_cuda_suffix=False
+                ),
                 "custreamz": RAPIDSPackage(has_wheel_package=False),
                 "dask-cudf": RAPIDSPackage(),
                 "libcudf": RAPIDSPackage(),
-                "libcudf_kafka": RAPIDSPackage(has_wheel_package=False),
+                "libcudf_kafka": RAPIDSPackage(
+                    has_wheel_package=False, has_cuda_suffix=False
+                ),
             }
         ),
         "cugraph": RAPIDSRepository(
