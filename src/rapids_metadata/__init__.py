@@ -354,6 +354,9 @@ all_metadata.versions["25.10"].repositories["cuvs-lucene"] = RAPIDSRepository(
 )
 
 all_metadata.versions["25.12"] = deepcopy(all_metadata.versions["25.10"])
+all_metadata.versions["25.12"].repositories["rapids-logger"].packages[
+    "rapids-logger"
+] = RAPIDSPackage(publishes_prereleases=False, has_cuda_suffix=False)
 del (
     all_metadata.versions["25.12"]
     .repositories["cugraph"]
