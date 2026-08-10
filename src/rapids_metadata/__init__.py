@@ -1,4 +1,4 @@
-# Copyright (c) 2024-2025, NVIDIA CORPORATION.
+# Copyright (c) 2024-2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -43,11 +43,15 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
             packages={
                 "cudf": RAPIDSPackage(),
                 "cudf-polars": RAPIDSPackage(),
-                "cudf_kafka": RAPIDSPackage(has_wheel_package=False),
+                "cudf_kafka": RAPIDSPackage(
+                    has_wheel_package=False, has_cuda_suffix=False
+                ),
                 "custreamz": RAPIDSPackage(has_wheel_package=False),
                 "dask-cudf": RAPIDSPackage(),
                 "libcudf": RAPIDSPackage(),
-                "libcudf_kafka": RAPIDSPackage(has_wheel_package=False),
+                "libcudf_kafka": RAPIDSPackage(
+                    has_wheel_package=False, has_cuda_suffix=False
+                ),
             }
         ),
         "cugraph": RAPIDSRepository(
@@ -85,16 +89,12 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
                 "libcumlprims": RAPIDSPackage(has_wheel_package=False),
             }
         ),
-        "cuproj": RAPIDSRepository(
-            packages={
-                "cuproj": RAPIDSPackage(),
-            }
-        ),
         "cuspatial": RAPIDSRepository(
             packages={
                 "cuspatial": RAPIDSPackage(),
                 "libcuspatial": RAPIDSPackage(),
                 "libcuspatial-tests": RAPIDSPackage(has_wheel_package=False),
+                "cuproj": RAPIDSPackage(),
             }
         ),
         "cuxfilter": RAPIDSRepository(
@@ -232,10 +232,82 @@ all_metadata.versions["25.02"].repositories["cuvs"].packages["libcuvs"] = RAPIDS
 all_metadata.versions["25.02"].repositories["raft"].packages["libraft"] = RAPIDSPackage(
     has_wheel_package=True
 )
+all_metadata.versions["25.02"].repositories["cudf"].packages["libcudf-tests"] = (
+    RAPIDSPackage(
+        publishes_prereleases=True,
+        has_cuda_suffix=True,
+        has_conda_package=True,
+        has_wheel_package=False,
+    )
+)
+all_metadata.versions["25.02"].repositories["cugraph"].packages["libcugraph-tests"] = (
+    RAPIDSPackage(
+        publishes_prereleases=True,
+        has_cuda_suffix=True,
+        has_conda_package=True,
+        has_wheel_package=False,
+    )
+)
+all_metadata.versions["25.02"].repositories["cuvs"].packages["libcuvs-tests"] = (
+    RAPIDSPackage(
+        publishes_prereleases=True,
+        has_cuda_suffix=True,
+        has_conda_package=True,
+        has_wheel_package=False,
+    )
+)
+all_metadata.versions["25.02"].repositories["kvikio"].packages["libkvikio-tests"] = (
+    RAPIDSPackage(
+        publishes_prereleases=True,
+        has_cuda_suffix=True,
+        has_conda_package=True,
+        has_wheel_package=False,
+    )
+)
+all_metadata.versions["25.02"].repositories["raft"].packages["libraft-tests"] = (
+    RAPIDSPackage(
+        publishes_prereleases=True,
+        has_cuda_suffix=True,
+        has_conda_package=True,
+        has_wheel_package=False,
+    )
+)
+all_metadata.versions["25.02"].repositories["rmm"].packages["librmm-tests"] = (
+    RAPIDSPackage(
+        publishes_prereleases=True,
+        has_cuda_suffix=True,
+        has_conda_package=True,
+        has_wheel_package=False,
+    )
+)
+all_metadata.versions["25.02"].repositories["cugraph-gnn"].packages[
+    "libwholegraph-tests"
+] = RAPIDSPackage(
+    publishes_prereleases=True,
+    has_cuda_suffix=True,
+    has_conda_package=True,
+    has_wheel_package=False,
+)
+all_metadata.versions["25.02"].repositories["ucxx"].packages["libucxx-tests"] = (
+    RAPIDSPackage(
+        publishes_prereleases=True,
+        has_cuda_suffix=True,
+        has_conda_package=True,
+        has_wheel_package=False,
+    )
+)
 
 all_metadata.versions["25.04"] = deepcopy(all_metadata.versions["25.02"])
 all_metadata.versions["25.04"].repositories["rapids-logger"] = RAPIDSRepository(
     packages={"rapids-logger": RAPIDSPackage(has_cuda_suffix=False)}
+)
+all_metadata.versions["25.04"].repositories["ucxx"].packages["ucxx-tests"] = (
+    RAPIDSPackage(
+        publishes_prereleases=True,
+        has_cuda_suffix=True,
+        has_conda_package=True,
+        has_wheel_package=False,
+    )
 )
 
 all_metadata.versions["25.06"] = deepcopy(all_metadata.versions["25.04"])
@@ -254,22 +326,103 @@ all_metadata.versions["25.06"].repositories["rapidsmpf"] = RAPIDSRepository(
     packages={
         "rapidsmpf": RAPIDSPackage(),
         "librapidsmpf": RAPIDSPackage(),
+        "librapidsmpf-tests": RAPIDSPackage(has_wheel_package=False),
     }
 )
+
 del all_metadata.versions["25.06"].repositories["cuspatial"]
 del all_metadata.versions["25.06"].repositories["cuml"].packages["cuml-cpu"]
 
 all_metadata.versions["25.08"] = deepcopy(all_metadata.versions["25.06"])
 del all_metadata.versions["25.08"].repositories["ptxcompiler"]
 del all_metadata.versions["25.08"].repositories["cugraph-gnn"].packages["cugraph-dgl"]
-del all_metadata.versions["25.08"].repositories["_nvidia"].packages["cubinlinker"]
+del all_metadata.versions["25.08"].repositories["_nvidia"]  # Only cubinlinker
 
 all_metadata.versions["25.10"] = deepcopy(all_metadata.versions["25.08"])
-del all_metadata.versions["25.10"].repositories["cuproj"]
 del all_metadata.versions["25.10"].repositories["pynvjitlink"]
 del all_metadata.versions["25.10"].repositories["ucx-py"]
+
+all_metadata.versions["25.10"].repositories["cuvs-lucene"] = RAPIDSRepository(
+    packages={
+        "cuvs-lucene": RAPIDSPackage(
+            publishes_prereleases=False,
+            has_cuda_suffix=False,
+            has_conda_package=False,
+            has_wheel_package=False,
+        ),
+    }
+)
 
 all_metadata.versions["25.12"] = deepcopy(all_metadata.versions["25.10"])
 all_metadata.versions["25.12"].repositories["rapids-logger"].packages[
     "rapids-logger"
 ] = RAPIDSPackage(publishes_prereleases=False, has_cuda_suffix=False)
+del (
+    all_metadata.versions["25.12"]
+    .repositories["cugraph"]
+    .packages["cugraph-service-client"]
+)
+del (
+    all_metadata.versions["25.12"]
+    .repositories["cugraph"]
+    .packages["cugraph-service-server"]
+)
+
+all_metadata.versions["26.02"] = deepcopy(all_metadata.versions["25.12"])
+del all_metadata.versions["26.02"].repositories["cumlprims_mg"]
+
+all_metadata.versions["26.04"] = deepcopy(all_metadata.versions["26.02"])
+all_metadata.versions["26.04"].repositories["nvforest"] = RAPIDSRepository(
+    packages={
+        "libnvforest": RAPIDSPackage(
+            publishes_prereleases=True,
+            has_cuda_suffix=True,
+            has_conda_package=True,
+            has_wheel_package=True,
+        ),
+        "nvforest": RAPIDSPackage(
+            publishes_prereleases=True,
+            has_cuda_suffix=True,
+            has_conda_package=True,
+            has_wheel_package=True,
+        ),
+        "libnvforest-tests": RAPIDSPackage(
+            publishes_prereleases=True,
+            has_cuda_suffix=True,
+            has_conda_package=True,
+            has_wheel_package=False,
+        ),
+    }
+)
+
+all_metadata.versions["26.06"] = deepcopy(all_metadata.versions["26.04"])
+
+all_metadata.versions["26.08"] = deepcopy(all_metadata.versions["26.06"])
+del all_metadata.versions["26.08"].repositories["cuxfilter"]
+
+all_metadata.versions["26.08"].repositories["cudf"].packages["libcudf-streaming"] = (
+    RAPIDSPackage(
+        publishes_prereleases=True,
+        has_cuda_suffix=True,
+        has_conda_package=True,
+        has_wheel_package=True,
+    )
+)
+all_metadata.versions["26.08"].repositories["cudf"].packages[
+    "libcudf-streaming-tests"
+] = RAPIDSPackage(
+    publishes_prereleases=True,
+    has_cuda_suffix=True,
+    has_conda_package=True,
+    has_wheel_package=False,
+)
+
+all_metadata.versions["26.08"].repositories["cudf"].packages["cudf-streaming"] = (
+    RAPIDSPackage(
+        publishes_prereleases=True,
+        has_cuda_suffix=True,
+        has_conda_package=True,
+        has_wheel_package=True,
+    )
+)
+all_metadata.versions["26.10"] = deepcopy(all_metadata.versions["26.08"])

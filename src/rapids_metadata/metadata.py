@@ -13,7 +13,6 @@
 # limitations under the License.
 
 from os import PathLike
-from typing import Union
 
 from pydantic import ConfigDict, Field
 from pydantic.dataclasses import dataclass
@@ -119,8 +118,8 @@ class RAPIDSMetadata:
 
     def get_current_version(
         self,
-        directory: Union[str, PathLike[str]],
-        version_file: Union[str, PathLike[str]] = "VERSION",
+        directory: str | PathLike[str],
+        version_file: str | PathLike[str] = "VERSION",
     ) -> RAPIDSVersion:
         from packaging.version import Version
 

@@ -10,8 +10,8 @@
 
 # Load `about` metadata
 {% set home = pyproject_data["project"]["urls"]["Homepage"] %}
-{% set license = pyproject_data["project"]["license"]["text"] %}
-{% set license_files = pyproject_data["tool"]["setuptools"]["license-files"] %}
+{% set license = pyproject_data["project"]["license"] %}
+{% set license_files = pyproject_data["project"]["license-files"] %}
 {% set summary = pyproject_data["project"]["description"] %}
 {% set dev_url = pyproject_data["project"]["urls"]["Source"] %}
 {% set doc_url = pyproject_data["project"]["urls"]["Documentation"] %}

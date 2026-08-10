@@ -2,7 +2,7 @@
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       - id: trailing-whitespace
         exclude: |
@@ -15,32 +15,33 @@ repos:
               rapids-metadata[.]json$|
               schemas/rapids-metadata-v[0-9]+[.]json$
   - repo: https://github.com/rapidsai/dependency-file-generator
-    rev: v1.20.0
+    rev: v1.21.0
     hooks:
       - id: rapids-dependency-file-generator
         args: ["--clean", "--warn-all", "--strict"]
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.4.1
+    rev: v2.4.2
     hooks:
       - id: codespell
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.11.12
+    rev: v0.15.20
     hooks:
-      - id: ruff
+      - id: ruff-check
         args: ["--fix"]
       - id: ruff-format
   - repo: https://github.com/shellcheck-py/shellcheck-py
-    rev: v0.10.0.1
+    rev: v0.11.0.1
     hooks:
       - id: shellcheck
         args: ["--severity=warning"]
   - repo: https://github.com/rapidsai/pre-commit-hooks
-    rev: v0.6.0
+    rev: v1.6.0
     hooks:
       - id: verify-copyright
         args: [--fix, --main-branch=main]
+      - id: verify-pyproject-license
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: 'v1.16.0'
+    rev: 'v2.1.0'
     hooks:
       - id: mypy
         args: [
@@ -51,6 +52,19 @@ repos:
         additional_dependencies:
           - packaging
           - pydantic
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.38.0
+    hooks:
+      - id: yamllint
+        additional_dependencies: [pyyaml]
+        exclude: |
+          (?x)^(
+            conda/recipes/rapids-metadata/meta.yaml$
+          )
+  - repo: https://github.com/zizmorcore/zizmor-pre-commit
+    rev: v1.26.1
+    hooks:
+      - id: zizmor
   - repo: local
     hooks:
       - id: generate-json
@@ -69,4 +83,4 @@ repos:
           - pydantic
 
 default_language_version:
-      python: python3
+  python: python3
