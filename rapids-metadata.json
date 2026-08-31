@@ -44,7 +44,7 @@
             },
             "cudf_kafka": {
               "has_conda_package": true,
-              "has_cuda_suffix": true,
+              "has_cuda_suffix": false,
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
@@ -68,7 +68,7 @@
             },
             "libcudf_kafka": {
               "has_conda_package": true,
-              "has_cuda_suffix": true,
+              "has_cuda_suffix": false,
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
@@ -448,7 +448,7 @@
             },
             "cudf_kafka": {
               "has_conda_package": true,
-              "has_cuda_suffix": true,
+              "has_cuda_suffix": false,
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
@@ -472,7 +472,7 @@
             },
             "libcudf_kafka": {
               "has_conda_package": true,
-              "has_cuda_suffix": true,
+              "has_cuda_suffix": false,
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
@@ -874,7 +874,7 @@
             },
             "cudf_kafka": {
               "has_conda_package": true,
-              "has_cuda_suffix": true,
+              "has_cuda_suffix": false,
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
@@ -898,7 +898,7 @@
             },
             "libcudf_kafka": {
               "has_conda_package": true,
-              "has_cuda_suffix": true,
+              "has_cuda_suffix": false,
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
@@ -1304,7 +1304,7 @@
             },
             "cudf_kafka": {
               "has_conda_package": true,
-              "has_cuda_suffix": true,
+              "has_cuda_suffix": false,
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
@@ -1334,7 +1334,7 @@
             },
             "libcudf_kafka": {
               "has_conda_package": true,
-              "has_cuda_suffix": true,
+              "has_cuda_suffix": false,
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
@@ -1769,7 +1769,7 @@
             },
             "cudf_kafka": {
               "has_conda_package": true,
-              "has_cuda_suffix": true,
+              "has_cuda_suffix": false,
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
@@ -1799,7 +1799,7 @@
             },
             "libcudf_kafka": {
               "has_conda_package": true,
-              "has_cuda_suffix": true,
+              "has_cuda_suffix": false,
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
@@ -2250,7 +2250,7 @@
             },
             "cudf_kafka": {
               "has_conda_package": true,
-              "has_cuda_suffix": true,
+              "has_cuda_suffix": false,
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
@@ -2280,7 +2280,7 @@
             },
             "libcudf_kafka": {
               "has_conda_package": true,
-              "has_cuda_suffix": true,
+              "has_cuda_suffix": false,
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
@@ -2719,7 +2719,7 @@
             },
             "cudf_kafka": {
               "has_conda_package": true,
-              "has_cuda_suffix": true,
+              "has_cuda_suffix": false,
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
@@ -2749,7 +2749,7 @@
             },
             "libcudf_kafka": {
               "has_conda_package": true,
-              "has_cuda_suffix": true,
+              "has_cuda_suffix": false,
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
@@ -3172,7 +3172,7 @@
             },
             "cudf_kafka": {
               "has_conda_package": true,
-              "has_cuda_suffix": true,
+              "has_cuda_suffix": false,
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
@@ -3202,7 +3202,7 @@
             },
             "libcudf_kafka": {
               "has_conda_package": true,
-              "has_cuda_suffix": true,
+              "has_cuda_suffix": false,
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
@@ -3615,7 +3615,7 @@
             },
             "cudf_kafka": {
               "has_conda_package": true,
-              "has_cuda_suffix": true,
+              "has_cuda_suffix": false,
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
@@ -3645,7 +3645,7 @@
             },
             "libcudf_kafka": {
               "has_conda_package": true,
-              "has_cuda_suffix": true,
+              "has_cuda_suffix": false,
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
@@ -3928,7 +3928,7 @@
               "has_conda_package": true,
               "has_cuda_suffix": false,
               "has_wheel_package": true,
-              "publishes_prereleases": true
+              "publishes_prereleases": false
             }
           }
         },
@@ -4046,7 +4046,7 @@
             },
             "cudf_kafka": {
               "has_conda_package": true,
-              "has_cuda_suffix": true,
+              "has_cuda_suffix": false,
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
@@ -4076,7 +4076,7 @@
             },
             "libcudf_kafka": {
               "has_conda_package": true,
-              "has_cuda_suffix": true,
+              "has_cuda_suffix": false,
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
@@ -4349,7 +4349,7 @@
               "has_conda_package": true,
               "has_cuda_suffix": false,
               "has_wheel_package": true,
-              "publishes_prereleases": true
+              "publishes_prereleases": false
             }
           }
         },
@@ -4467,7 +4467,7 @@
             },
             "cudf_kafka": {
               "has_conda_package": true,
-              "has_cuda_suffix": true,
+              "has_cuda_suffix": false,
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
@@ -4497,7 +4497,7 @@
             },
             "libcudf_kafka": {
               "has_conda_package": true,
-              "has_cuda_suffix": true,
+              "has_cuda_suffix": false,
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
@@ -4792,7 +4792,7 @@
               "has_conda_package": true,
               "has_cuda_suffix": false,
               "has_wheel_package": true,
-              "publishes_prereleases": true
+              "publishes_prereleases": false
             }
           }
         },
@@ -4910,7 +4910,7 @@
             },
             "cudf_kafka": {
               "has_conda_package": true,
-              "has_cuda_suffix": true,
+              "has_cuda_suffix": false,
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
@@ -4940,7 +4940,7 @@
             },
             "libcudf_kafka": {
               "has_conda_package": true,
-              "has_cuda_suffix": true,
+              "has_cuda_suffix": false,
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
@@ -5235,7 +5235,7 @@
               "has_conda_package": true,
               "has_cuda_suffix": false,
               "has_wheel_package": true,
-              "publishes_prereleases": true
+              "publishes_prereleases": false
             }
           }
         },
@@ -5359,7 +5359,7 @@
             },
             "cudf_kafka": {
               "has_conda_package": true,
-              "has_cuda_suffix": true,
+              "has_cuda_suffix": false,
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
@@ -5401,7 +5401,7 @@
             },
             "libcudf_kafka": {
               "has_conda_package": true,
-              "has_cuda_suffix": true,
+              "has_cuda_suffix": false,
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
@@ -5686,7 +5686,7 @@
               "has_conda_package": true,
               "has_cuda_suffix": false,
               "has_wheel_package": true,
-              "publishes_prereleases": true
+              "publishes_prereleases": false
             }
           }
         },
@@ -5810,7 +5810,7 @@
             },
             "cudf_kafka": {
               "has_conda_package": true,
-              "has_cuda_suffix": true,
+              "has_cuda_suffix": false,
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
@@ -5852,7 +5852,7 @@
             },
             "libcudf_kafka": {
               "has_conda_package": true,
-              "has_cuda_suffix": true,
+              "has_cuda_suffix": false,
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
@@ -6137,7 +6137,7 @@
               "has_conda_package": true,
               "has_cuda_suffix": false,
               "has_wheel_package": true,
-              "publishes_prereleases": true
+              "publishes_prereleases": false
             }
           }
         },
