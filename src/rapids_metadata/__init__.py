@@ -419,3 +419,5 @@ all_metadata.versions["26.08"].repositories["cudf"].packages["cudf-streaming"] =
     )
 )
 all_metadata.versions["26.10"] = deepcopy(all_metadata.versions["26.08"])
+
+all_metadata.versions["26.12"] = deepcopy(all_metadata.versions["26.10"])
