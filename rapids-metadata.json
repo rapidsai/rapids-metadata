@@ -5971,6 +5971,12 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             },
+            "cuvs-lucene": {
+              "has_conda_package": false,
+              "has_cuda_suffix": false,
+              "has_wheel_package": false,
+              "publishes_prereleases": false
+            },
             "libcuvs": {
               "has_conda_package": true,
               "has_cuda_suffix": true,
@@ -5988,16 +5994,6 @@
               "has_cuda_suffix": true,
               "has_wheel_package": false,
               "publishes_prereleases": true
-            }
-          }
-        },
-        "cuvs-lucene": {
-          "packages": {
-            "cuvs-lucene": {
-              "has_conda_package": false,
-              "has_cuda_suffix": false,
-              "has_wheel_package": false,
-              "publishes_prereleases": false
             }
           }
         },
