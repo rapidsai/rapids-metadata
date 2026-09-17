@@ -34,7 +34,15 @@
     "RAPIDSRepository": {
       "description": "RAPIDS Git repository. Can publish more than one package.",
       "properties": {
-        "github_url": {
+        "packages": {
+          "additionalProperties": {
+            "$ref": "#/$defs/RAPIDSPackage"
+          },
+          "description": "Dictionary of packages in this repository by name.",
+          "title": "Packages",
+          "type": "object"
+        },
+        "url": {
           "anyOf": [
             {
               "pattern": "^https://github\\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$",
@@ -45,19 +53,11 @@
             }
           ],
           "description": "Canonical GitHub repository URL, or null for a metadata-only package grouping that is not a Git repository.",
-          "title": "Github Url"
-        },
-        "packages": {
-          "additionalProperties": {
-            "$ref": "#/$defs/RAPIDSPackage"
-          },
-          "description": "Dictionary of packages in this repository by name.",
-          "title": "Packages",
-          "type": "object"
+          "title": "Url"
         }
       },
       "required": [
-        "github_url"
+        "url"
       ],
       "title": "RAPIDSRepository",
       "type": "object"

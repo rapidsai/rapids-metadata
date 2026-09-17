@@ -26,14 +26,14 @@ def metadata():
             "24.06": md.RAPIDSVersion(
                 repositories={
                     "repo1": md.RAPIDSRepository(
-                        github_url="https://github.com/example/repo1"
+                        url="https://github.com/example/repo1"
                     ),
                 }
             ),
             "24.08": md.RAPIDSVersion(
                 repositories={
                     "repo2": md.RAPIDSRepository(
-                        github_url="https://github.com/example/repo2"
+                        url="https://github.com/example/repo2"
                     ),
                 }
             ),

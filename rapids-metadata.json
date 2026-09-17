@@ -3,7 +3,6 @@
     "24.08": {
       "repositories": {
         "_nvidia": {
-          "github_url": null,
           "packages": {
             "cubinlinker": {
               "has_conda_package": true,
@@ -11,10 +10,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": null
         },
         "cucim": {
-          "github_url": "https://github.com/rapidsai/cucim",
           "packages": {
             "cucim": {
               "has_conda_package": true,
@@ -28,10 +27,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cucim"
         },
         "cudf": {
-          "github_url": "https://github.com/rapidsai/cudf",
           "packages": {
             "cudf": {
               "has_conda_package": true,
@@ -75,10 +74,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cudf"
         },
         "cugraph": {
-          "github_url": "https://github.com/rapidsai/cugraph",
           "packages": {
             "cugraph": {
               "has_conda_package": true,
@@ -140,10 +139,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph"
         },
         "cugraph-ops": {
-          "github_url": "https://github.com/rapidsai/cugraph-ops",
           "packages": {
             "libcugraphops": {
               "has_conda_package": true,
@@ -157,10 +156,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph-ops"
         },
         "cuml": {
-          "github_url": "https://github.com/rapidsai/cuml",
           "packages": {
             "cuml": {
               "has_conda_package": true,
@@ -186,10 +185,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuml"
         },
         "cumlprims_mg": {
-          "github_url": "https://github.com/rapidsai/cumlprims_mg",
           "packages": {
             "libcumlprims": {
               "has_conda_package": true,
@@ -197,10 +196,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cumlprims_mg"
         },
         "cuspatial": {
-          "github_url": "https://github.com/rapidsai/cuspatial",
           "packages": {
             "cuproj": {
               "has_conda_package": true,
@@ -226,10 +225,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuspatial"
         },
         "cuxfilter": {
-          "github_url": "https://github.com/rapidsai/cuxfilter",
           "packages": {
             "cuxfilter": {
               "has_conda_package": true,
@@ -237,10 +236,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuxfilter"
         },
         "dask-cuda": {
-          "github_url": "https://github.com/rapidsai/dask-cuda",
           "packages": {
             "dask-cuda": {
               "has_conda_package": true,
@@ -248,10 +247,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/dask-cuda"
         },
         "kvikio": {
-          "github_url": "https://github.com/rapidsai/kvikio",
           "packages": {
             "kvikio": {
               "has_conda_package": true,
@@ -265,10 +264,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/kvikio"
         },
         "ptxcompiler": {
-          "github_url": "https://github.com/rapidsai/ptxcompiler",
           "packages": {
             "ptxcompiler": {
               "has_conda_package": true,
@@ -276,10 +275,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/ptxcompiler"
         },
         "pynvjitlink": {
-          "github_url": "https://github.com/rapidsai/pynvjitlink",
           "packages": {
             "pynvjitlink": {
               "has_conda_package": true,
@@ -287,10 +286,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/pynvjitlink"
         },
         "raft": {
-          "github_url": "https://github.com/rapidsai/raft",
           "packages": {
             "libraft": {
               "has_conda_package": true,
@@ -340,10 +339,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/raft"
         },
         "rapids-dask-dependency": {
-          "github_url": "https://github.com/rapidsai/rapids-dask-dependency",
           "packages": {
             "rapids-dask-dependency": {
               "has_conda_package": true,
@@ -351,10 +350,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-dask-dependency"
         },
         "rmm": {
-          "github_url": "https://github.com/rapidsai/rmm",
           "packages": {
             "librmm": {
               "has_conda_package": true,
@@ -368,10 +367,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rmm"
         },
         "ucx-py": {
-          "github_url": "https://github.com/rapidsai/ucx-py",
           "packages": {
             "ucx-py": {
               "has_conda_package": true,
@@ -379,10 +378,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/ucx-py"
         },
         "ucxx": {
-          "github_url": "https://github.com/rapidsai/ucxx",
           "packages": {
             "distributed-ucxx": {
               "has_conda_package": true,
@@ -402,10 +401,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/ucxx"
         },
         "wholegraph": {
-          "github_url": "https://github.com/rapidsai/wholegraph",
           "packages": {
             "libwholegraph": {
               "has_conda_package": true,
@@ -419,14 +418,14 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/wholegraph"
         }
       }
     },
     "24.10": {
       "repositories": {
         "_nvidia": {
-          "github_url": null,
           "packages": {
             "cubinlinker": {
               "has_conda_package": true,
@@ -434,10 +433,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": null
         },
         "cucim": {
-          "github_url": "https://github.com/rapidsai/cucim",
           "packages": {
             "cucim": {
               "has_conda_package": true,
@@ -451,10 +450,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cucim"
         },
         "cudf": {
-          "github_url": "https://github.com/rapidsai/cudf",
           "packages": {
             "cudf": {
               "has_conda_package": true,
@@ -504,10 +503,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cudf"
         },
         "cugraph": {
-          "github_url": "https://github.com/rapidsai/cugraph",
           "packages": {
             "cugraph": {
               "has_conda_package": true,
@@ -569,10 +568,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph"
         },
         "cugraph-ops": {
-          "github_url": "https://github.com/rapidsai/cugraph-ops",
           "packages": {
             "libcugraphops": {
               "has_conda_package": true,
@@ -586,10 +585,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph-ops"
         },
         "cuml": {
-          "github_url": "https://github.com/rapidsai/cuml",
           "packages": {
             "cuml": {
               "has_conda_package": true,
@@ -615,10 +614,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuml"
         },
         "cumlprims_mg": {
-          "github_url": "https://github.com/rapidsai/cumlprims_mg",
           "packages": {
             "libcumlprims": {
               "has_conda_package": true,
@@ -626,10 +625,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cumlprims_mg"
         },
         "cuspatial": {
-          "github_url": "https://github.com/rapidsai/cuspatial",
           "packages": {
             "cuproj": {
               "has_conda_package": true,
@@ -655,10 +654,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuspatial"
         },
         "cuvs": {
-          "github_url": "https://github.com/NVIDIA/cuvs",
           "packages": {
             "cuvs": {
               "has_conda_package": true,
@@ -672,10 +671,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/NVIDIA/cuvs"
         },
         "cuxfilter": {
-          "github_url": "https://github.com/rapidsai/cuxfilter",
           "packages": {
             "cuxfilter": {
               "has_conda_package": true,
@@ -683,10 +682,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuxfilter"
         },
         "dask-cuda": {
-          "github_url": "https://github.com/rapidsai/dask-cuda",
           "packages": {
             "dask-cuda": {
               "has_conda_package": true,
@@ -694,10 +693,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/dask-cuda"
         },
         "kvikio": {
-          "github_url": "https://github.com/rapidsai/kvikio",
           "packages": {
             "kvikio": {
               "has_conda_package": true,
@@ -711,10 +710,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/kvikio"
         },
         "ptxcompiler": {
-          "github_url": "https://github.com/rapidsai/ptxcompiler",
           "packages": {
             "ptxcompiler": {
               "has_conda_package": true,
@@ -722,10 +721,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/ptxcompiler"
         },
         "pynvjitlink": {
-          "github_url": "https://github.com/rapidsai/pynvjitlink",
           "packages": {
             "pynvjitlink": {
               "has_conda_package": true,
@@ -733,10 +732,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/pynvjitlink"
         },
         "raft": {
-          "github_url": "https://github.com/rapidsai/raft",
           "packages": {
             "libraft": {
               "has_conda_package": true,
@@ -786,10 +785,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/raft"
         },
         "rapids-dask-dependency": {
-          "github_url": "https://github.com/rapidsai/rapids-dask-dependency",
           "packages": {
             "rapids-dask-dependency": {
               "has_conda_package": true,
@@ -797,10 +796,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-dask-dependency"
         },
         "rmm": {
-          "github_url": "https://github.com/rapidsai/rmm",
           "packages": {
             "librmm": {
               "has_conda_package": true,
@@ -814,10 +813,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rmm"
         },
         "ucx-py": {
-          "github_url": "https://github.com/rapidsai/ucx-py",
           "packages": {
             "ucx-py": {
               "has_conda_package": true,
@@ -825,10 +824,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/ucx-py"
         },
         "ucxx": {
-          "github_url": "https://github.com/rapidsai/ucxx",
           "packages": {
             "distributed-ucxx": {
               "has_conda_package": true,
@@ -848,10 +847,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/ucxx"
         },
         "wholegraph": {
-          "github_url": "https://github.com/rapidsai/wholegraph",
           "packages": {
             "libwholegraph": {
               "has_conda_package": true,
@@ -865,14 +864,14 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/wholegraph"
         }
       }
     },
     "24.12": {
       "repositories": {
         "_nvidia": {
-          "github_url": null,
           "packages": {
             "cubinlinker": {
               "has_conda_package": true,
@@ -880,10 +879,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": null
         },
         "cucim": {
-          "github_url": "https://github.com/rapidsai/cucim",
           "packages": {
             "cucim": {
               "has_conda_package": true,
@@ -897,10 +896,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cucim"
         },
         "cudf": {
-          "github_url": "https://github.com/rapidsai/cudf",
           "packages": {
             "cudf": {
               "has_conda_package": true,
@@ -950,10 +949,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cudf"
         },
         "cugraph": {
-          "github_url": "https://github.com/rapidsai/cugraph",
           "packages": {
             "cugraph": {
               "has_conda_package": true,
@@ -991,10 +990,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph"
         },
         "cugraph-gnn": {
-          "github_url": "https://github.com/rapidsai/cugraph-gnn",
           "packages": {
             "cugraph-dgl": {
               "has_conda_package": true,
@@ -1020,10 +1019,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph-gnn"
         },
         "cugraph-ops": {
-          "github_url": "https://github.com/rapidsai/cugraph-ops",
           "packages": {
             "libcugraphops": {
               "has_conda_package": true,
@@ -1037,10 +1036,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph-ops"
         },
         "cuml": {
-          "github_url": "https://github.com/rapidsai/cuml",
           "packages": {
             "cuml": {
               "has_conda_package": true,
@@ -1066,10 +1065,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuml"
         },
         "cumlprims_mg": {
-          "github_url": "https://github.com/rapidsai/cumlprims_mg",
           "packages": {
             "libcumlprims": {
               "has_conda_package": true,
@@ -1077,10 +1076,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cumlprims_mg"
         },
         "cuspatial": {
-          "github_url": "https://github.com/rapidsai/cuspatial",
           "packages": {
             "cuproj": {
               "has_conda_package": true,
@@ -1106,10 +1105,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuspatial"
         },
         "cuvs": {
-          "github_url": "https://github.com/NVIDIA/cuvs",
           "packages": {
             "cuvs": {
               "has_conda_package": true,
@@ -1141,10 +1140,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/NVIDIA/cuvs"
         },
         "cuxfilter": {
-          "github_url": "https://github.com/rapidsai/cuxfilter",
           "packages": {
             "cuxfilter": {
               "has_conda_package": true,
@@ -1152,10 +1151,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuxfilter"
         },
         "dask-cuda": {
-          "github_url": "https://github.com/rapidsai/dask-cuda",
           "packages": {
             "dask-cuda": {
               "has_conda_package": true,
@@ -1163,10 +1162,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/dask-cuda"
         },
         "kvikio": {
-          "github_url": "https://github.com/rapidsai/kvikio",
           "packages": {
             "kvikio": {
               "has_conda_package": true,
@@ -1180,10 +1179,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/kvikio"
         },
         "nx-cugraph": {
-          "github_url": "https://github.com/rapidsai/nx-cugraph",
           "packages": {
             "nx-cugraph": {
               "has_conda_package": true,
@@ -1191,10 +1190,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/nx-cugraph"
         },
         "ptxcompiler": {
-          "github_url": "https://github.com/rapidsai/ptxcompiler",
           "packages": {
             "ptxcompiler": {
               "has_conda_package": true,
@@ -1202,10 +1201,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/ptxcompiler"
         },
         "pynvjitlink": {
-          "github_url": "https://github.com/rapidsai/pynvjitlink",
           "packages": {
             "pynvjitlink": {
               "has_conda_package": true,
@@ -1213,10 +1212,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/pynvjitlink"
         },
         "raft": {
-          "github_url": "https://github.com/rapidsai/raft",
           "packages": {
             "libraft": {
               "has_conda_package": true,
@@ -1254,10 +1253,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/raft"
         },
         "rapids-dask-dependency": {
-          "github_url": "https://github.com/rapidsai/rapids-dask-dependency",
           "packages": {
             "rapids-dask-dependency": {
               "has_conda_package": true,
@@ -1265,10 +1264,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-dask-dependency"
         },
         "rmm": {
-          "github_url": "https://github.com/rapidsai/rmm",
           "packages": {
             "librmm": {
               "has_conda_package": true,
@@ -1282,10 +1281,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rmm"
         },
         "ucx-py": {
-          "github_url": "https://github.com/rapidsai/ucx-py",
           "packages": {
             "ucx-py": {
               "has_conda_package": true,
@@ -1293,10 +1292,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/ucx-py"
         },
         "ucxx": {
-          "github_url": "https://github.com/rapidsai/ucxx",
           "packages": {
             "distributed-ucxx": {
               "has_conda_package": true,
@@ -1316,14 +1315,14 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/ucxx"
         }
       }
     },
     "25.02": {
       "repositories": {
         "_nvidia": {
-          "github_url": null,
           "packages": {
             "cubinlinker": {
               "has_conda_package": true,
@@ -1331,10 +1330,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": null
         },
         "cucim": {
-          "github_url": "https://github.com/rapidsai/cucim",
           "packages": {
             "cucim": {
               "has_conda_package": true,
@@ -1348,10 +1347,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cucim"
         },
         "cudf": {
-          "github_url": "https://github.com/rapidsai/cudf",
           "packages": {
             "cudf": {
               "has_conda_package": true,
@@ -1407,10 +1406,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cudf"
         },
         "cugraph": {
-          "github_url": "https://github.com/rapidsai/cugraph",
           "packages": {
             "cugraph": {
               "has_conda_package": true,
@@ -1454,14 +1453,14 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph"
         },
         "cugraph-docs": {
-          "github_url": "https://github.com/rapidsai/cugraph-docs",
-          "packages": {}
+          "packages": {},
+          "url": "https://github.com/rapidsai/cugraph-docs"
         },
         "cugraph-gnn": {
-          "github_url": "https://github.com/rapidsai/cugraph-gnn",
           "packages": {
             "cugraph-dgl": {
               "has_conda_package": true,
@@ -1493,10 +1492,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph-gnn"
         },
         "cuml": {
-          "github_url": "https://github.com/rapidsai/cuml",
           "packages": {
             "cuml": {
               "has_conda_package": true,
@@ -1522,10 +1521,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuml"
         },
         "cumlprims_mg": {
-          "github_url": "https://github.com/rapidsai/cumlprims_mg",
           "packages": {
             "libcumlprims": {
               "has_conda_package": true,
@@ -1533,10 +1532,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cumlprims_mg"
         },
         "cuspatial": {
-          "github_url": "https://github.com/rapidsai/cuspatial",
           "packages": {
             "cuproj": {
               "has_conda_package": true,
@@ -1562,10 +1561,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuspatial"
         },
         "cuvs": {
-          "github_url": "https://github.com/NVIDIA/cuvs",
           "packages": {
             "cuvs": {
               "has_conda_package": true,
@@ -1603,10 +1602,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/NVIDIA/cuvs"
         },
         "cuxfilter": {
-          "github_url": "https://github.com/rapidsai/cuxfilter",
           "packages": {
             "cuxfilter": {
               "has_conda_package": true,
@@ -1614,10 +1613,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuxfilter"
         },
         "dask-cuda": {
-          "github_url": "https://github.com/rapidsai/dask-cuda",
           "packages": {
             "dask-cuda": {
               "has_conda_package": true,
@@ -1625,10 +1624,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/dask-cuda"
         },
         "kvikio": {
-          "github_url": "https://github.com/rapidsai/kvikio",
           "packages": {
             "kvikio": {
               "has_conda_package": true,
@@ -1648,10 +1647,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/kvikio"
         },
         "nx-cugraph": {
-          "github_url": "https://github.com/rapidsai/nx-cugraph",
           "packages": {
             "nx-cugraph": {
               "has_conda_package": true,
@@ -1659,10 +1658,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/nx-cugraph"
         },
         "ptxcompiler": {
-          "github_url": "https://github.com/rapidsai/ptxcompiler",
           "packages": {
             "ptxcompiler": {
               "has_conda_package": true,
@@ -1670,10 +1669,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/ptxcompiler"
         },
         "pynvjitlink": {
-          "github_url": "https://github.com/rapidsai/pynvjitlink",
           "packages": {
             "pynvjitlink": {
               "has_conda_package": true,
@@ -1681,10 +1680,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/pynvjitlink"
         },
         "raft": {
-          "github_url": "https://github.com/rapidsai/raft",
           "packages": {
             "libraft": {
               "has_conda_package": true,
@@ -1728,10 +1727,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/raft"
         },
         "rapids-dask-dependency": {
-          "github_url": "https://github.com/rapidsai/rapids-dask-dependency",
           "packages": {
             "rapids-dask-dependency": {
               "has_conda_package": true,
@@ -1739,10 +1738,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-dask-dependency"
         },
         "rmm": {
-          "github_url": "https://github.com/rapidsai/rmm",
           "packages": {
             "librmm": {
               "has_conda_package": true,
@@ -1762,10 +1761,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rmm"
         },
         "ucx-py": {
-          "github_url": "https://github.com/rapidsai/ucx-py",
           "packages": {
             "ucx-py": {
               "has_conda_package": true,
@@ -1773,10 +1772,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/ucx-py"
         },
         "ucxx": {
-          "github_url": "https://github.com/rapidsai/ucxx",
           "packages": {
             "distributed-ucxx": {
               "has_conda_package": true,
@@ -1802,14 +1801,14 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/ucxx"
         }
       }
     },
     "25.04": {
       "repositories": {
         "_nvidia": {
-          "github_url": null,
           "packages": {
             "cubinlinker": {
               "has_conda_package": true,
@@ -1817,10 +1816,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": null
         },
         "cucim": {
-          "github_url": "https://github.com/rapidsai/cucim",
           "packages": {
             "cucim": {
               "has_conda_package": true,
@@ -1834,10 +1833,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cucim"
         },
         "cudf": {
-          "github_url": "https://github.com/rapidsai/cudf",
           "packages": {
             "cudf": {
               "has_conda_package": true,
@@ -1893,10 +1892,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cudf"
         },
         "cugraph": {
-          "github_url": "https://github.com/rapidsai/cugraph",
           "packages": {
             "cugraph": {
               "has_conda_package": true,
@@ -1940,14 +1939,14 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph"
         },
         "cugraph-docs": {
-          "github_url": "https://github.com/rapidsai/cugraph-docs",
-          "packages": {}
+          "packages": {},
+          "url": "https://github.com/rapidsai/cugraph-docs"
         },
         "cugraph-gnn": {
-          "github_url": "https://github.com/rapidsai/cugraph-gnn",
           "packages": {
             "cugraph-dgl": {
               "has_conda_package": true,
@@ -1979,10 +1978,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph-gnn"
         },
         "cuml": {
-          "github_url": "https://github.com/rapidsai/cuml",
           "packages": {
             "cuml": {
               "has_conda_package": true,
@@ -2008,10 +2007,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuml"
         },
         "cumlprims_mg": {
-          "github_url": "https://github.com/rapidsai/cumlprims_mg",
           "packages": {
             "libcumlprims": {
               "has_conda_package": true,
@@ -2019,10 +2018,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cumlprims_mg"
         },
         "cuspatial": {
-          "github_url": "https://github.com/rapidsai/cuspatial",
           "packages": {
             "cuproj": {
               "has_conda_package": true,
@@ -2048,10 +2047,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuspatial"
         },
         "cuvs": {
-          "github_url": "https://github.com/NVIDIA/cuvs",
           "packages": {
             "cuvs": {
               "has_conda_package": true,
@@ -2089,10 +2088,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/NVIDIA/cuvs"
         },
         "cuxfilter": {
-          "github_url": "https://github.com/rapidsai/cuxfilter",
           "packages": {
             "cuxfilter": {
               "has_conda_package": true,
@@ -2100,10 +2099,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuxfilter"
         },
         "dask-cuda": {
-          "github_url": "https://github.com/rapidsai/dask-cuda",
           "packages": {
             "dask-cuda": {
               "has_conda_package": true,
@@ -2111,10 +2110,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/dask-cuda"
         },
         "kvikio": {
-          "github_url": "https://github.com/rapidsai/kvikio",
           "packages": {
             "kvikio": {
               "has_conda_package": true,
@@ -2134,10 +2133,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/kvikio"
         },
         "nx-cugraph": {
-          "github_url": "https://github.com/rapidsai/nx-cugraph",
           "packages": {
             "nx-cugraph": {
               "has_conda_package": true,
@@ -2145,10 +2144,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/nx-cugraph"
         },
         "ptxcompiler": {
-          "github_url": "https://github.com/rapidsai/ptxcompiler",
           "packages": {
             "ptxcompiler": {
               "has_conda_package": true,
@@ -2156,10 +2155,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/ptxcompiler"
         },
         "pynvjitlink": {
-          "github_url": "https://github.com/rapidsai/pynvjitlink",
           "packages": {
             "pynvjitlink": {
               "has_conda_package": true,
@@ -2167,10 +2166,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/pynvjitlink"
         },
         "raft": {
-          "github_url": "https://github.com/rapidsai/raft",
           "packages": {
             "libraft": {
               "has_conda_package": true,
@@ -2214,10 +2213,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/raft"
         },
         "rapids-dask-dependency": {
-          "github_url": "https://github.com/rapidsai/rapids-dask-dependency",
           "packages": {
             "rapids-dask-dependency": {
               "has_conda_package": true,
@@ -2225,10 +2224,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-dask-dependency"
         },
         "rapids-logger": {
-          "github_url": "https://github.com/rapidsai/rapids-logger",
           "packages": {
             "rapids-logger": {
               "has_conda_package": true,
@@ -2236,10 +2235,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-logger"
         },
         "rmm": {
-          "github_url": "https://github.com/rapidsai/rmm",
           "packages": {
             "librmm": {
               "has_conda_package": true,
@@ -2259,10 +2258,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rmm"
         },
         "ucx-py": {
-          "github_url": "https://github.com/rapidsai/ucx-py",
           "packages": {
             "ucx-py": {
               "has_conda_package": true,
@@ -2270,10 +2269,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/ucx-py"
         },
         "ucxx": {
-          "github_url": "https://github.com/rapidsai/ucxx",
           "packages": {
             "distributed-ucxx": {
               "has_conda_package": true,
@@ -2305,14 +2304,14 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/ucxx"
         }
       }
     },
     "25.06": {
       "repositories": {
         "_nvidia": {
-          "github_url": null,
           "packages": {
             "cubinlinker": {
               "has_conda_package": true,
@@ -2320,10 +2319,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": null
         },
         "cucim": {
-          "github_url": "https://github.com/rapidsai/cucim",
           "packages": {
             "cucim": {
               "has_conda_package": true,
@@ -2337,10 +2336,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cucim"
         },
         "cudf": {
-          "github_url": "https://github.com/rapidsai/cudf",
           "packages": {
             "cudf": {
               "has_conda_package": true,
@@ -2396,10 +2395,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cudf"
         },
         "cugraph": {
-          "github_url": "https://github.com/rapidsai/cugraph",
           "packages": {
             "cugraph": {
               "has_conda_package": true,
@@ -2443,14 +2442,14 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph"
         },
         "cugraph-docs": {
-          "github_url": "https://github.com/rapidsai/cugraph-docs",
-          "packages": {}
+          "packages": {},
+          "url": "https://github.com/rapidsai/cugraph-docs"
         },
         "cugraph-gnn": {
-          "github_url": "https://github.com/rapidsai/cugraph-gnn",
           "packages": {
             "cugraph-dgl": {
               "has_conda_package": true,
@@ -2482,10 +2481,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph-gnn"
         },
         "cuml": {
-          "github_url": "https://github.com/rapidsai/cuml",
           "packages": {
             "cuml": {
               "has_conda_package": true,
@@ -2505,10 +2504,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuml"
         },
         "cumlprims_mg": {
-          "github_url": "https://github.com/rapidsai/cumlprims_mg",
           "packages": {
             "libcumlprims": {
               "has_conda_package": true,
@@ -2516,10 +2515,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cumlprims_mg"
         },
         "cuvs": {
-          "github_url": "https://github.com/NVIDIA/cuvs",
           "packages": {
             "cuvs": {
               "has_conda_package": true,
@@ -2557,10 +2556,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/NVIDIA/cuvs"
         },
         "cuxfilter": {
-          "github_url": "https://github.com/rapidsai/cuxfilter",
           "packages": {
             "cuxfilter": {
               "has_conda_package": true,
@@ -2568,10 +2567,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuxfilter"
         },
         "dask-cuda": {
-          "github_url": "https://github.com/rapidsai/dask-cuda",
           "packages": {
             "dask-cuda": {
               "has_conda_package": true,
@@ -2579,10 +2578,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/dask-cuda"
         },
         "kvikio": {
-          "github_url": "https://github.com/rapidsai/kvikio",
           "packages": {
             "kvikio": {
               "has_conda_package": true,
@@ -2602,10 +2601,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/kvikio"
         },
         "nx-cugraph": {
-          "github_url": "https://github.com/rapidsai/nx-cugraph",
           "packages": {
             "nx-cugraph": {
               "has_conda_package": true,
@@ -2613,10 +2612,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/nx-cugraph"
         },
         "ptxcompiler": {
-          "github_url": "https://github.com/rapidsai/ptxcompiler",
           "packages": {
             "ptxcompiler": {
               "has_conda_package": true,
@@ -2624,10 +2623,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/ptxcompiler"
         },
         "pynvjitlink": {
-          "github_url": "https://github.com/rapidsai/pynvjitlink",
           "packages": {
             "pynvjitlink": {
               "has_conda_package": true,
@@ -2635,10 +2634,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/pynvjitlink"
         },
         "raft": {
-          "github_url": "https://github.com/rapidsai/raft",
           "packages": {
             "libraft": {
               "has_conda_package": true,
@@ -2682,10 +2681,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/raft"
         },
         "rapids-cli": {
-          "github_url": "https://github.com/rapidsai/rapids-cli",
           "packages": {
             "rapids-cli": {
               "has_conda_package": true,
@@ -2693,10 +2692,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-cli"
         },
         "rapids-dask-dependency": {
-          "github_url": "https://github.com/rapidsai/rapids-dask-dependency",
           "packages": {
             "rapids-dask-dependency": {
               "has_conda_package": true,
@@ -2704,10 +2703,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-dask-dependency"
         },
         "rapids-logger": {
-          "github_url": "https://github.com/rapidsai/rapids-logger",
           "packages": {
             "rapids-logger": {
               "has_conda_package": true,
@@ -2715,10 +2714,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-logger"
         },
         "rapidsmpf": {
-          "github_url": "https://github.com/rapidsai/rapidsmpf",
           "packages": {
             "librapidsmpf": {
               "has_conda_package": true,
@@ -2738,10 +2737,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapidsmpf"
         },
         "rmm": {
-          "github_url": "https://github.com/rapidsai/rmm",
           "packages": {
             "librmm": {
               "has_conda_package": true,
@@ -2761,10 +2760,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rmm"
         },
         "ucx-py": {
-          "github_url": "https://github.com/rapidsai/ucx-py",
           "packages": {
             "ucx-py": {
               "has_conda_package": true,
@@ -2772,10 +2771,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/ucx-py"
         },
         "ucxx": {
-          "github_url": "https://github.com/rapidsai/ucxx",
           "packages": {
             "distributed-ucxx": {
               "has_conda_package": true,
@@ -2807,14 +2806,14 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/ucxx"
         }
       }
     },
     "25.08": {
       "repositories": {
         "cucim": {
-          "github_url": "https://github.com/rapidsai/cucim",
           "packages": {
             "cucim": {
               "has_conda_package": true,
@@ -2828,10 +2827,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cucim"
         },
         "cudf": {
-          "github_url": "https://github.com/rapidsai/cudf",
           "packages": {
             "cudf": {
               "has_conda_package": true,
@@ -2887,10 +2886,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cudf"
         },
         "cugraph": {
-          "github_url": "https://github.com/rapidsai/cugraph",
           "packages": {
             "cugraph": {
               "has_conda_package": true,
@@ -2934,14 +2933,14 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph"
         },
         "cugraph-docs": {
-          "github_url": "https://github.com/rapidsai/cugraph-docs",
-          "packages": {}
+          "packages": {},
+          "url": "https://github.com/rapidsai/cugraph-docs"
         },
         "cugraph-gnn": {
-          "github_url": "https://github.com/rapidsai/cugraph-gnn",
           "packages": {
             "cugraph-pyg": {
               "has_conda_package": true,
@@ -2967,10 +2966,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph-gnn"
         },
         "cuml": {
-          "github_url": "https://github.com/rapidsai/cuml",
           "packages": {
             "cuml": {
               "has_conda_package": true,
@@ -2990,10 +2989,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuml"
         },
         "cumlprims_mg": {
-          "github_url": "https://github.com/rapidsai/cumlprims_mg",
           "packages": {
             "libcumlprims": {
               "has_conda_package": true,
@@ -3001,10 +3000,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cumlprims_mg"
         },
         "cuvs": {
-          "github_url": "https://github.com/NVIDIA/cuvs",
           "packages": {
             "cuvs": {
               "has_conda_package": true,
@@ -3042,10 +3041,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/NVIDIA/cuvs"
         },
         "cuxfilter": {
-          "github_url": "https://github.com/rapidsai/cuxfilter",
           "packages": {
             "cuxfilter": {
               "has_conda_package": true,
@@ -3053,10 +3052,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuxfilter"
         },
         "dask-cuda": {
-          "github_url": "https://github.com/rapidsai/dask-cuda",
           "packages": {
             "dask-cuda": {
               "has_conda_package": true,
@@ -3064,10 +3063,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/dask-cuda"
         },
         "kvikio": {
-          "github_url": "https://github.com/rapidsai/kvikio",
           "packages": {
             "kvikio": {
               "has_conda_package": true,
@@ -3087,10 +3086,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/kvikio"
         },
         "nx-cugraph": {
-          "github_url": "https://github.com/rapidsai/nx-cugraph",
           "packages": {
             "nx-cugraph": {
               "has_conda_package": true,
@@ -3098,10 +3097,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/nx-cugraph"
         },
         "pynvjitlink": {
-          "github_url": "https://github.com/rapidsai/pynvjitlink",
           "packages": {
             "pynvjitlink": {
               "has_conda_package": true,
@@ -3109,10 +3108,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/pynvjitlink"
         },
         "raft": {
-          "github_url": "https://github.com/rapidsai/raft",
           "packages": {
             "libraft": {
               "has_conda_package": true,
@@ -3156,10 +3155,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/raft"
         },
         "rapids-cli": {
-          "github_url": "https://github.com/rapidsai/rapids-cli",
           "packages": {
             "rapids-cli": {
               "has_conda_package": true,
@@ -3167,10 +3166,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-cli"
         },
         "rapids-dask-dependency": {
-          "github_url": "https://github.com/rapidsai/rapids-dask-dependency",
           "packages": {
             "rapids-dask-dependency": {
               "has_conda_package": true,
@@ -3178,10 +3177,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-dask-dependency"
         },
         "rapids-logger": {
-          "github_url": "https://github.com/rapidsai/rapids-logger",
           "packages": {
             "rapids-logger": {
               "has_conda_package": true,
@@ -3189,10 +3188,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-logger"
         },
         "rapidsmpf": {
-          "github_url": "https://github.com/rapidsai/rapidsmpf",
           "packages": {
             "librapidsmpf": {
               "has_conda_package": true,
@@ -3212,10 +3211,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapidsmpf"
         },
         "rmm": {
-          "github_url": "https://github.com/rapidsai/rmm",
           "packages": {
             "librmm": {
               "has_conda_package": true,
@@ -3235,10 +3234,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rmm"
         },
         "ucx-py": {
-          "github_url": "https://github.com/rapidsai/ucx-py",
           "packages": {
             "ucx-py": {
               "has_conda_package": true,
@@ -3246,10 +3245,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/ucx-py"
         },
         "ucxx": {
-          "github_url": "https://github.com/rapidsai/ucxx",
           "packages": {
             "distributed-ucxx": {
               "has_conda_package": true,
@@ -3281,14 +3280,14 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/ucxx"
         }
       }
     },
     "25.10": {
       "repositories": {
         "cucim": {
-          "github_url": "https://github.com/rapidsai/cucim",
           "packages": {
             "cucim": {
               "has_conda_package": true,
@@ -3302,10 +3301,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cucim"
         },
         "cudf": {
-          "github_url": "https://github.com/rapidsai/cudf",
           "packages": {
             "cudf": {
               "has_conda_package": true,
@@ -3361,10 +3360,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cudf"
         },
         "cugraph": {
-          "github_url": "https://github.com/rapidsai/cugraph",
           "packages": {
             "cugraph": {
               "has_conda_package": true,
@@ -3408,14 +3407,14 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph"
         },
         "cugraph-docs": {
-          "github_url": "https://github.com/rapidsai/cugraph-docs",
-          "packages": {}
+          "packages": {},
+          "url": "https://github.com/rapidsai/cugraph-docs"
         },
         "cugraph-gnn": {
-          "github_url": "https://github.com/rapidsai/cugraph-gnn",
           "packages": {
             "cugraph-pyg": {
               "has_conda_package": true,
@@ -3441,10 +3440,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph-gnn"
         },
         "cuml": {
-          "github_url": "https://github.com/rapidsai/cuml",
           "packages": {
             "cuml": {
               "has_conda_package": true,
@@ -3464,10 +3463,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuml"
         },
         "cumlprims_mg": {
-          "github_url": "https://github.com/rapidsai/cumlprims_mg",
           "packages": {
             "libcumlprims": {
               "has_conda_package": true,
@@ -3475,10 +3474,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cumlprims_mg"
         },
         "cuvs": {
-          "github_url": "https://github.com/NVIDIA/cuvs",
           "packages": {
             "cuvs": {
               "has_conda_package": true,
@@ -3516,10 +3515,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/NVIDIA/cuvs"
         },
         "cuvs-lucene": {
-          "github_url": "https://github.com/NVIDIA/cuvs-lucene",
           "packages": {
             "cuvs-lucene": {
               "has_conda_package": false,
@@ -3527,10 +3526,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/NVIDIA/cuvs-lucene"
         },
         "cuxfilter": {
-          "github_url": "https://github.com/rapidsai/cuxfilter",
           "packages": {
             "cuxfilter": {
               "has_conda_package": true,
@@ -3538,10 +3537,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuxfilter"
         },
         "dask-cuda": {
-          "github_url": "https://github.com/rapidsai/dask-cuda",
           "packages": {
             "dask-cuda": {
               "has_conda_package": true,
@@ -3549,10 +3548,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/dask-cuda"
         },
         "kvikio": {
-          "github_url": "https://github.com/rapidsai/kvikio",
           "packages": {
             "kvikio": {
               "has_conda_package": true,
@@ -3572,10 +3571,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/kvikio"
         },
         "nx-cugraph": {
-          "github_url": "https://github.com/rapidsai/nx-cugraph",
           "packages": {
             "nx-cugraph": {
               "has_conda_package": true,
@@ -3583,10 +3582,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/nx-cugraph"
         },
         "raft": {
-          "github_url": "https://github.com/rapidsai/raft",
           "packages": {
             "libraft": {
               "has_conda_package": true,
@@ -3630,10 +3629,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/raft"
         },
         "rapids-cli": {
-          "github_url": "https://github.com/rapidsai/rapids-cli",
           "packages": {
             "rapids-cli": {
               "has_conda_package": true,
@@ -3641,10 +3640,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-cli"
         },
         "rapids-dask-dependency": {
-          "github_url": "https://github.com/rapidsai/rapids-dask-dependency",
           "packages": {
             "rapids-dask-dependency": {
               "has_conda_package": true,
@@ -3652,10 +3651,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-dask-dependency"
         },
         "rapids-logger": {
-          "github_url": "https://github.com/rapidsai/rapids-logger",
           "packages": {
             "rapids-logger": {
               "has_conda_package": true,
@@ -3663,10 +3662,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-logger"
         },
         "rapidsmpf": {
-          "github_url": "https://github.com/rapidsai/rapidsmpf",
           "packages": {
             "librapidsmpf": {
               "has_conda_package": true,
@@ -3686,10 +3685,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapidsmpf"
         },
         "rmm": {
-          "github_url": "https://github.com/rapidsai/rmm",
           "packages": {
             "librmm": {
               "has_conda_package": true,
@@ -3709,10 +3708,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rmm"
         },
         "ucxx": {
-          "github_url": "https://github.com/rapidsai/ucxx",
           "packages": {
             "distributed-ucxx": {
               "has_conda_package": true,
@@ -3744,14 +3743,14 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/ucxx"
         }
       }
     },
     "25.12": {
       "repositories": {
         "cucim": {
-          "github_url": "https://github.com/rapidsai/cucim",
           "packages": {
             "cucim": {
               "has_conda_package": true,
@@ -3765,10 +3764,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cucim"
         },
         "cudf": {
-          "github_url": "https://github.com/rapidsai/cudf",
           "packages": {
             "cudf": {
               "has_conda_package": true,
@@ -3824,10 +3823,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cudf"
         },
         "cugraph": {
-          "github_url": "https://github.com/rapidsai/cugraph",
           "packages": {
             "cugraph": {
               "has_conda_package": true,
@@ -3859,14 +3858,14 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph"
         },
         "cugraph-docs": {
-          "github_url": "https://github.com/rapidsai/cugraph-docs",
-          "packages": {}
+          "packages": {},
+          "url": "https://github.com/rapidsai/cugraph-docs"
         },
         "cugraph-gnn": {
-          "github_url": "https://github.com/rapidsai/cugraph-gnn",
           "packages": {
             "cugraph-pyg": {
               "has_conda_package": true,
@@ -3892,10 +3891,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph-gnn"
         },
         "cuml": {
-          "github_url": "https://github.com/rapidsai/cuml",
           "packages": {
             "cuml": {
               "has_conda_package": true,
@@ -3915,10 +3914,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuml"
         },
         "cumlprims_mg": {
-          "github_url": "https://github.com/rapidsai/cumlprims_mg",
           "packages": {
             "libcumlprims": {
               "has_conda_package": true,
@@ -3926,10 +3925,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cumlprims_mg"
         },
         "cuvs": {
-          "github_url": "https://github.com/NVIDIA/cuvs",
           "packages": {
             "cuvs": {
               "has_conda_package": true,
@@ -3967,10 +3966,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/NVIDIA/cuvs"
         },
         "cuvs-lucene": {
-          "github_url": "https://github.com/NVIDIA/cuvs-lucene",
           "packages": {
             "cuvs-lucene": {
               "has_conda_package": false,
@@ -3978,10 +3977,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/NVIDIA/cuvs-lucene"
         },
         "cuxfilter": {
-          "github_url": "https://github.com/rapidsai/cuxfilter",
           "packages": {
             "cuxfilter": {
               "has_conda_package": true,
@@ -3989,10 +3988,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuxfilter"
         },
         "dask-cuda": {
-          "github_url": "https://github.com/rapidsai/dask-cuda",
           "packages": {
             "dask-cuda": {
               "has_conda_package": true,
@@ -4000,10 +3999,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/dask-cuda"
         },
         "kvikio": {
-          "github_url": "https://github.com/rapidsai/kvikio",
           "packages": {
             "kvikio": {
               "has_conda_package": true,
@@ -4023,10 +4022,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/kvikio"
         },
         "nx-cugraph": {
-          "github_url": "https://github.com/rapidsai/nx-cugraph",
           "packages": {
             "nx-cugraph": {
               "has_conda_package": true,
@@ -4034,10 +4033,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/nx-cugraph"
         },
         "raft": {
-          "github_url": "https://github.com/rapidsai/raft",
           "packages": {
             "libraft": {
               "has_conda_package": true,
@@ -4081,10 +4080,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/raft"
         },
         "rapids-cli": {
-          "github_url": "https://github.com/rapidsai/rapids-cli",
           "packages": {
             "rapids-cli": {
               "has_conda_package": true,
@@ -4092,10 +4091,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-cli"
         },
         "rapids-dask-dependency": {
-          "github_url": "https://github.com/rapidsai/rapids-dask-dependency",
           "packages": {
             "rapids-dask-dependency": {
               "has_conda_package": true,
@@ -4103,10 +4102,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-dask-dependency"
         },
         "rapids-logger": {
-          "github_url": "https://github.com/rapidsai/rapids-logger",
           "packages": {
             "rapids-logger": {
               "has_conda_package": true,
@@ -4114,10 +4113,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-logger"
         },
         "rapidsmpf": {
-          "github_url": "https://github.com/rapidsai/rapidsmpf",
           "packages": {
             "librapidsmpf": {
               "has_conda_package": true,
@@ -4137,10 +4136,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapidsmpf"
         },
         "rmm": {
-          "github_url": "https://github.com/rapidsai/rmm",
           "packages": {
             "librmm": {
               "has_conda_package": true,
@@ -4160,10 +4159,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rmm"
         },
         "ucxx": {
-          "github_url": "https://github.com/rapidsai/ucxx",
           "packages": {
             "distributed-ucxx": {
               "has_conda_package": true,
@@ -4195,14 +4194,14 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/ucxx"
         }
       }
     },
     "26.02": {
       "repositories": {
         "cucim": {
-          "github_url": "https://github.com/rapidsai/cucim",
           "packages": {
             "cucim": {
               "has_conda_package": true,
@@ -4216,10 +4215,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cucim"
         },
         "cudf": {
-          "github_url": "https://github.com/rapidsai/cudf",
           "packages": {
             "cudf": {
               "has_conda_package": true,
@@ -4275,10 +4274,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cudf"
         },
         "cugraph": {
-          "github_url": "https://github.com/rapidsai/cugraph",
           "packages": {
             "cugraph": {
               "has_conda_package": true,
@@ -4310,14 +4309,14 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph"
         },
         "cugraph-docs": {
-          "github_url": "https://github.com/rapidsai/cugraph-docs",
-          "packages": {}
+          "packages": {},
+          "url": "https://github.com/rapidsai/cugraph-docs"
         },
         "cugraph-gnn": {
-          "github_url": "https://github.com/rapidsai/cugraph-gnn",
           "packages": {
             "cugraph-pyg": {
               "has_conda_package": true,
@@ -4343,10 +4342,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph-gnn"
         },
         "cuml": {
-          "github_url": "https://github.com/rapidsai/cuml",
           "packages": {
             "cuml": {
               "has_conda_package": true,
@@ -4366,10 +4365,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuml"
         },
         "cuvs": {
-          "github_url": "https://github.com/NVIDIA/cuvs",
           "packages": {
             "cuvs": {
               "has_conda_package": true,
@@ -4407,10 +4406,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/NVIDIA/cuvs"
         },
         "cuvs-lucene": {
-          "github_url": "https://github.com/NVIDIA/cuvs-lucene",
           "packages": {
             "cuvs-lucene": {
               "has_conda_package": false,
@@ -4418,10 +4417,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/NVIDIA/cuvs-lucene"
         },
         "cuxfilter": {
-          "github_url": "https://github.com/rapidsai/cuxfilter",
           "packages": {
             "cuxfilter": {
               "has_conda_package": true,
@@ -4429,10 +4428,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuxfilter"
         },
         "dask-cuda": {
-          "github_url": "https://github.com/rapidsai/dask-cuda",
           "packages": {
             "dask-cuda": {
               "has_conda_package": true,
@@ -4440,10 +4439,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/dask-cuda"
         },
         "kvikio": {
-          "github_url": "https://github.com/rapidsai/kvikio",
           "packages": {
             "kvikio": {
               "has_conda_package": true,
@@ -4463,10 +4462,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/kvikio"
         },
         "nx-cugraph": {
-          "github_url": "https://github.com/rapidsai/nx-cugraph",
           "packages": {
             "nx-cugraph": {
               "has_conda_package": true,
@@ -4474,10 +4473,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/nx-cugraph"
         },
         "raft": {
-          "github_url": "https://github.com/rapidsai/raft",
           "packages": {
             "libraft": {
               "has_conda_package": true,
@@ -4521,10 +4520,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/raft"
         },
         "rapids-cli": {
-          "github_url": "https://github.com/rapidsai/rapids-cli",
           "packages": {
             "rapids-cli": {
               "has_conda_package": true,
@@ -4532,10 +4531,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-cli"
         },
         "rapids-dask-dependency": {
-          "github_url": "https://github.com/rapidsai/rapids-dask-dependency",
           "packages": {
             "rapids-dask-dependency": {
               "has_conda_package": true,
@@ -4543,10 +4542,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-dask-dependency"
         },
         "rapids-logger": {
-          "github_url": "https://github.com/rapidsai/rapids-logger",
           "packages": {
             "rapids-logger": {
               "has_conda_package": true,
@@ -4554,10 +4553,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-logger"
         },
         "rapidsmpf": {
-          "github_url": "https://github.com/rapidsai/rapidsmpf",
           "packages": {
             "librapidsmpf": {
               "has_conda_package": true,
@@ -4577,10 +4576,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapidsmpf"
         },
         "rmm": {
-          "github_url": "https://github.com/rapidsai/rmm",
           "packages": {
             "librmm": {
               "has_conda_package": true,
@@ -4600,10 +4599,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rmm"
         },
         "ucxx": {
-          "github_url": "https://github.com/rapidsai/ucxx",
           "packages": {
             "distributed-ucxx": {
               "has_conda_package": true,
@@ -4635,14 +4634,14 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/ucxx"
         }
       }
     },
     "26.04": {
       "repositories": {
         "cucim": {
-          "github_url": "https://github.com/rapidsai/cucim",
           "packages": {
             "cucim": {
               "has_conda_package": true,
@@ -4656,10 +4655,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cucim"
         },
         "cudf": {
-          "github_url": "https://github.com/rapidsai/cudf",
           "packages": {
             "cudf": {
               "has_conda_package": true,
@@ -4715,10 +4714,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cudf"
         },
         "cugraph": {
-          "github_url": "https://github.com/rapidsai/cugraph",
           "packages": {
             "cugraph": {
               "has_conda_package": true,
@@ -4750,14 +4749,14 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph"
         },
         "cugraph-docs": {
-          "github_url": "https://github.com/rapidsai/cugraph-docs",
-          "packages": {}
+          "packages": {},
+          "url": "https://github.com/rapidsai/cugraph-docs"
         },
         "cugraph-gnn": {
-          "github_url": "https://github.com/rapidsai/cugraph-gnn",
           "packages": {
             "cugraph-pyg": {
               "has_conda_package": true,
@@ -4783,10 +4782,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph-gnn"
         },
         "cuml": {
-          "github_url": "https://github.com/rapidsai/cuml",
           "packages": {
             "cuml": {
               "has_conda_package": true,
@@ -4806,10 +4805,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuml"
         },
         "cuvs": {
-          "github_url": "https://github.com/NVIDIA/cuvs",
           "packages": {
             "cuvs": {
               "has_conda_package": true,
@@ -4847,10 +4846,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/NVIDIA/cuvs"
         },
         "cuvs-lucene": {
-          "github_url": "https://github.com/NVIDIA/cuvs-lucene",
           "packages": {
             "cuvs-lucene": {
               "has_conda_package": false,
@@ -4858,10 +4857,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/NVIDIA/cuvs-lucene"
         },
         "cuxfilter": {
-          "github_url": "https://github.com/rapidsai/cuxfilter",
           "packages": {
             "cuxfilter": {
               "has_conda_package": true,
@@ -4869,10 +4868,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuxfilter"
         },
         "dask-cuda": {
-          "github_url": "https://github.com/rapidsai/dask-cuda",
           "packages": {
             "dask-cuda": {
               "has_conda_package": true,
@@ -4880,10 +4879,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/dask-cuda"
         },
         "kvikio": {
-          "github_url": "https://github.com/rapidsai/kvikio",
           "packages": {
             "kvikio": {
               "has_conda_package": true,
@@ -4903,10 +4902,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/kvikio"
         },
         "nvforest": {
-          "github_url": "https://github.com/rapidsai/nvforest",
           "packages": {
             "libnvforest": {
               "has_conda_package": true,
@@ -4926,10 +4925,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/nvforest"
         },
         "nx-cugraph": {
-          "github_url": "https://github.com/rapidsai/nx-cugraph",
           "packages": {
             "nx-cugraph": {
               "has_conda_package": true,
@@ -4937,10 +4936,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/nx-cugraph"
         },
         "raft": {
-          "github_url": "https://github.com/rapidsai/raft",
           "packages": {
             "libraft": {
               "has_conda_package": true,
@@ -4984,10 +4983,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/raft"
         },
         "rapids-cli": {
-          "github_url": "https://github.com/rapidsai/rapids-cli",
           "packages": {
             "rapids-cli": {
               "has_conda_package": true,
@@ -4995,10 +4994,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-cli"
         },
         "rapids-dask-dependency": {
-          "github_url": "https://github.com/rapidsai/rapids-dask-dependency",
           "packages": {
             "rapids-dask-dependency": {
               "has_conda_package": true,
@@ -5006,10 +5005,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-dask-dependency"
         },
         "rapids-logger": {
-          "github_url": "https://github.com/rapidsai/rapids-logger",
           "packages": {
             "rapids-logger": {
               "has_conda_package": true,
@@ -5017,10 +5016,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-logger"
         },
         "rapidsmpf": {
-          "github_url": "https://github.com/rapidsai/rapidsmpf",
           "packages": {
             "librapidsmpf": {
               "has_conda_package": true,
@@ -5040,10 +5039,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapidsmpf"
         },
         "rmm": {
-          "github_url": "https://github.com/rapidsai/rmm",
           "packages": {
             "librmm": {
               "has_conda_package": true,
@@ -5063,10 +5062,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rmm"
         },
         "ucxx": {
-          "github_url": "https://github.com/rapidsai/ucxx",
           "packages": {
             "distributed-ucxx": {
               "has_conda_package": true,
@@ -5098,14 +5097,14 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/ucxx"
         }
       }
     },
     "26.06": {
       "repositories": {
         "cucim": {
-          "github_url": "https://github.com/rapidsai/cucim",
           "packages": {
             "cucim": {
               "has_conda_package": true,
@@ -5119,10 +5118,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cucim"
         },
         "cudf": {
-          "github_url": "https://github.com/rapidsai/cudf",
           "packages": {
             "cudf": {
               "has_conda_package": true,
@@ -5178,10 +5177,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cudf"
         },
         "cugraph": {
-          "github_url": "https://github.com/rapidsai/cugraph",
           "packages": {
             "cugraph": {
               "has_conda_package": true,
@@ -5213,14 +5212,14 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph"
         },
         "cugraph-docs": {
-          "github_url": "https://github.com/rapidsai/cugraph-docs",
-          "packages": {}
+          "packages": {},
+          "url": "https://github.com/rapidsai/cugraph-docs"
         },
         "cugraph-gnn": {
-          "github_url": "https://github.com/rapidsai/cugraph-gnn",
           "packages": {
             "cugraph-pyg": {
               "has_conda_package": true,
@@ -5246,10 +5245,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph-gnn"
         },
         "cuml": {
-          "github_url": "https://github.com/rapidsai/cuml",
           "packages": {
             "cuml": {
               "has_conda_package": true,
@@ -5269,10 +5268,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuml"
         },
         "cuvs": {
-          "github_url": "https://github.com/NVIDIA/cuvs",
           "packages": {
             "cuvs": {
               "has_conda_package": true,
@@ -5310,10 +5309,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/NVIDIA/cuvs"
         },
         "cuvs-lucene": {
-          "github_url": "https://github.com/NVIDIA/cuvs-lucene",
           "packages": {
             "cuvs-lucene": {
               "has_conda_package": false,
@@ -5321,10 +5320,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/NVIDIA/cuvs-lucene"
         },
         "cuxfilter": {
-          "github_url": "https://github.com/rapidsai/cuxfilter",
           "packages": {
             "cuxfilter": {
               "has_conda_package": true,
@@ -5332,10 +5331,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuxfilter"
         },
         "dask-cuda": {
-          "github_url": "https://github.com/rapidsai/dask-cuda",
           "packages": {
             "dask-cuda": {
               "has_conda_package": true,
@@ -5343,10 +5342,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/dask-cuda"
         },
         "kvikio": {
-          "github_url": "https://github.com/rapidsai/kvikio",
           "packages": {
             "kvikio": {
               "has_conda_package": true,
@@ -5366,10 +5365,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/kvikio"
         },
         "nvforest": {
-          "github_url": "https://github.com/rapidsai/nvforest",
           "packages": {
             "libnvforest": {
               "has_conda_package": true,
@@ -5389,10 +5388,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/nvforest"
         },
         "nx-cugraph": {
-          "github_url": "https://github.com/rapidsai/nx-cugraph",
           "packages": {
             "nx-cugraph": {
               "has_conda_package": true,
@@ -5400,10 +5399,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/nx-cugraph"
         },
         "raft": {
-          "github_url": "https://github.com/rapidsai/raft",
           "packages": {
             "libraft": {
               "has_conda_package": true,
@@ -5447,10 +5446,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/raft"
         },
         "rapids-cli": {
-          "github_url": "https://github.com/rapidsai/rapids-cli",
           "packages": {
             "rapids-cli": {
               "has_conda_package": true,
@@ -5458,10 +5457,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-cli"
         },
         "rapids-dask-dependency": {
-          "github_url": "https://github.com/rapidsai/rapids-dask-dependency",
           "packages": {
             "rapids-dask-dependency": {
               "has_conda_package": true,
@@ -5469,10 +5468,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-dask-dependency"
         },
         "rapids-logger": {
-          "github_url": "https://github.com/rapidsai/rapids-logger",
           "packages": {
             "rapids-logger": {
               "has_conda_package": true,
@@ -5480,10 +5479,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-logger"
         },
         "rapidsmpf": {
-          "github_url": "https://github.com/rapidsai/rapidsmpf",
           "packages": {
             "librapidsmpf": {
               "has_conda_package": true,
@@ -5503,10 +5502,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapidsmpf"
         },
         "rmm": {
-          "github_url": "https://github.com/rapidsai/rmm",
           "packages": {
             "librmm": {
               "has_conda_package": true,
@@ -5526,10 +5525,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rmm"
         },
         "ucxx": {
-          "github_url": "https://github.com/rapidsai/ucxx",
           "packages": {
             "distributed-ucxx": {
               "has_conda_package": true,
@@ -5561,14 +5560,14 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/ucxx"
         }
       }
     },
     "26.08": {
       "repositories": {
         "cucim": {
-          "github_url": "https://github.com/rapidsai/cucim",
           "packages": {
             "cucim": {
               "has_conda_package": true,
@@ -5582,10 +5581,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cucim"
         },
         "cudf": {
-          "github_url": "https://github.com/rapidsai/cudf",
           "packages": {
             "cudf": {
               "has_conda_package": true,
@@ -5659,10 +5658,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cudf"
         },
         "cugraph": {
-          "github_url": "https://github.com/rapidsai/cugraph",
           "packages": {
             "cugraph": {
               "has_conda_package": true,
@@ -5694,14 +5693,14 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph"
         },
         "cugraph-docs": {
-          "github_url": "https://github.com/rapidsai/cugraph-docs",
-          "packages": {}
+          "packages": {},
+          "url": "https://github.com/rapidsai/cugraph-docs"
         },
         "cugraph-gnn": {
-          "github_url": "https://github.com/rapidsai/cugraph-gnn",
           "packages": {
             "cugraph-pyg": {
               "has_conda_package": true,
@@ -5727,10 +5726,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph-gnn"
         },
         "cuml": {
-          "github_url": "https://github.com/rapidsai/cuml",
           "packages": {
             "cuml": {
               "has_conda_package": true,
@@ -5750,10 +5749,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cuml"
         },
         "cuvs": {
-          "github_url": "https://github.com/NVIDIA/cuvs",
           "packages": {
             "cuvs": {
               "has_conda_package": true,
@@ -5791,10 +5790,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/NVIDIA/cuvs"
         },
         "cuvs-lucene": {
-          "github_url": "https://github.com/NVIDIA/cuvs-lucene",
           "packages": {
             "cuvs-lucene": {
               "has_conda_package": false,
@@ -5802,10 +5801,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/NVIDIA/cuvs-lucene"
         },
         "dask-cuda": {
-          "github_url": "https://github.com/rapidsai/dask-cuda",
           "packages": {
             "dask-cuda": {
               "has_conda_package": true,
@@ -5813,10 +5812,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/dask-cuda"
         },
         "kvikio": {
-          "github_url": "https://github.com/rapidsai/kvikio",
           "packages": {
             "kvikio": {
               "has_conda_package": true,
@@ -5836,10 +5835,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/kvikio"
         },
         "nvforest": {
-          "github_url": "https://github.com/rapidsai/nvforest",
           "packages": {
             "libnvforest": {
               "has_conda_package": true,
@@ -5859,10 +5858,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/nvforest"
         },
         "nx-cugraph": {
-          "github_url": "https://github.com/rapidsai/nx-cugraph",
           "packages": {
             "nx-cugraph": {
               "has_conda_package": true,
@@ -5870,10 +5869,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/nx-cugraph"
         },
         "raft": {
-          "github_url": "https://github.com/rapidsai/raft",
           "packages": {
             "libraft": {
               "has_conda_package": true,
@@ -5917,10 +5916,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/raft"
         },
         "rapids-cli": {
-          "github_url": "https://github.com/rapidsai/rapids-cli",
           "packages": {
             "rapids-cli": {
               "has_conda_package": true,
@@ -5928,10 +5927,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-cli"
         },
         "rapids-dask-dependency": {
-          "github_url": "https://github.com/rapidsai/rapids-dask-dependency",
           "packages": {
             "rapids-dask-dependency": {
               "has_conda_package": true,
@@ -5939,10 +5938,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-dask-dependency"
         },
         "rapids-logger": {
-          "github_url": "https://github.com/rapidsai/rapids-logger",
           "packages": {
             "rapids-logger": {
               "has_conda_package": true,
@@ -5950,10 +5949,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-logger"
         },
         "rapidsmpf": {
-          "github_url": "https://github.com/rapidsai/rapidsmpf",
           "packages": {
             "librapidsmpf": {
               "has_conda_package": true,
@@ -5973,10 +5972,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapidsmpf"
         },
         "rmm": {
-          "github_url": "https://github.com/rapidsai/rmm",
           "packages": {
             "librmm": {
               "has_conda_package": true,
@@ -5996,10 +5995,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rmm"
         },
         "ucxx": {
-          "github_url": "https://github.com/rapidsai/ucxx",
           "packages": {
             "distributed-ucxx": {
               "has_conda_package": true,
@@ -6031,14 +6030,14 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/ucxx"
         }
       }
     },
     "26.10": {
       "repositories": {
         "cucim": {
-          "github_url": "https://github.com/rapidsai/cucim",
           "packages": {
             "cucim": {
               "has_conda_package": true,
@@ -6052,10 +6051,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cucim"
         },
         "cudf": {
-          "github_url": "https://github.com/NVIDIA/cudf",
           "packages": {
             "cudf": {
               "has_conda_package": true,
@@ -6129,10 +6128,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/NVIDIA/cudf"
         },
         "cugraph": {
-          "github_url": "https://github.com/rapidsai/cugraph",
           "packages": {
             "cugraph": {
               "has_conda_package": true,
@@ -6164,14 +6163,14 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph"
         },
         "cugraph-docs": {
-          "github_url": "https://github.com/rapidsai/cugraph-docs",
-          "packages": {}
+          "packages": {},
+          "url": "https://github.com/rapidsai/cugraph-docs"
         },
         "cugraph-gnn": {
-          "github_url": "https://github.com/rapidsai/cugraph-gnn",
           "packages": {
             "cugraph-pyg": {
               "has_conda_package": true,
@@ -6197,10 +6196,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph-gnn"
         },
         "cuml": {
-          "github_url": "https://github.com/NVIDIA/cuml",
           "packages": {
             "cuml": {
               "has_conda_package": true,
@@ -6220,10 +6219,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/NVIDIA/cuml"
         },
         "cuvs": {
-          "github_url": "https://github.com/NVIDIA/cuvs",
           "packages": {
             "cuvs": {
               "has_conda_package": true,
@@ -6267,10 +6266,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/NVIDIA/cuvs"
         },
         "dask-cuda": {
-          "github_url": "https://github.com/rapidsai/dask-cuda",
           "packages": {
             "dask-cuda": {
               "has_conda_package": true,
@@ -6278,10 +6277,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/dask-cuda"
         },
         "kvikio": {
-          "github_url": "https://github.com/rapidsai/kvikio",
           "packages": {
             "kvikio": {
               "has_conda_package": true,
@@ -6301,10 +6300,10 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/kvikio"
         },
         "nvforest": {
-          "github_url": "https://github.com/rapidsai/nvforest",
           "packages": {
             "libnvforest": {
               "has_conda_package": true,
@@ -6324,10 +6323,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/nvforest"
         },
         "nx-cugraph": {
-          "github_url": "https://github.com/rapidsai/nx-cugraph",
           "packages": {
             "nx-cugraph": {
               "has_conda_package": true,
@@ -6335,10 +6334,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/nx-cugraph"
         },
         "raft": {
-          "github_url": "https://github.com/NVIDIA/raft",
           "packages": {
             "libraft": {
               "has_conda_package": true,
@@ -6382,10 +6381,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/NVIDIA/raft"
         },
         "rapids-cli": {
-          "github_url": "https://github.com/rapidsai/rapids-cli",
           "packages": {
             "rapids-cli": {
               "has_conda_package": true,
@@ -6393,10 +6392,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-cli"
         },
         "rapids-dask-dependency": {
-          "github_url": "https://github.com/rapidsai/rapids-dask-dependency",
           "packages": {
             "rapids-dask-dependency": {
               "has_conda_package": true,
@@ -6404,10 +6403,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-dask-dependency"
         },
         "rapids-logger": {
-          "github_url": "https://github.com/rapidsai/rapids-logger",
           "packages": {
             "rapids-logger": {
               "has_conda_package": true,
@@ -6415,10 +6414,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-logger"
         },
         "rapidsmpf": {
-          "github_url": "https://github.com/rapidsai/rapidsmpf",
           "packages": {
             "librapidsmpf": {
               "has_conda_package": true,
@@ -6438,10 +6437,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapidsmpf"
         },
         "rmm": {
-          "github_url": "https://github.com/rapidsai/rmm",
           "packages": {
             "librmm": {
               "has_conda_package": true,
@@ -6461,10 +6460,10 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rmm"
         },
         "ucxx": {
-          "github_url": "https://github.com/rapidsai/ucxx",
           "packages": {
             "distributed-ucxx": {
               "has_conda_package": true,
@@ -6496,7 +6495,8 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/ucxx"
         }
       }
     }

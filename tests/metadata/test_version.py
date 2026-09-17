@@ -21,7 +21,7 @@ def metadata():
     return md.RAPIDSVersion(
         repositories={
             "repo1": md.RAPIDSRepository(
-                github_url="https://github.com/example/repo1",
+                url="https://github.com/example/repo1",
                 packages={
                     "package1": md.RAPIDSPackage(
                         publishes_prereleases=True, has_cuda_suffix=True
@@ -32,7 +32,7 @@ def metadata():
                 },
             ),
             "repo2": md.RAPIDSRepository(
-                github_url="https://github.com/example/repo2",
+                url="https://github.com/example/repo2",
                 packages={
                     "package3": md.RAPIDSPackage(
                         publishes_prereleases=False, has_cuda_suffix=True
