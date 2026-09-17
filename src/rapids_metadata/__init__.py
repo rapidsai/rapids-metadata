@@ -42,7 +42,7 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
             },
         ),
         "cudf": RAPIDSRepository(
-            url="https://github.com/rapidsai/cudf",
+            url="https://github.com/NVIDIA/cudf",
             packages={
                 "cudf": RAPIDSPackage(),
                 "cudf-polars": RAPIDSPackage(),
@@ -82,7 +82,7 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
             },
         ),
         "cuml": RAPIDSRepository(
-            url="https://github.com/rapidsai/cuml",
+            url="https://github.com/NVIDIA/cuml",
             packages={
                 "cuml": RAPIDSPackage(),
                 "cuml-cpu": RAPIDSPackage(has_wheel_package=False),
@@ -137,7 +137,7 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
             },
         ),
         "raft": RAPIDSRepository(
-            url="https://github.com/rapidsai/raft",
+            url="https://github.com/NVIDIA/raft",
             packages={
                 "libraft": RAPIDSPackage(has_wheel_package=False),
                 "libraft-headers": RAPIDSPackage(has_wheel_package=False),

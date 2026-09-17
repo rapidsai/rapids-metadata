@@ -75,7 +75,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cudf"
+          "url": "https://github.com/NVIDIA/cudf"
         },
         "cugraph": {
           "packages": {
@@ -186,7 +186,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuml"
+          "url": "https://github.com/NVIDIA/cuml"
         },
         "cumlprims_mg": {
           "packages": {
@@ -340,7 +340,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/raft"
+          "url": "https://github.com/NVIDIA/raft"
         },
         "rapids-dask-dependency": {
           "packages": {
@@ -504,7 +504,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cudf"
+          "url": "https://github.com/NVIDIA/cudf"
         },
         "cugraph": {
           "packages": {
@@ -615,7 +615,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuml"
+          "url": "https://github.com/NVIDIA/cuml"
         },
         "cumlprims_mg": {
           "packages": {
@@ -786,7 +786,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/raft"
+          "url": "https://github.com/NVIDIA/raft"
         },
         "rapids-dask-dependency": {
           "packages": {
@@ -950,7 +950,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cudf"
+          "url": "https://github.com/NVIDIA/cudf"
         },
         "cugraph": {
           "packages": {
@@ -1066,7 +1066,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuml"
+          "url": "https://github.com/NVIDIA/cuml"
         },
         "cumlprims_mg": {
           "packages": {
@@ -1254,7 +1254,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/raft"
+          "url": "https://github.com/NVIDIA/raft"
         },
         "rapids-dask-dependency": {
           "packages": {
@@ -1407,7 +1407,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cudf"
+          "url": "https://github.com/NVIDIA/cudf"
         },
         "cugraph": {
           "packages": {
@@ -1522,7 +1522,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuml"
+          "url": "https://github.com/NVIDIA/cuml"
         },
         "cumlprims_mg": {
           "packages": {
@@ -1728,7 +1728,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/raft"
+          "url": "https://github.com/NVIDIA/raft"
         },
         "rapids-dask-dependency": {
           "packages": {
@@ -1893,7 +1893,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cudf"
+          "url": "https://github.com/NVIDIA/cudf"
         },
         "cugraph": {
           "packages": {
@@ -2008,7 +2008,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuml"
+          "url": "https://github.com/NVIDIA/cuml"
         },
         "cumlprims_mg": {
           "packages": {
@@ -2214,7 +2214,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/raft"
+          "url": "https://github.com/NVIDIA/raft"
         },
         "rapids-dask-dependency": {
           "packages": {
@@ -2396,7 +2396,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cudf"
+          "url": "https://github.com/NVIDIA/cudf"
         },
         "cugraph": {
           "packages": {
@@ -2505,7 +2505,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuml"
+          "url": "https://github.com/NVIDIA/cuml"
         },
         "cumlprims_mg": {
           "packages": {
@@ -2682,7 +2682,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/raft"
+          "url": "https://github.com/NVIDIA/raft"
         },
         "rapids-cli": {
           "packages": {
@@ -2887,7 +2887,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cudf"
+          "url": "https://github.com/NVIDIA/cudf"
         },
         "cugraph": {
           "packages": {
@@ -2990,7 +2990,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuml"
+          "url": "https://github.com/NVIDIA/cuml"
         },
         "cumlprims_mg": {
           "packages": {
@@ -3156,7 +3156,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/raft"
+          "url": "https://github.com/NVIDIA/raft"
         },
         "rapids-cli": {
           "packages": {
@@ -3361,7 +3361,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cudf"
+          "url": "https://github.com/NVIDIA/cudf"
         },
         "cugraph": {
           "packages": {
@@ -3464,7 +3464,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuml"
+          "url": "https://github.com/NVIDIA/cuml"
         },
         "cumlprims_mg": {
           "packages": {
@@ -3630,7 +3630,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/raft"
+          "url": "https://github.com/NVIDIA/raft"
         },
         "rapids-cli": {
           "packages": {
@@ -3824,7 +3824,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cudf"
+          "url": "https://github.com/NVIDIA/cudf"
         },
         "cugraph": {
           "packages": {
@@ -3915,7 +3915,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuml"
+          "url": "https://github.com/NVIDIA/cuml"
         },
         "cumlprims_mg": {
           "packages": {
@@ -4081,7 +4081,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/raft"
+          "url": "https://github.com/NVIDIA/raft"
         },
         "rapids-cli": {
           "packages": {
@@ -4275,7 +4275,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cudf"
+          "url": "https://github.com/NVIDIA/cudf"
         },
         "cugraph": {
           "packages": {
@@ -4366,7 +4366,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuml"
+          "url": "https://github.com/NVIDIA/cuml"
         },
         "cuvs": {
           "packages": {
@@ -4521,7 +4521,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/raft"
+          "url": "https://github.com/NVIDIA/raft"
         },
         "rapids-cli": {
           "packages": {
@@ -4715,7 +4715,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cudf"
+          "url": "https://github.com/NVIDIA/cudf"
         },
         "cugraph": {
           "packages": {
@@ -4806,7 +4806,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuml"
+          "url": "https://github.com/NVIDIA/cuml"
         },
         "cuvs": {
           "packages": {
@@ -4984,7 +4984,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/raft"
+          "url": "https://github.com/NVIDIA/raft"
         },
         "rapids-cli": {
           "packages": {
@@ -5178,7 +5178,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cudf"
+          "url": "https://github.com/NVIDIA/cudf"
         },
         "cugraph": {
           "packages": {
@@ -5269,7 +5269,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuml"
+          "url": "https://github.com/NVIDIA/cuml"
         },
         "cuvs": {
           "packages": {
@@ -5447,7 +5447,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/raft"
+          "url": "https://github.com/NVIDIA/raft"
         },
         "rapids-cli": {
           "packages": {
@@ -5659,7 +5659,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cudf"
+          "url": "https://github.com/NVIDIA/cudf"
         },
         "cugraph": {
           "packages": {
@@ -5750,7 +5750,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuml"
+          "url": "https://github.com/NVIDIA/cuml"
         },
         "cuvs": {
           "packages": {
@@ -5917,7 +5917,7 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/raft"
+          "url": "https://github.com/NVIDIA/raft"
         },
         "rapids-cli": {
           "packages": {
