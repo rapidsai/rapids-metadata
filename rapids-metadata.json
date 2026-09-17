@@ -3519,7 +3519,7 @@
           }
         },
         "cuvs-lucene": {
-          "github_organization": "rapidsai",
+          "github_organization": "NVIDIA",
           "packages": {
             "cuvs-lucene": {
               "has_conda_package": false,
@@ -3970,7 +3970,7 @@
           }
         },
         "cuvs-lucene": {
-          "github_organization": "rapidsai",
+          "github_organization": "NVIDIA",
           "packages": {
             "cuvs-lucene": {
               "has_conda_package": false,
@@ -4410,7 +4410,7 @@
           }
         },
         "cuvs-lucene": {
-          "github_organization": "rapidsai",
+          "github_organization": "NVIDIA",
           "packages": {
             "cuvs-lucene": {
               "has_conda_package": false,
@@ -4850,7 +4850,7 @@
           }
         },
         "cuvs-lucene": {
-          "github_organization": "rapidsai",
+          "github_organization": "NVIDIA",
           "packages": {
             "cuvs-lucene": {
               "has_conda_package": false,
@@ -5313,7 +5313,7 @@
           }
         },
         "cuvs-lucene": {
-          "github_organization": "rapidsai",
+          "github_organization": "NVIDIA",
           "packages": {
             "cuvs-lucene": {
               "has_conda_package": false,
@@ -5794,7 +5794,7 @@
           }
         },
         "cuvs-lucene": {
-          "github_organization": "rapidsai",
+          "github_organization": "NVIDIA",
           "packages": {
             "cuvs-lucene": {
               "has_conda_package": false,
