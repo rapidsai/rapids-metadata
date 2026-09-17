@@ -172,10 +172,11 @@ all_metadata.versions["24.10"].repositories["cudf"].packages["pylibcudf"] = (
     RAPIDSPackage()
 )
 all_metadata.versions["24.10"].repositories["cuvs"] = RAPIDSRepository(
+    github_organization="NVIDIA",
     packages={
         "cuvs": RAPIDSPackage(),
         "libcuvs": RAPIDSPackage(has_wheel_package=False),
-    }
+    },
 )
 
 all_metadata.versions["24.12"] = deepcopy(all_metadata.versions["24.10"])
@@ -427,6 +428,26 @@ all_metadata.versions["26.08"].repositories["cudf"].packages["cudf-streaming"] =
 )
 all_metadata.versions["26.10"] = deepcopy(all_metadata.versions["26.08"])
 del all_metadata.versions["26.10"].repositories["cuvs-lucene"]
+
+# These repositories moved to the NVIDIA organization for the 26.10 release.
+for repository in ("cudf", "cuml", "raft"):
+    all_metadata.versions["26.10"].repositories[
+        repository
+    ].github_organization = "NVIDIA"
+
+all_metadata.versions["26.10"].repositories["cuopt"] = RAPIDSRepository(
+    github_organization="NVIDIA",
+    packages={
+        "cuopt": RAPIDSPackage(),
+        "cuopt-mps-parser": RAPIDSPackage(
+            has_cuda_suffix=False,
+            has_conda_package=False,
+        ),
+        "cuopt-server": RAPIDSPackage(),
+        "cuopt-sh-client": RAPIDSPackage(has_cuda_suffix=False),
+        "libcuopt": RAPIDSPackage(),
+    },
+)
 
 all_metadata.versions["26.10"].repositories["cuvs"].packages["cuvs-lucene"] = (
     RAPIDSPackage(

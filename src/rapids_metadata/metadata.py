@@ -1,4 +1,4 @@
-# Copyright (c) 2024-2025, NVIDIA CORPORATION.
+# Copyright (c) 2024-2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -55,6 +55,12 @@ class RAPIDSPackage:
 @dataclass
 class RAPIDSRepository:
     """RAPIDS Git repository. Can publish more than one package."""
+
+    github_organization: str = Field(
+        default="rapidsai",
+        pattern=r"^[A-Za-z0-9_.-]+$",
+        description="""Canonical GitHub organization that owns this repository.""",
+    )
 
     packages: dict[str, RAPIDSPackage] = Field(
         default_factory=dict,

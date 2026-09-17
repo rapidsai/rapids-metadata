@@ -1,4 +1,4 @@
-# Copyright (c) 2024-2025, NVIDIA CORPORATION.
+# Copyright (c) 2024-2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -72,14 +72,16 @@ def set_cwd(cwd: os.PathLike) -> Generator:
         ),
         (
             RAPIDSRepository(
+                github_organization="NVIDIA",
                 packages={
                     "package1": RAPIDSPackage(),
                     "package2": RAPIDSPackage(
                         publishes_prereleases=False, has_cuda_suffix=False
                     ),
-                }
+                },
             ),
             {
+                "github_organization": "NVIDIA",
                 "packages": {
                     "package1": {
                         "publishes_prereleases": True,
@@ -115,9 +117,11 @@ def set_cwd(cwd: os.PathLike) -> Generator:
             {
                 "repositories": {
                     "repo1": {
+                        "github_organization": "rapidsai",
                         "packages": {},
                     },
                     "repo2": {
+                        "github_organization": "rapidsai",
                         "packages": {
                             "package": {
                                 "publishes_prereleases": True,
@@ -128,6 +132,7 @@ def set_cwd(cwd: os.PathLike) -> Generator:
                         },
                     },
                     "_nvidia": {
+                        "github_organization": "rapidsai",
                         "packages": {
                             "proprietary-package": {
                                 "publishes_prereleases": True,
@@ -159,6 +164,7 @@ def set_cwd(cwd: os.PathLike) -> Generator:
                     "24.08": {
                         "repositories": {
                             "repo": {
+                                "github_organization": "rapidsai",
                                 "packages": {},
                             },
                         },
@@ -183,6 +189,7 @@ def test_metadata_encoder(unencoded, encoded):
             '"24.08":{'
             '"repositories":{'
             '"repo1":{'
+            '"github_organization":"rapidsai",'
             '"packages":{'
             '"package":{'
             '"has_conda_package":true,'
@@ -205,6 +212,7 @@ def test_metadata_encoder(unencoded, encoded):
             '"24.10":{'
             '"repositories":{'
             '"repo2":{'
+            '"github_organization":"rapidsai",'
             '"packages":{'
             '"package":{'
             '"has_conda_package":true,'
@@ -227,6 +235,7 @@ def test_metadata_encoder(unencoded, encoded):
             '"24.12":{'
             '"repositories":{'
             '"repo2":{'
+            '"github_organization":"rapidsai",'
             '"packages":{'
             '"package":{'
             '"has_conda_package":true,'
@@ -249,6 +258,7 @@ def test_metadata_encoder(unencoded, encoded):
             '"24.08":{'
             '"repositories":{'
             '"repo1":{'
+            '"github_organization":"rapidsai",'
             '"packages":{'
             '"package":{'
             '"has_conda_package":true,'
@@ -263,6 +273,7 @@ def test_metadata_encoder(unencoded, encoded):
             '"24.10":{'
             '"repositories":{'
             '"repo2":{'
+            '"github_organization":"rapidsai",'
             '"packages":{'
             '"package":{'
             '"has_conda_package":true,'
@@ -287,6 +298,7 @@ def test_metadata_encoder(unencoded, encoded):
                     "24.08": {
                       "repositories": {
                         "repo1": {
+                          "github_organization": "rapidsai",
                           "packages": {
                             "package": {
                               "has_conda_package": true,

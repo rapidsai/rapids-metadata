@@ -8,6 +8,7 @@ RAPIDS packages (both Python packages and Conda packages.)
 The information currently provided by this package consists of:
 
 - Which RAPIDS repositories are available
+- Which GitHub organization canonically owns each RAPIDS repository
 - Which RAPIDS packages are available
 - Which RAPIDS packages require a CUDA suffix (`-cu12`, etc.)
 - Which RAPIDS packages require an alpha spec (`>=0.0.0a0`) due to publishing

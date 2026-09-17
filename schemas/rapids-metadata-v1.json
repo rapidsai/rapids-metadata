@@ -34,6 +34,13 @@
     "RAPIDSRepository": {
       "description": "RAPIDS Git repository. Can publish more than one package.",
       "properties": {
+        "github_organization": {
+          "default": "rapidsai",
+          "description": "Canonical GitHub organization that owns this repository.",
+          "pattern": "^[A-Za-z0-9_.-]+$",
+          "title": "Github Organization",
+          "type": "string"
+        },
         "packages": {
           "additionalProperties": {
             "$ref": "#/$defs/RAPIDSPackage"
