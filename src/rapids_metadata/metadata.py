@@ -56,10 +56,12 @@ class RAPIDSPackage:
 class RAPIDSRepository:
     """RAPIDS Git repository. Can publish more than one package."""
 
-    github_organization: str = Field(
-        default="rapidsai",
-        pattern=r"^[A-Za-z0-9_.-]+$",
-        description="""Canonical GitHub organization that owns this repository.""",
+    github_url: str | None = Field(
+        pattern=r"^https://github\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$",
+        description=(
+            """Canonical GitHub repository URL, or null for a metadata-only """
+            """package grouping that is not a Git repository."""
+        ),
     )
 
     packages: dict[str, RAPIDSPackage] = Field(

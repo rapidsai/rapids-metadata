@@ -34,12 +34,18 @@
     "RAPIDSRepository": {
       "description": "RAPIDS Git repository. Can publish more than one package.",
       "properties": {
-        "github_organization": {
-          "default": "rapidsai",
-          "description": "Canonical GitHub organization that owns this repository.",
-          "pattern": "^[A-Za-z0-9_.-]+$",
-          "title": "Github Organization",
-          "type": "string"
+        "github_url": {
+          "anyOf": [
+            {
+              "pattern": "^https://github\\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Canonical GitHub repository URL, or null for a metadata-only package grouping that is not a Git repository.",
+          "title": "Github Url"
         },
         "packages": {
           "additionalProperties": {
@@ -50,6 +56,9 @@
           "type": "object"
         }
       },
+      "required": [
+        "github_url"
+      ],
       "title": "RAPIDSRepository",
       "type": "object"
     },

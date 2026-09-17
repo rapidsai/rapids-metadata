@@ -1,4 +1,4 @@
-# Copyright (c) 2024, NVIDIA CORPORATION.
+# Copyright (c) 2024-2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -25,12 +25,16 @@ def metadata():
         versions={
             "24.06": md.RAPIDSVersion(
                 repositories={
-                    "repo1": md.RAPIDSRepository(),
+                    "repo1": md.RAPIDSRepository(
+                        github_url="https://github.com/example/repo1"
+                    ),
                 }
             ),
             "24.08": md.RAPIDSVersion(
                 repositories={
-                    "repo2": md.RAPIDSRepository(),
+                    "repo2": md.RAPIDSRepository(
+                        github_url="https://github.com/example/repo2"
+                    ),
                 }
             ),
         }

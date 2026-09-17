@@ -72,7 +72,7 @@ def set_cwd(cwd: os.PathLike) -> Generator:
         ),
         (
             RAPIDSRepository(
-                github_organization="NVIDIA",
+                github_url="https://github.com/NVIDIA/repository",
                 packages={
                     "package1": RAPIDSPackage(),
                     "package2": RAPIDSPackage(
@@ -81,7 +81,7 @@ def set_cwd(cwd: os.PathLike) -> Generator:
                 },
             ),
             {
-                "github_organization": "NVIDIA",
+                "github_url": "https://github.com/NVIDIA/repository",
                 "packages": {
                     "package1": {
                         "publishes_prereleases": True,
@@ -101,27 +101,31 @@ def set_cwd(cwd: os.PathLike) -> Generator:
         (
             RAPIDSVersion(
                 repositories={
-                    "repo1": RAPIDSRepository(),
+                    "repo1": RAPIDSRepository(
+                        github_url="https://github.com/example/repo1"
+                    ),
                     "repo2": RAPIDSRepository(
+                        github_url="https://github.com/example/repo2",
                         packages={
                             "package": RAPIDSPackage(),
-                        }
+                        },
                     ),
                     "_nvidia": RAPIDSRepository(
+                        github_url=None,
                         packages={
                             "proprietary-package": RAPIDSPackage(),
-                        }
+                        },
                     ),
                 }
             ),
             {
                 "repositories": {
                     "repo1": {
-                        "github_organization": "rapidsai",
+                        "github_url": "https://github.com/example/repo1",
                         "packages": {},
                     },
                     "repo2": {
-                        "github_organization": "rapidsai",
+                        "github_url": "https://github.com/example/repo2",
                         "packages": {
                             "package": {
                                 "publishes_prereleases": True,
@@ -132,7 +136,7 @@ def set_cwd(cwd: os.PathLike) -> Generator:
                         },
                     },
                     "_nvidia": {
-                        "github_organization": "rapidsai",
+                        "github_url": None,
                         "packages": {
                             "proprietary-package": {
                                 "publishes_prereleases": True,
@@ -151,7 +155,9 @@ def set_cwd(cwd: os.PathLike) -> Generator:
                     "24.06": RAPIDSVersion(),
                     "24.08": RAPIDSVersion(
                         repositories={
-                            "repo": RAPIDSRepository(),
+                            "repo": RAPIDSRepository(
+                                github_url="https://github.com/example/repo"
+                            ),
                         },
                     ),
                 }
@@ -164,7 +170,7 @@ def set_cwd(cwd: os.PathLike) -> Generator:
                     "24.08": {
                         "repositories": {
                             "repo": {
-                                "github_organization": "rapidsai",
+                                "github_url": "https://github.com/example/repo",
                                 "packages": {},
                             },
                         },
@@ -189,7 +195,7 @@ def test_metadata_encoder(unencoded, encoded):
             '"24.08":{'
             '"repositories":{'
             '"repo1":{'
-            '"github_organization":"rapidsai",'
+            '"github_url":"https://github.com/example/repo1",'
             '"packages":{'
             '"package":{'
             '"has_conda_package":true,'
@@ -212,7 +218,7 @@ def test_metadata_encoder(unencoded, encoded):
             '"24.10":{'
             '"repositories":{'
             '"repo2":{'
-            '"github_organization":"rapidsai",'
+            '"github_url":"https://github.com/example/repo2",'
             '"packages":{'
             '"package":{'
             '"has_conda_package":true,'
@@ -235,7 +241,7 @@ def test_metadata_encoder(unencoded, encoded):
             '"24.12":{'
             '"repositories":{'
             '"repo2":{'
-            '"github_organization":"rapidsai",'
+            '"github_url":"https://github.com/example/repo2",'
             '"packages":{'
             '"package":{'
             '"has_conda_package":true,'
@@ -258,7 +264,7 @@ def test_metadata_encoder(unencoded, encoded):
             '"24.08":{'
             '"repositories":{'
             '"repo1":{'
-            '"github_organization":"rapidsai",'
+            '"github_url":"https://github.com/example/repo1",'
             '"packages":{'
             '"package":{'
             '"has_conda_package":true,'
@@ -273,7 +279,7 @@ def test_metadata_encoder(unencoded, encoded):
             '"24.10":{'
             '"repositories":{'
             '"repo2":{'
-            '"github_organization":"rapidsai",'
+            '"github_url":"https://github.com/example/repo2",'
             '"packages":{'
             '"package":{'
             '"has_conda_package":true,'
@@ -298,7 +304,7 @@ def test_metadata_encoder(unencoded, encoded):
                     "24.08": {
                       "repositories": {
                         "repo1": {
-                          "github_organization": "rapidsai",
+                          "github_url": "https://github.com/example/repo1",
                           "packages": {
                             "package": {
                               "has_conda_package": true,
@@ -336,6 +342,7 @@ def test_main(
             "24.08": RAPIDSVersion(
                 repositories={
                     "repo1": RAPIDSRepository(
+                        github_url="https://github.com/example/repo1",
                         packages={
                             "package": RAPIDSPackage(),
                         },
@@ -345,6 +352,7 @@ def test_main(
             "24.10": RAPIDSVersion(
                 repositories={
                     "repo2": RAPIDSRepository(
+                        github_url="https://github.com/example/repo2",
                         packages={
                             "package": RAPIDSPackage(),
                         },
