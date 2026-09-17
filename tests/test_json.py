@@ -72,7 +72,7 @@ def set_cwd(cwd: os.PathLike) -> Generator:
         ),
         (
             RAPIDSRepository(
-                url="https://github.com/NVIDIA/repository",
+                url="https://gitlab.example.com/group/repository",
                 packages={
                     "package1": RAPIDSPackage(),
                     "package2": RAPIDSPackage(
@@ -81,7 +81,7 @@ def set_cwd(cwd: os.PathLike) -> Generator:
                 },
             ),
             {
-                "url": "https://github.com/NVIDIA/repository",
+                "url": "https://gitlab.example.com/group/repository",
                 "packages": {
                     "package1": {
                         "publishes_prereleases": True,

@@ -45,14 +45,14 @@
         "url": {
           "anyOf": [
             {
-              "pattern": "^https://github\\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$",
+              "pattern": "^[A-Za-z][A-Za-z0-9+.-]*://[^\\s]+$",
               "type": "string"
             },
             {
               "type": "null"
             }
           ],
-          "description": "Canonical GitHub repository URL, or null for a metadata-only package grouping that is not a Git repository.",
+          "description": "Canonical repository URL, or null for a metadata-only package grouping that is not a Git repository.",
           "title": "Url"
         }
       },

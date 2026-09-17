@@ -57,9 +57,9 @@ class RAPIDSRepository:
     """RAPIDS Git repository. Can publish more than one package."""
 
     url: str | None = Field(
-        pattern=r"^https://github\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$",
+        pattern=r"^[A-Za-z][A-Za-z0-9+.-]*://[^\s]+$",
         description=(
-            """Canonical GitHub repository URL, or null for a metadata-only """
+            """Canonical repository URL, or null for a metadata-only """
             """package grouping that is not a Git repository."""
         ),
     )
