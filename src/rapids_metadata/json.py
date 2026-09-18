@@ -89,7 +89,11 @@ def main(argv: list[str] | None = None):
         else:
             version = parsed.version or get_rapids_version(os.getcwd())
             try:
-                version_data = all_metadata.get_version(version)
+                version_data = (
+                    all_metadata.get_version(version)
+                    if parsed.version is not None
+                    else all_metadata.get_current_version(os.getcwd())
+                )
             except KeyError:
                 parser.error(f"no metadata compatible with RAPIDS {version}")
             metadata = RAPIDSMetadata(versions={version: version_data})

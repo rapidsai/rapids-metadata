@@ -125,23 +125,26 @@ class RAPIDSMetadata:
     )
 
     def get_version(self, version: str) -> RAPIDSVersion:
-        """Return metadata compatible with a requested RAPIDS version."""
+        """Return metadata for a requested RAPIDS version."""
         from packaging.version import Version
 
-        try:
-            return self.versions[version]
-        except KeyError:
-            max_version, max_version_data = max(
-                self.versions.items(), key=lambda item: Version(item[0])
-            )
-            if Version(version) > Version(max_version):
-                return max_version_data
-            raise
+        Version(version)
+        return self.versions[version]
 
     def get_current_version(
         self,
         directory: str | PathLike[str],
         version_file: str | PathLike[str] = "VERSION",
     ) -> RAPIDSVersion:
+        from packaging.version import Version
+
         current_version = get_rapids_version(directory, version_file)
-        return self.get_version(current_version)
+        try:
+            return self.get_version(current_version)
+        except KeyError:
+            max_version, max_version_data = max(
+                self.versions.items(), key=lambda item: Version(item[0])
+            )
+            if Version(current_version) > Version(max_version):
+                return max_version_data
+            raise
