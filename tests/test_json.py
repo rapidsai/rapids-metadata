@@ -232,6 +232,29 @@ def test_metadata_encoder(unencoded, encoded):
             "}",
         ),
         (
+            None,
+            ["--version", "24.08"],
+            "{"
+            '"versions":{'
+            '"24.08":{'
+            '"repositories":{'
+            '"repo1":{'
+            '"packages":{'
+            '"package":{'
+            '"has_conda_package":true,'
+            '"has_cuda_suffix":true,'
+            '"has_wheel_package":true,'
+            '"publishes_prereleases":true'
+            "}"
+            "},"
+            '"url":"https://github.com/example/repo1"'
+            "}"
+            "}"
+            "}"
+            "}"
+            "}",
+        ),
+        (
             "24.12.00",
             [],
             "{"

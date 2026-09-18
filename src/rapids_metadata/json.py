@@ -1,4 +1,4 @@
-# Copyright (c) 2024-2025, NVIDIA CORPORATION.
+# Copyright (c) 2024-2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,6 +15,7 @@
 import argparse
 import json
 import os
+import re
 import sys
 from typing import Any, TextIO
 
@@ -41,6 +42,10 @@ def main(argv: list[str] | None = None):
         help="Output all versions, ignoring local VERSION file",
     )
     parser.add_argument(
+        "--version",
+        help="Output metadata for this RAPIDS YY.MM version, ignoring local VERSION file",
+    )
+    parser.add_argument(
         "--schema",
         action="store_true",
         help="Output a JSON schema for the data instead of the data itself",
@@ -56,6 +61,13 @@ def main(argv: list[str] | None = None):
     )
 
     parsed = parser.parse_args(argv)
+    if parsed.all_versions and parsed.version is not None:
+        parser.error("--all-versions and --version cannot be used together")
+    if (
+        parsed.version is not None
+        and re.fullmatch(r"[0-9]{2}\.[0-9]{2}", parsed.version) is None
+    ):
+        parser.error("--version must use YY.MM format")
 
     def write_file(data: dict[str, Any], f: TextIO):
         json.dump(
@@ -72,17 +84,15 @@ def main(argv: list[str] | None = None):
     if parsed.schema:
         data = type_adapter.json_schema()
     else:
-        metadata = (
-            all_metadata
-            if parsed.all_versions
-            else RAPIDSMetadata(
-                versions={
-                    get_rapids_version(os.getcwd()): all_metadata.get_current_version(
-                        os.getcwd()
-                    )
-                }
-            )
-        )
+        if parsed.all_versions:
+            metadata = all_metadata
+        else:
+            version = parsed.version or get_rapids_version(os.getcwd())
+            try:
+                version_data = all_metadata.get_version(version)
+            except KeyError:
+                parser.error(f"no metadata compatible with RAPIDS {version}")
+            metadata = RAPIDSMetadata(versions={version: version_data})
         data = type_adapter.dump_python(metadata)
 
     if parsed.output:

@@ -72,3 +72,27 @@ def test_get_current_version(current_version, expected_version, metadata):
         for v, m in metadata.versions.items():
             if v != expected_version:
                 assert m != current_version
+
+
+@pytest.mark.parametrize(
+    ["requested_version", "expected_version"],
+    [
+        ("24.05", KeyError),
+        ("24.06", "24.06"),
+        ("24.07", KeyError),
+        ("24.08", "24.08"),
+        ("24.09", "24.08"),
+        ("aaa", InvalidVersion),
+    ],
+)
+def test_get_version(requested_version, expected_version, metadata):
+    if isinstance(expected_version, type) and issubclass(
+        expected_version, BaseException
+    ):
+        with pytest.raises(expected_version):
+            metadata.get_version(requested_version)
+    else:
+        assert (
+            metadata.get_version(requested_version)
+            == metadata.versions[expected_version]
+        )

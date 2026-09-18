@@ -26,8 +26,14 @@ rapids-metadata-json
 ```
 
 This will print the metadata for the RAPIDS version specified by the `VERSION`
-file in the current directory or above. If you wish to get metadata for all
-RAPIDS versions instead, run:
+file in the current directory or above. To select a version explicitly, run:
+
+```
+rapids-metadata-json --version 26.10
+```
+
+An explicit version does not require a local `VERSION` file. If you wish to get
+metadata for all RAPIDS versions instead, run:
 
 ```
 rapids-metadata-json --all-versions
