@@ -1,4 +1,4 @@
-# Copyright (c) 2024-2025, NVIDIA CORPORATION.
+# Copyright (c) 2024-2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -55,6 +55,14 @@ class RAPIDSPackage:
 @dataclass
 class RAPIDSRepository:
     """RAPIDS Git repository. Can publish more than one package."""
+
+    url: str | None = Field(
+        pattern=r"^[A-Za-z][A-Za-z0-9+.-]*://[^\s]+$",
+        description=(
+            """Canonical repository URL, or null for a metadata-only """
+            """package grouping that is not a Git repository."""
+        ),
+    )
 
     packages: dict[str, RAPIDSPackage] = Field(
         default_factory=dict,
@@ -116,6 +124,13 @@ class RAPIDSMetadata:
         ),
     )
 
+    def get_version(self, version: str) -> RAPIDSVersion:
+        """Return metadata for a requested RAPIDS version."""
+        from packaging.version import Version
+
+        Version(version)
+        return self.versions[version]
+
     def get_current_version(
         self,
         directory: str | PathLike[str],
@@ -125,7 +140,7 @@ class RAPIDSMetadata:
 
         current_version = get_rapids_version(directory, version_file)
         try:
-            return self.versions[current_version]
+            return self.get_version(current_version)
         except KeyError:
             max_version, max_version_data = max(
                 self.versions.items(), key=lambda item: Version(item[0])

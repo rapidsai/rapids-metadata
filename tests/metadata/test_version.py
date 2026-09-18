@@ -1,4 +1,4 @@
-# Copyright (c) 2024, NVIDIA CORPORATION.
+# Copyright (c) 2024-2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,6 +21,7 @@ def metadata():
     return md.RAPIDSVersion(
         repositories={
             "repo1": md.RAPIDSRepository(
+                url="https://github.com/example/repo1",
                 packages={
                     "package1": md.RAPIDSPackage(
                         publishes_prereleases=True, has_cuda_suffix=True
@@ -28,9 +29,10 @@ def metadata():
                     "package2": md.RAPIDSPackage(
                         publishes_prereleases=True, has_cuda_suffix=False
                     ),
-                }
+                },
             ),
             "repo2": md.RAPIDSRepository(
+                url="https://github.com/example/repo2",
                 packages={
                     "package3": md.RAPIDSPackage(
                         publishes_prereleases=False, has_cuda_suffix=True
@@ -38,7 +40,7 @@ def metadata():
                     "package4": md.RAPIDSPackage(
                         publishes_prereleases=False, has_cuda_suffix=False
                     ),
-                }
+                },
             ),
         }
     )

@@ -41,8 +41,24 @@
           "description": "Dictionary of packages in this repository by name.",
           "title": "Packages",
           "type": "object"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z][A-Za-z0-9+.-]*://[^\\s]+$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Canonical repository URL, or null for a metadata-only package grouping that is not a Git repository.",
+          "title": "Url"
         }
       },
+      "required": [
+        "url"
+      ],
       "title": "RAPIDSRepository",
       "type": "object"
     },

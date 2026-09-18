@@ -1,4 +1,4 @@
-# Copyright (c) 2024, NVIDIA CORPORATION.
+# Copyright (c) 2024-2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -25,12 +25,16 @@ def metadata():
         versions={
             "24.06": md.RAPIDSVersion(
                 repositories={
-                    "repo1": md.RAPIDSRepository(),
+                    "repo1": md.RAPIDSRepository(
+                        url="https://github.com/example/repo1"
+                    ),
                 }
             ),
             "24.08": md.RAPIDSVersion(
                 repositories={
-                    "repo2": md.RAPIDSRepository(),
+                    "repo2": md.RAPIDSRepository(
+                        url="https://github.com/example/repo2"
+                    ),
                 }
             ),
         }
@@ -68,3 +72,23 @@ def test_get_current_version(current_version, expected_version, metadata):
         for v, m in metadata.versions.items():
             if v != expected_version:
                 assert m != current_version
+
+
+@pytest.mark.parametrize(
+    "requested_version",
+    [
+        pytest.param("24.05", marks=pytest.mark.xfail(raises=KeyError, strict=True)),
+        "24.06",
+        pytest.param("24.07", marks=pytest.mark.xfail(raises=KeyError, strict=True)),
+        "24.08",
+        pytest.param("24.09", marks=pytest.mark.xfail(raises=KeyError, strict=True)),
+        pytest.param(
+            "aaa",
+            marks=pytest.mark.xfail(raises=InvalidVersion, strict=True),
+        ),
+    ],
+)
+def test_get_version(requested_version, metadata):
+    assert (
+        metadata.get_version(requested_version) == metadata.versions[requested_version]
+    )
