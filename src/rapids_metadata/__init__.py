@@ -426,5 +426,15 @@ all_metadata.versions["26.08"].repositories["cudf"].packages["cudf-streaming"] =
     )
 )
 all_metadata.versions["26.10"] = deepcopy(all_metadata.versions["26.08"])
+del all_metadata.versions["26.10"].repositories["cuvs-lucene"]
+
+all_metadata.versions["26.10"].repositories["cuvs"].packages["cuvs-lucene"] = (
+    RAPIDSPackage(
+        publishes_prereleases=False,
+        has_cuda_suffix=False,
+        has_conda_package=False,
+        has_wheel_package=False,
+    )
+)
 
 all_metadata.versions["26.12"] = deepcopy(all_metadata.versions["26.10"])
