@@ -436,3 +436,5 @@ all_metadata.versions["26.10"].repositories["cuvs"].packages["cuvs-lucene"] = (
         has_wheel_package=False,
     )
 )
+
+all_metadata.versions["26.12"] = deepcopy(all_metadata.versions["26.10"])
