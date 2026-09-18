@@ -455,12 +455,6 @@ all_metadata.versions["26.08"].repositories["cudf"].packages["cudf-streaming"] =
 all_metadata.versions["26.10"] = deepcopy(all_metadata.versions["26.08"])
 del all_metadata.versions["26.10"].repositories["cuvs-lucene"]
 
-# These repositories moved to the NVIDIA organization for the 26.10 release.
-for repository in ("cudf", "cuml", "raft"):
-    all_metadata.versions["26.10"].repositories[
-        repository
-    ].url = f"https://github.com/NVIDIA/{repository}"
-
 all_metadata.versions["26.10"].repositories["cuvs"].packages["cuvs-lucene"] = (
     RAPIDSPackage(
         publishes_prereleases=False,
