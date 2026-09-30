@@ -64,6 +64,11 @@ class RAPIDSRepository:
         ),
     )
 
+    version: str | None = Field(
+        default=None,
+        description="Repository version, if it differs from the containing RAPIDS version.",
+    )
+
     packages: dict[str, RAPIDSPackage] = Field(
         default_factory=dict,
         description="""Dictionary of packages in this repository by name.""",
