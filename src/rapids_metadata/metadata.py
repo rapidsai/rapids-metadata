@@ -57,11 +57,17 @@ class RAPIDSRepository:
     """RAPIDS Git repository. Can publish more than one package."""
 
     url: str | None = Field(
+        default=None,
         pattern=r"^[A-Za-z][A-Za-z0-9+.-]*://[^\s]+$",
         description=(
             """Canonical repository URL, or null for a metadata-only """
             """package grouping that is not a Git repository."""
         ),
+    )
+
+    version: str | None = Field(
+        default=None,
+        description="Repository version, if it differs from the containing RAPIDS version.",
     )
 
     packages: dict[str, RAPIDSPackage] = Field(

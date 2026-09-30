@@ -97,7 +97,7 @@ def main(argv: list[str] | None = None):
             except KeyError:
                 parser.error(f"no metadata compatible with RAPIDS {version}")
             metadata = RAPIDSMetadata(versions={version: version_data})
-        data = type_adapter.dump_python(metadata)
+        data = type_adapter.dump_python(metadata, exclude_none=True)
 
     if parsed.output:
         with open(parsed.output, "w") as f:

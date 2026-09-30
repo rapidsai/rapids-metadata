@@ -10,8 +10,7 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          },
-          "url": null
+          }
         },
         "cucim": {
           "packages": {
@@ -402,7 +401,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/ucxx"
+          "url": "https://github.com/rapidsai/ucxx",
+          "version": "0.39.00"
         },
         "wholegraph": {
           "packages": {
@@ -433,8 +433,7 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          },
-          "url": null
+          }
         },
         "cucim": {
           "packages": {
@@ -848,7 +847,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/ucxx"
+          "url": "https://github.com/rapidsai/ucxx",
+          "version": "0.40.00"
         },
         "wholegraph": {
           "packages": {
@@ -879,8 +879,7 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          },
-          "url": null
+          }
         },
         "cucim": {
           "packages": {
@@ -1316,7 +1315,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/ucxx"
+          "url": "https://github.com/rapidsai/ucxx",
+          "version": "0.41.00"
         }
       }
     },
@@ -1330,8 +1330,7 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          },
-          "url": null
+          }
         },
         "cucim": {
           "packages": {
@@ -1802,7 +1801,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/ucxx"
+          "url": "https://github.com/rapidsai/ucxx",
+          "version": "0.42.00"
         }
       }
     },
@@ -1816,8 +1816,7 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          },
-          "url": null
+          }
         },
         "cucim": {
           "packages": {
@@ -2236,7 +2235,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapids-logger"
+          "url": "https://github.com/rapidsai/rapids-logger",
+          "version": "0.1.1"
         },
         "rmm": {
           "packages": {
@@ -2305,7 +2305,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/ucxx"
+          "url": "https://github.com/rapidsai/ucxx",
+          "version": "0.43.00"
         }
       }
     },
@@ -2319,8 +2320,7 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          },
-          "url": null
+          }
         },
         "cucim": {
           "packages": {
@@ -2715,7 +2715,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapids-logger"
+          "url": "https://github.com/rapidsai/rapids-logger",
+          "version": "0.1.1"
         },
         "rapidsmpf": {
           "packages": {
@@ -2807,7 +2808,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/ucxx"
+          "url": "https://github.com/rapidsai/ucxx",
+          "version": "0.44.00"
         }
       }
     },
@@ -3189,7 +3191,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapids-logger"
+          "url": "https://github.com/rapidsai/rapids-logger",
+          "version": "0.1.1"
         },
         "rapidsmpf": {
           "packages": {
@@ -3281,7 +3284,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/ucxx"
+          "url": "https://github.com/rapidsai/ucxx",
+          "version": "0.45.00"
         }
       }
     },
@@ -3663,7 +3667,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapids-logger"
+          "url": "https://github.com/rapidsai/rapids-logger",
+          "version": "0.2.3"
         },
         "rapidsmpf": {
           "packages": {
@@ -3744,7 +3749,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/ucxx"
+          "url": "https://github.com/rapidsai/ucxx",
+          "version": "0.46.00"
         }
       }
     },
@@ -4114,7 +4120,8 @@
               "publishes_prereleases": false
             }
           },
-          "url": "https://github.com/rapidsai/rapids-logger"
+          "url": "https://github.com/rapidsai/rapids-logger",
+          "version": "0.2.3"
         },
         "rapidsmpf": {
           "packages": {
@@ -4195,7 +4202,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/ucxx"
+          "url": "https://github.com/rapidsai/ucxx",
+          "version": "0.47.00"
         }
       }
     },
@@ -4554,7 +4562,8 @@
               "publishes_prereleases": false
             }
           },
-          "url": "https://github.com/rapidsai/rapids-logger"
+          "url": "https://github.com/rapidsai/rapids-logger",
+          "version": "0.2.3"
         },
         "rapidsmpf": {
           "packages": {
@@ -4635,7 +4644,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/ucxx"
+          "url": "https://github.com/rapidsai/ucxx",
+          "version": "0.48.00"
         }
       }
     },
@@ -5017,7 +5027,8 @@
               "publishes_prereleases": false
             }
           },
-          "url": "https://github.com/rapidsai/rapids-logger"
+          "url": "https://github.com/rapidsai/rapids-logger",
+          "version": "0.2.3"
         },
         "rapidsmpf": {
           "packages": {
@@ -5098,7 +5109,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/ucxx"
+          "url": "https://github.com/rapidsai/ucxx",
+          "version": "0.49.00"
         }
       }
     },
@@ -5480,7 +5492,8 @@
               "publishes_prereleases": false
             }
           },
-          "url": "https://github.com/rapidsai/rapids-logger"
+          "url": "https://github.com/rapidsai/rapids-logger",
+          "version": "0.2.3"
         },
         "rapidsmpf": {
           "packages": {
@@ -5561,7 +5574,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/ucxx"
+          "url": "https://github.com/rapidsai/ucxx",
+          "version": "0.50.00"
         }
       }
     },
@@ -5950,7 +5964,8 @@
               "publishes_prereleases": false
             }
           },
-          "url": "https://github.com/rapidsai/rapids-logger"
+          "url": "https://github.com/rapidsai/rapids-logger",
+          "version": "0.3.0"
         },
         "rapidsmpf": {
           "packages": {
@@ -6031,7 +6046,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/ucxx"
+          "url": "https://github.com/rapidsai/ucxx",
+          "version": "0.51.00"
         }
       }
     },
@@ -6415,7 +6431,8 @@
               "publishes_prereleases": false
             }
           },
-          "url": "https://github.com/rapidsai/rapids-logger"
+          "url": "https://github.com/rapidsai/rapids-logger",
+          "version": "0.3.0"
         },
         "rapidsmpf": {
           "packages": {
@@ -6496,7 +6513,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/ucxx"
+          "url": "https://github.com/rapidsai/ucxx",
+          "version": "0.52.00"
         }
       }
     },
@@ -6516,7 +6534,8 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cucim"
         },
         "cudf": {
           "packages": {
@@ -6592,7 +6611,8 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/NVIDIA/cudf"
         },
         "cugraph": {
           "packages": {
@@ -6626,10 +6646,12 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph"
         },
         "cugraph-docs": {
-          "packages": {}
+          "packages": {},
+          "url": "https://github.com/rapidsai/cugraph-docs"
         },
         "cugraph-gnn": {
           "packages": {
@@ -6657,7 +6679,8 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/cugraph-gnn"
         },
         "cuml": {
           "packages": {
@@ -6679,7 +6702,8 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/NVIDIA/cuml"
         },
         "cuvs": {
           "packages": {
@@ -6725,7 +6749,8 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/NVIDIA/cuvs"
         },
         "dask-cuda": {
           "packages": {
@@ -6735,7 +6760,8 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/dask-cuda"
         },
         "kvikio": {
           "packages": {
@@ -6757,7 +6783,8 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/kvikio"
         },
         "nvforest": {
           "packages": {
@@ -6779,7 +6806,8 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/nvforest"
         },
         "nx-cugraph": {
           "packages": {
@@ -6789,7 +6817,8 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/nx-cugraph"
         },
         "raft": {
           "packages": {
@@ -6835,7 +6864,8 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/NVIDIA/raft"
         },
         "rapids-cli": {
           "packages": {
@@ -6845,7 +6875,8 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-cli"
         },
         "rapids-dask-dependency": {
           "packages": {
@@ -6855,7 +6886,8 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-dask-dependency"
         },
         "rapids-logger": {
           "packages": {
@@ -6865,7 +6897,9 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapids-logger",
+          "version": "0.3.0"
         },
         "rapidsmpf": {
           "packages": {
@@ -6887,7 +6921,8 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rapidsmpf"
         },
         "rmm": {
           "packages": {
@@ -6909,7 +6944,8 @@
               "has_wheel_package": true,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/rmm"
         },
         "ucxx": {
           "packages": {
@@ -6943,7 +6979,9 @@
               "has_wheel_package": false,
               "publishes_prereleases": true
             }
-          }
+          },
+          "url": "https://github.com/rapidsai/ucxx",
+          "version": "0.53.00"
         }
       }
     }
