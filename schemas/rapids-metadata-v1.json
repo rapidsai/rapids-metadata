@@ -52,6 +52,7 @@
               "type": "null"
             }
           ],
+          "default": null,
           "description": "Canonical repository URL, or null for a metadata-only package grouping that is not a Git repository.",
           "title": "Url"
         },
@@ -69,9 +70,6 @@
           "title": "Version"
         }
       },
-      "required": [
-        "url"
-      ],
       "title": "RAPIDSRepository",
       "type": "object"
     },
