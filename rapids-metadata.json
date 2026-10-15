@@ -10,7 +10,9 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": null,
+          "version": null
         },
         "cucim": {
           "packages": {
@@ -27,7 +29,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cucim"
+          "url": "https://github.com/rapidsai/cucim",
+          "version": null
         },
         "cudf": {
           "packages": {
@@ -74,7 +77,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cudf"
+          "url": "https://github.com/NVIDIA/cudf",
+          "version": null
         },
         "cugraph": {
           "packages": {
@@ -139,7 +143,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph"
+          "url": "https://github.com/rapidsai/cugraph",
+          "version": null
         },
         "cugraph-ops": {
           "packages": {
@@ -156,7 +161,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph-ops"
+          "url": "https://github.com/rapidsai/cugraph-ops",
+          "version": null
         },
         "cuml": {
           "packages": {
@@ -185,7 +191,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuml"
+          "url": "https://github.com/NVIDIA/cuml",
+          "version": null
         },
         "cumlprims_mg": {
           "packages": {
@@ -196,7 +203,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cumlprims_mg"
+          "url": "https://github.com/rapidsai/cumlprims_mg",
+          "version": null
         },
         "cuspatial": {
           "packages": {
@@ -225,7 +233,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuspatial"
+          "url": "https://github.com/rapidsai/cuspatial",
+          "version": null
         },
         "cuxfilter": {
           "packages": {
@@ -236,7 +245,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuxfilter"
+          "url": "https://github.com/rapidsai/cuxfilter",
+          "version": null
         },
         "dask-cuda": {
           "packages": {
@@ -247,7 +257,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/dask-cuda"
+          "url": "https://github.com/rapidsai/dask-cuda",
+          "version": null
         },
         "kvikio": {
           "packages": {
@@ -264,7 +275,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/kvikio"
+          "url": "https://github.com/rapidsai/kvikio",
+          "version": null
         },
         "ptxcompiler": {
           "packages": {
@@ -275,7 +287,8 @@
               "publishes_prereleases": false
             }
           },
-          "url": "https://github.com/rapidsai/ptxcompiler"
+          "url": "https://github.com/rapidsai/ptxcompiler",
+          "version": null
         },
         "pynvjitlink": {
           "packages": {
@@ -286,7 +299,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/pynvjitlink"
+          "url": "https://github.com/rapidsai/pynvjitlink",
+          "version": null
         },
         "raft": {
           "packages": {
@@ -339,7 +353,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/raft"
+          "url": "https://github.com/NVIDIA/raft",
+          "version": null
         },
         "rapids-dask-dependency": {
           "packages": {
@@ -350,7 +365,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapids-dask-dependency"
+          "url": "https://github.com/rapidsai/rapids-dask-dependency",
+          "version": null
         },
         "rmm": {
           "packages": {
@@ -367,7 +383,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rmm"
+          "url": "https://github.com/rapidsai/rmm",
+          "version": null
         },
         "ucx-py": {
           "packages": {
@@ -378,7 +395,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/ucx-py"
+          "url": "https://github.com/rapidsai/ucx-py",
+          "version": null
         },
         "ucxx": {
           "packages": {
@@ -419,7 +437,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/wholegraph"
+          "url": "https://github.com/rapidsai/wholegraph",
+          "version": null
         }
       }
     },
@@ -433,7 +452,9 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": null,
+          "version": null
         },
         "cucim": {
           "packages": {
@@ -450,7 +471,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cucim"
+          "url": "https://github.com/rapidsai/cucim",
+          "version": null
         },
         "cudf": {
           "packages": {
@@ -503,7 +525,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cudf"
+          "url": "https://github.com/NVIDIA/cudf",
+          "version": null
         },
         "cugraph": {
           "packages": {
@@ -568,7 +591,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph"
+          "url": "https://github.com/rapidsai/cugraph",
+          "version": null
         },
         "cugraph-ops": {
           "packages": {
@@ -585,7 +609,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph-ops"
+          "url": "https://github.com/rapidsai/cugraph-ops",
+          "version": null
         },
         "cuml": {
           "packages": {
@@ -614,7 +639,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuml"
+          "url": "https://github.com/NVIDIA/cuml",
+          "version": null
         },
         "cumlprims_mg": {
           "packages": {
@@ -625,7 +651,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cumlprims_mg"
+          "url": "https://github.com/rapidsai/cumlprims_mg",
+          "version": null
         },
         "cuspatial": {
           "packages": {
@@ -654,7 +681,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuspatial"
+          "url": "https://github.com/rapidsai/cuspatial",
+          "version": null
         },
         "cuvs": {
           "packages": {
@@ -671,7 +699,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuvs"
+          "url": "https://github.com/NVIDIA/cuvs",
+          "version": null
         },
         "cuxfilter": {
           "packages": {
@@ -682,7 +711,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuxfilter"
+          "url": "https://github.com/rapidsai/cuxfilter",
+          "version": null
         },
         "dask-cuda": {
           "packages": {
@@ -693,7 +723,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/dask-cuda"
+          "url": "https://github.com/rapidsai/dask-cuda",
+          "version": null
         },
         "kvikio": {
           "packages": {
@@ -710,7 +741,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/kvikio"
+          "url": "https://github.com/rapidsai/kvikio",
+          "version": null
         },
         "ptxcompiler": {
           "packages": {
@@ -721,7 +753,8 @@
               "publishes_prereleases": false
             }
           },
-          "url": "https://github.com/rapidsai/ptxcompiler"
+          "url": "https://github.com/rapidsai/ptxcompiler",
+          "version": null
         },
         "pynvjitlink": {
           "packages": {
@@ -732,7 +765,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/pynvjitlink"
+          "url": "https://github.com/rapidsai/pynvjitlink",
+          "version": null
         },
         "raft": {
           "packages": {
@@ -785,7 +819,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/raft"
+          "url": "https://github.com/NVIDIA/raft",
+          "version": null
         },
         "rapids-dask-dependency": {
           "packages": {
@@ -796,7 +831,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapids-dask-dependency"
+          "url": "https://github.com/rapidsai/rapids-dask-dependency",
+          "version": null
         },
         "rmm": {
           "packages": {
@@ -813,7 +849,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rmm"
+          "url": "https://github.com/rapidsai/rmm",
+          "version": null
         },
         "ucx-py": {
           "packages": {
@@ -824,7 +861,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/ucx-py"
+          "url": "https://github.com/rapidsai/ucx-py",
+          "version": null
         },
         "ucxx": {
           "packages": {
@@ -865,7 +903,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/wholegraph"
+          "url": "https://github.com/rapidsai/wholegraph",
+          "version": null
         }
       }
     },
@@ -879,7 +918,9 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": null,
+          "version": null
         },
         "cucim": {
           "packages": {
@@ -896,7 +937,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cucim"
+          "url": "https://github.com/rapidsai/cucim",
+          "version": null
         },
         "cudf": {
           "packages": {
@@ -949,7 +991,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cudf"
+          "url": "https://github.com/NVIDIA/cudf",
+          "version": null
         },
         "cugraph": {
           "packages": {
@@ -990,7 +1033,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph"
+          "url": "https://github.com/rapidsai/cugraph",
+          "version": null
         },
         "cugraph-gnn": {
           "packages": {
@@ -1019,7 +1063,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph-gnn"
+          "url": "https://github.com/rapidsai/cugraph-gnn",
+          "version": null
         },
         "cugraph-ops": {
           "packages": {
@@ -1036,7 +1081,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph-ops"
+          "url": "https://github.com/rapidsai/cugraph-ops",
+          "version": null
         },
         "cuml": {
           "packages": {
@@ -1065,7 +1111,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuml"
+          "url": "https://github.com/NVIDIA/cuml",
+          "version": null
         },
         "cumlprims_mg": {
           "packages": {
@@ -1076,7 +1123,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cumlprims_mg"
+          "url": "https://github.com/rapidsai/cumlprims_mg",
+          "version": null
         },
         "cuspatial": {
           "packages": {
@@ -1105,7 +1153,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuspatial"
+          "url": "https://github.com/rapidsai/cuspatial",
+          "version": null
         },
         "cuvs": {
           "packages": {
@@ -1140,7 +1189,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuvs"
+          "url": "https://github.com/NVIDIA/cuvs",
+          "version": null
         },
         "cuxfilter": {
           "packages": {
@@ -1151,7 +1201,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuxfilter"
+          "url": "https://github.com/rapidsai/cuxfilter",
+          "version": null
         },
         "dask-cuda": {
           "packages": {
@@ -1162,7 +1213,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/dask-cuda"
+          "url": "https://github.com/rapidsai/dask-cuda",
+          "version": null
         },
         "kvikio": {
           "packages": {
@@ -1179,7 +1231,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/kvikio"
+          "url": "https://github.com/rapidsai/kvikio",
+          "version": null
         },
         "nx-cugraph": {
           "packages": {
@@ -1190,7 +1243,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/nx-cugraph"
+          "url": "https://github.com/rapidsai/nx-cugraph",
+          "version": null
         },
         "ptxcompiler": {
           "packages": {
@@ -1201,7 +1255,8 @@
               "publishes_prereleases": false
             }
           },
-          "url": "https://github.com/rapidsai/ptxcompiler"
+          "url": "https://github.com/rapidsai/ptxcompiler",
+          "version": null
         },
         "pynvjitlink": {
           "packages": {
@@ -1212,7 +1267,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/pynvjitlink"
+          "url": "https://github.com/rapidsai/pynvjitlink",
+          "version": null
         },
         "raft": {
           "packages": {
@@ -1253,7 +1309,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/raft"
+          "url": "https://github.com/NVIDIA/raft",
+          "version": null
         },
         "rapids-dask-dependency": {
           "packages": {
@@ -1264,7 +1321,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapids-dask-dependency"
+          "url": "https://github.com/rapidsai/rapids-dask-dependency",
+          "version": null
         },
         "rmm": {
           "packages": {
@@ -1281,7 +1339,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rmm"
+          "url": "https://github.com/rapidsai/rmm",
+          "version": null
         },
         "ucx-py": {
           "packages": {
@@ -1292,7 +1351,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/ucx-py"
+          "url": "https://github.com/rapidsai/ucx-py",
+          "version": null
         },
         "ucxx": {
           "packages": {
@@ -1330,7 +1390,9 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": null,
+          "version": null
         },
         "cucim": {
           "packages": {
@@ -1347,7 +1409,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cucim"
+          "url": "https://github.com/rapidsai/cucim",
+          "version": null
         },
         "cudf": {
           "packages": {
@@ -1406,7 +1469,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cudf"
+          "url": "https://github.com/NVIDIA/cudf",
+          "version": null
         },
         "cugraph": {
           "packages": {
@@ -1453,11 +1517,13 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph"
+          "url": "https://github.com/rapidsai/cugraph",
+          "version": null
         },
         "cugraph-docs": {
           "packages": {},
-          "url": "https://github.com/rapidsai/cugraph-docs"
+          "url": "https://github.com/rapidsai/cugraph-docs",
+          "version": null
         },
         "cugraph-gnn": {
           "packages": {
@@ -1492,7 +1558,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph-gnn"
+          "url": "https://github.com/rapidsai/cugraph-gnn",
+          "version": null
         },
         "cuml": {
           "packages": {
@@ -1521,7 +1588,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuml"
+          "url": "https://github.com/NVIDIA/cuml",
+          "version": null
         },
         "cumlprims_mg": {
           "packages": {
@@ -1532,7 +1600,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cumlprims_mg"
+          "url": "https://github.com/rapidsai/cumlprims_mg",
+          "version": null
         },
         "cuspatial": {
           "packages": {
@@ -1561,7 +1630,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuspatial"
+          "url": "https://github.com/rapidsai/cuspatial",
+          "version": null
         },
         "cuvs": {
           "packages": {
@@ -1602,7 +1672,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuvs"
+          "url": "https://github.com/NVIDIA/cuvs",
+          "version": null
         },
         "cuxfilter": {
           "packages": {
@@ -1613,7 +1684,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuxfilter"
+          "url": "https://github.com/rapidsai/cuxfilter",
+          "version": null
         },
         "dask-cuda": {
           "packages": {
@@ -1624,7 +1696,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/dask-cuda"
+          "url": "https://github.com/rapidsai/dask-cuda",
+          "version": null
         },
         "kvikio": {
           "packages": {
@@ -1647,7 +1720,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/kvikio"
+          "url": "https://github.com/rapidsai/kvikio",
+          "version": null
         },
         "nx-cugraph": {
           "packages": {
@@ -1658,7 +1732,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/nx-cugraph"
+          "url": "https://github.com/rapidsai/nx-cugraph",
+          "version": null
         },
         "ptxcompiler": {
           "packages": {
@@ -1669,7 +1744,8 @@
               "publishes_prereleases": false
             }
           },
-          "url": "https://github.com/rapidsai/ptxcompiler"
+          "url": "https://github.com/rapidsai/ptxcompiler",
+          "version": null
         },
         "pynvjitlink": {
           "packages": {
@@ -1680,7 +1756,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/pynvjitlink"
+          "url": "https://github.com/rapidsai/pynvjitlink",
+          "version": null
         },
         "raft": {
           "packages": {
@@ -1727,7 +1804,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/raft"
+          "url": "https://github.com/NVIDIA/raft",
+          "version": null
         },
         "rapids-dask-dependency": {
           "packages": {
@@ -1738,7 +1816,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapids-dask-dependency"
+          "url": "https://github.com/rapidsai/rapids-dask-dependency",
+          "version": null
         },
         "rmm": {
           "packages": {
@@ -1761,7 +1840,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rmm"
+          "url": "https://github.com/rapidsai/rmm",
+          "version": null
         },
         "ucx-py": {
           "packages": {
@@ -1772,7 +1852,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/ucx-py"
+          "url": "https://github.com/rapidsai/ucx-py",
+          "version": null
         },
         "ucxx": {
           "packages": {
@@ -1816,7 +1897,9 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": null,
+          "version": null
         },
         "cucim": {
           "packages": {
@@ -1833,7 +1916,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cucim"
+          "url": "https://github.com/rapidsai/cucim",
+          "version": null
         },
         "cudf": {
           "packages": {
@@ -1892,7 +1976,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cudf"
+          "url": "https://github.com/NVIDIA/cudf",
+          "version": null
         },
         "cugraph": {
           "packages": {
@@ -1939,11 +2024,13 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph"
+          "url": "https://github.com/rapidsai/cugraph",
+          "version": null
         },
         "cugraph-docs": {
           "packages": {},
-          "url": "https://github.com/rapidsai/cugraph-docs"
+          "url": "https://github.com/rapidsai/cugraph-docs",
+          "version": null
         },
         "cugraph-gnn": {
           "packages": {
@@ -1978,7 +2065,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph-gnn"
+          "url": "https://github.com/rapidsai/cugraph-gnn",
+          "version": null
         },
         "cuml": {
           "packages": {
@@ -2007,7 +2095,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuml"
+          "url": "https://github.com/NVIDIA/cuml",
+          "version": null
         },
         "cumlprims_mg": {
           "packages": {
@@ -2018,7 +2107,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cumlprims_mg"
+          "url": "https://github.com/rapidsai/cumlprims_mg",
+          "version": null
         },
         "cuspatial": {
           "packages": {
@@ -2047,7 +2137,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuspatial"
+          "url": "https://github.com/rapidsai/cuspatial",
+          "version": null
         },
         "cuvs": {
           "packages": {
@@ -2088,7 +2179,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuvs"
+          "url": "https://github.com/NVIDIA/cuvs",
+          "version": null
         },
         "cuxfilter": {
           "packages": {
@@ -2099,7 +2191,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuxfilter"
+          "url": "https://github.com/rapidsai/cuxfilter",
+          "version": null
         },
         "dask-cuda": {
           "packages": {
@@ -2110,7 +2203,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/dask-cuda"
+          "url": "https://github.com/rapidsai/dask-cuda",
+          "version": null
         },
         "kvikio": {
           "packages": {
@@ -2133,7 +2227,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/kvikio"
+          "url": "https://github.com/rapidsai/kvikio",
+          "version": null
         },
         "nx-cugraph": {
           "packages": {
@@ -2144,7 +2239,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/nx-cugraph"
+          "url": "https://github.com/rapidsai/nx-cugraph",
+          "version": null
         },
         "ptxcompiler": {
           "packages": {
@@ -2155,7 +2251,8 @@
               "publishes_prereleases": false
             }
           },
-          "url": "https://github.com/rapidsai/ptxcompiler"
+          "url": "https://github.com/rapidsai/ptxcompiler",
+          "version": null
         },
         "pynvjitlink": {
           "packages": {
@@ -2166,7 +2263,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/pynvjitlink"
+          "url": "https://github.com/rapidsai/pynvjitlink",
+          "version": null
         },
         "raft": {
           "packages": {
@@ -2213,7 +2311,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/raft"
+          "url": "https://github.com/NVIDIA/raft",
+          "version": null
         },
         "rapids-dask-dependency": {
           "packages": {
@@ -2224,7 +2323,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapids-dask-dependency"
+          "url": "https://github.com/rapidsai/rapids-dask-dependency",
+          "version": null
         },
         "rapids-logger": {
           "packages": {
@@ -2259,7 +2359,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rmm"
+          "url": "https://github.com/rapidsai/rmm",
+          "version": null
         },
         "ucx-py": {
           "packages": {
@@ -2270,7 +2371,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/ucx-py"
+          "url": "https://github.com/rapidsai/ucx-py",
+          "version": null
         },
         "ucxx": {
           "packages": {
@@ -2320,7 +2422,9 @@
               "has_wheel_package": true,
               "publishes_prereleases": false
             }
-          }
+          },
+          "url": null,
+          "version": null
         },
         "cucim": {
           "packages": {
@@ -2337,7 +2441,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cucim"
+          "url": "https://github.com/rapidsai/cucim",
+          "version": null
         },
         "cudf": {
           "packages": {
@@ -2396,7 +2501,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cudf"
+          "url": "https://github.com/NVIDIA/cudf",
+          "version": null
         },
         "cugraph": {
           "packages": {
@@ -2443,11 +2549,13 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph"
+          "url": "https://github.com/rapidsai/cugraph",
+          "version": null
         },
         "cugraph-docs": {
           "packages": {},
-          "url": "https://github.com/rapidsai/cugraph-docs"
+          "url": "https://github.com/rapidsai/cugraph-docs",
+          "version": null
         },
         "cugraph-gnn": {
           "packages": {
@@ -2482,7 +2590,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph-gnn"
+          "url": "https://github.com/rapidsai/cugraph-gnn",
+          "version": null
         },
         "cuml": {
           "packages": {
@@ -2505,7 +2614,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuml"
+          "url": "https://github.com/NVIDIA/cuml",
+          "version": null
         },
         "cumlprims_mg": {
           "packages": {
@@ -2516,7 +2626,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cumlprims_mg"
+          "url": "https://github.com/rapidsai/cumlprims_mg",
+          "version": null
         },
         "cuvs": {
           "packages": {
@@ -2557,7 +2668,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuvs"
+          "url": "https://github.com/NVIDIA/cuvs",
+          "version": null
         },
         "cuxfilter": {
           "packages": {
@@ -2568,7 +2680,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuxfilter"
+          "url": "https://github.com/rapidsai/cuxfilter",
+          "version": null
         },
         "dask-cuda": {
           "packages": {
@@ -2579,7 +2692,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/dask-cuda"
+          "url": "https://github.com/rapidsai/dask-cuda",
+          "version": null
         },
         "kvikio": {
           "packages": {
@@ -2602,7 +2716,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/kvikio"
+          "url": "https://github.com/rapidsai/kvikio",
+          "version": null
         },
         "nx-cugraph": {
           "packages": {
@@ -2613,7 +2728,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/nx-cugraph"
+          "url": "https://github.com/rapidsai/nx-cugraph",
+          "version": null
         },
         "ptxcompiler": {
           "packages": {
@@ -2624,7 +2740,8 @@
               "publishes_prereleases": false
             }
           },
-          "url": "https://github.com/rapidsai/ptxcompiler"
+          "url": "https://github.com/rapidsai/ptxcompiler",
+          "version": null
         },
         "pynvjitlink": {
           "packages": {
@@ -2635,7 +2752,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/pynvjitlink"
+          "url": "https://github.com/rapidsai/pynvjitlink",
+          "version": null
         },
         "raft": {
           "packages": {
@@ -2682,7 +2800,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/raft"
+          "url": "https://github.com/NVIDIA/raft",
+          "version": null
         },
         "rapids-cli": {
           "packages": {
@@ -2693,7 +2812,8 @@
               "publishes_prereleases": false
             }
           },
-          "url": "https://github.com/rapidsai/rapids-cli"
+          "url": "https://github.com/rapidsai/rapids-cli",
+          "version": null
         },
         "rapids-dask-dependency": {
           "packages": {
@@ -2704,7 +2824,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapids-dask-dependency"
+          "url": "https://github.com/rapidsai/rapids-dask-dependency",
+          "version": null
         },
         "rapids-logger": {
           "packages": {
@@ -2739,7 +2860,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapidsmpf"
+          "url": "https://github.com/rapidsai/rapidsmpf",
+          "version": null
         },
         "rmm": {
           "packages": {
@@ -2762,7 +2884,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rmm"
+          "url": "https://github.com/rapidsai/rmm",
+          "version": null
         },
         "ucx-py": {
           "packages": {
@@ -2773,7 +2896,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/ucx-py"
+          "url": "https://github.com/rapidsai/ucx-py",
+          "version": null
         },
         "ucxx": {
           "packages": {
@@ -2830,7 +2954,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cucim"
+          "url": "https://github.com/rapidsai/cucim",
+          "version": null
         },
         "cudf": {
           "packages": {
@@ -2889,7 +3014,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cudf"
+          "url": "https://github.com/NVIDIA/cudf",
+          "version": null
         },
         "cugraph": {
           "packages": {
@@ -2936,11 +3062,13 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph"
+          "url": "https://github.com/rapidsai/cugraph",
+          "version": null
         },
         "cugraph-docs": {
           "packages": {},
-          "url": "https://github.com/rapidsai/cugraph-docs"
+          "url": "https://github.com/rapidsai/cugraph-docs",
+          "version": null
         },
         "cugraph-gnn": {
           "packages": {
@@ -2969,7 +3097,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph-gnn"
+          "url": "https://github.com/rapidsai/cugraph-gnn",
+          "version": null
         },
         "cuml": {
           "packages": {
@@ -2992,7 +3121,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuml"
+          "url": "https://github.com/NVIDIA/cuml",
+          "version": null
         },
         "cumlprims_mg": {
           "packages": {
@@ -3003,7 +3133,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cumlprims_mg"
+          "url": "https://github.com/rapidsai/cumlprims_mg",
+          "version": null
         },
         "cuvs": {
           "packages": {
@@ -3044,7 +3175,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuvs"
+          "url": "https://github.com/NVIDIA/cuvs",
+          "version": null
         },
         "cuxfilter": {
           "packages": {
@@ -3055,7 +3187,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuxfilter"
+          "url": "https://github.com/rapidsai/cuxfilter",
+          "version": null
         },
         "dask-cuda": {
           "packages": {
@@ -3066,7 +3199,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/dask-cuda"
+          "url": "https://github.com/rapidsai/dask-cuda",
+          "version": null
         },
         "kvikio": {
           "packages": {
@@ -3089,7 +3223,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/kvikio"
+          "url": "https://github.com/rapidsai/kvikio",
+          "version": null
         },
         "nx-cugraph": {
           "packages": {
@@ -3100,7 +3235,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/nx-cugraph"
+          "url": "https://github.com/rapidsai/nx-cugraph",
+          "version": null
         },
         "pynvjitlink": {
           "packages": {
@@ -3111,7 +3247,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/pynvjitlink"
+          "url": "https://github.com/rapidsai/pynvjitlink",
+          "version": null
         },
         "raft": {
           "packages": {
@@ -3158,7 +3295,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/raft"
+          "url": "https://github.com/NVIDIA/raft",
+          "version": null
         },
         "rapids-cli": {
           "packages": {
@@ -3169,7 +3307,8 @@
               "publishes_prereleases": false
             }
           },
-          "url": "https://github.com/rapidsai/rapids-cli"
+          "url": "https://github.com/rapidsai/rapids-cli",
+          "version": null
         },
         "rapids-dask-dependency": {
           "packages": {
@@ -3180,7 +3319,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapids-dask-dependency"
+          "url": "https://github.com/rapidsai/rapids-dask-dependency",
+          "version": null
         },
         "rapids-logger": {
           "packages": {
@@ -3215,7 +3355,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapidsmpf"
+          "url": "https://github.com/rapidsai/rapidsmpf",
+          "version": null
         },
         "rmm": {
           "packages": {
@@ -3238,7 +3379,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rmm"
+          "url": "https://github.com/rapidsai/rmm",
+          "version": null
         },
         "ucx-py": {
           "packages": {
@@ -3249,7 +3391,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/ucx-py"
+          "url": "https://github.com/rapidsai/ucx-py",
+          "version": null
         },
         "ucxx": {
           "packages": {
@@ -3306,7 +3449,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cucim"
+          "url": "https://github.com/rapidsai/cucim",
+          "version": null
         },
         "cudf": {
           "packages": {
@@ -3365,7 +3509,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cudf"
+          "url": "https://github.com/NVIDIA/cudf",
+          "version": null
         },
         "cugraph": {
           "packages": {
@@ -3412,11 +3557,13 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph"
+          "url": "https://github.com/rapidsai/cugraph",
+          "version": null
         },
         "cugraph-docs": {
           "packages": {},
-          "url": "https://github.com/rapidsai/cugraph-docs"
+          "url": "https://github.com/rapidsai/cugraph-docs",
+          "version": null
         },
         "cugraph-gnn": {
           "packages": {
@@ -3445,7 +3592,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph-gnn"
+          "url": "https://github.com/rapidsai/cugraph-gnn",
+          "version": null
         },
         "cuml": {
           "packages": {
@@ -3468,7 +3616,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuml"
+          "url": "https://github.com/NVIDIA/cuml",
+          "version": null
         },
         "cumlprims_mg": {
           "packages": {
@@ -3479,7 +3628,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cumlprims_mg"
+          "url": "https://github.com/rapidsai/cumlprims_mg",
+          "version": null
         },
         "cuvs": {
           "packages": {
@@ -3520,7 +3670,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuvs"
+          "url": "https://github.com/NVIDIA/cuvs",
+          "version": null
         },
         "cuvs-lucene": {
           "packages": {
@@ -3531,7 +3682,8 @@
               "publishes_prereleases": false
             }
           },
-          "url": "https://github.com/NVIDIA/cuvs-lucene"
+          "url": "https://github.com/NVIDIA/cuvs-lucene",
+          "version": null
         },
         "cuxfilter": {
           "packages": {
@@ -3542,7 +3694,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuxfilter"
+          "url": "https://github.com/rapidsai/cuxfilter",
+          "version": null
         },
         "dask-cuda": {
           "packages": {
@@ -3553,7 +3706,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/dask-cuda"
+          "url": "https://github.com/rapidsai/dask-cuda",
+          "version": null
         },
         "kvikio": {
           "packages": {
@@ -3576,7 +3730,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/kvikio"
+          "url": "https://github.com/rapidsai/kvikio",
+          "version": null
         },
         "nx-cugraph": {
           "packages": {
@@ -3587,7 +3742,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/nx-cugraph"
+          "url": "https://github.com/rapidsai/nx-cugraph",
+          "version": null
         },
         "raft": {
           "packages": {
@@ -3634,7 +3790,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/raft"
+          "url": "https://github.com/NVIDIA/raft",
+          "version": null
         },
         "rapids-cli": {
           "packages": {
@@ -3645,7 +3802,8 @@
               "publishes_prereleases": false
             }
           },
-          "url": "https://github.com/rapidsai/rapids-cli"
+          "url": "https://github.com/rapidsai/rapids-cli",
+          "version": null
         },
         "rapids-dask-dependency": {
           "packages": {
@@ -3656,7 +3814,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapids-dask-dependency"
+          "url": "https://github.com/rapidsai/rapids-dask-dependency",
+          "version": null
         },
         "rapids-logger": {
           "packages": {
@@ -3691,7 +3850,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapidsmpf"
+          "url": "https://github.com/rapidsai/rapidsmpf",
+          "version": null
         },
         "rmm": {
           "packages": {
@@ -3714,7 +3874,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rmm"
+          "url": "https://github.com/rapidsai/rmm",
+          "version": null
         },
         "ucxx": {
           "packages": {
@@ -3771,7 +3932,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cucim"
+          "url": "https://github.com/rapidsai/cucim",
+          "version": null
         },
         "cudf": {
           "packages": {
@@ -3830,7 +3992,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cudf"
+          "url": "https://github.com/NVIDIA/cudf",
+          "version": null
         },
         "cugraph": {
           "packages": {
@@ -3865,11 +4028,13 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph"
+          "url": "https://github.com/rapidsai/cugraph",
+          "version": null
         },
         "cugraph-docs": {
           "packages": {},
-          "url": "https://github.com/rapidsai/cugraph-docs"
+          "url": "https://github.com/rapidsai/cugraph-docs",
+          "version": null
         },
         "cugraph-gnn": {
           "packages": {
@@ -3898,7 +4063,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph-gnn"
+          "url": "https://github.com/rapidsai/cugraph-gnn",
+          "version": null
         },
         "cuml": {
           "packages": {
@@ -3921,7 +4087,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuml"
+          "url": "https://github.com/NVIDIA/cuml",
+          "version": null
         },
         "cumlprims_mg": {
           "packages": {
@@ -3932,7 +4099,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cumlprims_mg"
+          "url": "https://github.com/rapidsai/cumlprims_mg",
+          "version": null
         },
         "cuvs": {
           "packages": {
@@ -3973,7 +4141,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuvs"
+          "url": "https://github.com/NVIDIA/cuvs",
+          "version": null
         },
         "cuvs-lucene": {
           "packages": {
@@ -3984,7 +4153,8 @@
               "publishes_prereleases": false
             }
           },
-          "url": "https://github.com/NVIDIA/cuvs-lucene"
+          "url": "https://github.com/NVIDIA/cuvs-lucene",
+          "version": null
         },
         "cuxfilter": {
           "packages": {
@@ -3995,7 +4165,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuxfilter"
+          "url": "https://github.com/rapidsai/cuxfilter",
+          "version": null
         },
         "dask-cuda": {
           "packages": {
@@ -4006,7 +4177,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/dask-cuda"
+          "url": "https://github.com/rapidsai/dask-cuda",
+          "version": null
         },
         "kvikio": {
           "packages": {
@@ -4029,7 +4201,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/kvikio"
+          "url": "https://github.com/rapidsai/kvikio",
+          "version": null
         },
         "nx-cugraph": {
           "packages": {
@@ -4040,7 +4213,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/nx-cugraph"
+          "url": "https://github.com/rapidsai/nx-cugraph",
+          "version": null
         },
         "raft": {
           "packages": {
@@ -4087,7 +4261,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/raft"
+          "url": "https://github.com/NVIDIA/raft",
+          "version": null
         },
         "rapids-cli": {
           "packages": {
@@ -4098,7 +4273,8 @@
               "publishes_prereleases": false
             }
           },
-          "url": "https://github.com/rapidsai/rapids-cli"
+          "url": "https://github.com/rapidsai/rapids-cli",
+          "version": null
         },
         "rapids-dask-dependency": {
           "packages": {
@@ -4109,7 +4285,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapids-dask-dependency"
+          "url": "https://github.com/rapidsai/rapids-dask-dependency",
+          "version": null
         },
         "rapids-logger": {
           "packages": {
@@ -4144,7 +4321,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapidsmpf"
+          "url": "https://github.com/rapidsai/rapidsmpf",
+          "version": null
         },
         "rmm": {
           "packages": {
@@ -4167,7 +4345,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rmm"
+          "url": "https://github.com/rapidsai/rmm",
+          "version": null
         },
         "ucxx": {
           "packages": {
@@ -4224,7 +4403,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cucim"
+          "url": "https://github.com/rapidsai/cucim",
+          "version": null
         },
         "cudf": {
           "packages": {
@@ -4283,7 +4463,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cudf"
+          "url": "https://github.com/NVIDIA/cudf",
+          "version": null
         },
         "cugraph": {
           "packages": {
@@ -4318,11 +4499,13 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph"
+          "url": "https://github.com/rapidsai/cugraph",
+          "version": null
         },
         "cugraph-docs": {
           "packages": {},
-          "url": "https://github.com/rapidsai/cugraph-docs"
+          "url": "https://github.com/rapidsai/cugraph-docs",
+          "version": null
         },
         "cugraph-gnn": {
           "packages": {
@@ -4351,7 +4534,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph-gnn"
+          "url": "https://github.com/rapidsai/cugraph-gnn",
+          "version": null
         },
         "cuml": {
           "packages": {
@@ -4374,7 +4558,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuml"
+          "url": "https://github.com/NVIDIA/cuml",
+          "version": null
         },
         "cuvs": {
           "packages": {
@@ -4415,7 +4600,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuvs"
+          "url": "https://github.com/NVIDIA/cuvs",
+          "version": null
         },
         "cuvs-lucene": {
           "packages": {
@@ -4426,7 +4612,8 @@
               "publishes_prereleases": false
             }
           },
-          "url": "https://github.com/NVIDIA/cuvs-lucene"
+          "url": "https://github.com/NVIDIA/cuvs-lucene",
+          "version": null
         },
         "cuxfilter": {
           "packages": {
@@ -4437,7 +4624,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuxfilter"
+          "url": "https://github.com/rapidsai/cuxfilter",
+          "version": null
         },
         "dask-cuda": {
           "packages": {
@@ -4448,7 +4636,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/dask-cuda"
+          "url": "https://github.com/rapidsai/dask-cuda",
+          "version": null
         },
         "kvikio": {
           "packages": {
@@ -4471,7 +4660,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/kvikio"
+          "url": "https://github.com/rapidsai/kvikio",
+          "version": null
         },
         "nx-cugraph": {
           "packages": {
@@ -4482,7 +4672,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/nx-cugraph"
+          "url": "https://github.com/rapidsai/nx-cugraph",
+          "version": null
         },
         "raft": {
           "packages": {
@@ -4529,7 +4720,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/raft"
+          "url": "https://github.com/NVIDIA/raft",
+          "version": null
         },
         "rapids-cli": {
           "packages": {
@@ -4540,7 +4732,8 @@
               "publishes_prereleases": false
             }
           },
-          "url": "https://github.com/rapidsai/rapids-cli"
+          "url": "https://github.com/rapidsai/rapids-cli",
+          "version": null
         },
         "rapids-dask-dependency": {
           "packages": {
@@ -4551,7 +4744,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapids-dask-dependency"
+          "url": "https://github.com/rapidsai/rapids-dask-dependency",
+          "version": null
         },
         "rapids-logger": {
           "packages": {
@@ -4586,7 +4780,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapidsmpf"
+          "url": "https://github.com/rapidsai/rapidsmpf",
+          "version": null
         },
         "rmm": {
           "packages": {
@@ -4609,7 +4804,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rmm"
+          "url": "https://github.com/rapidsai/rmm",
+          "version": null
         },
         "ucxx": {
           "packages": {
@@ -4666,7 +4862,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cucim"
+          "url": "https://github.com/rapidsai/cucim",
+          "version": null
         },
         "cudf": {
           "packages": {
@@ -4725,7 +4922,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cudf"
+          "url": "https://github.com/NVIDIA/cudf",
+          "version": null
         },
         "cugraph": {
           "packages": {
@@ -4760,11 +4958,13 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph"
+          "url": "https://github.com/rapidsai/cugraph",
+          "version": null
         },
         "cugraph-docs": {
           "packages": {},
-          "url": "https://github.com/rapidsai/cugraph-docs"
+          "url": "https://github.com/rapidsai/cugraph-docs",
+          "version": null
         },
         "cugraph-gnn": {
           "packages": {
@@ -4793,7 +4993,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph-gnn"
+          "url": "https://github.com/rapidsai/cugraph-gnn",
+          "version": null
         },
         "cuml": {
           "packages": {
@@ -4816,7 +5017,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuml"
+          "url": "https://github.com/NVIDIA/cuml",
+          "version": null
         },
         "cuvs": {
           "packages": {
@@ -4857,7 +5059,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuvs"
+          "url": "https://github.com/NVIDIA/cuvs",
+          "version": null
         },
         "cuvs-lucene": {
           "packages": {
@@ -4868,7 +5071,8 @@
               "publishes_prereleases": false
             }
           },
-          "url": "https://github.com/NVIDIA/cuvs-lucene"
+          "url": "https://github.com/NVIDIA/cuvs-lucene",
+          "version": null
         },
         "cuxfilter": {
           "packages": {
@@ -4879,7 +5083,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuxfilter"
+          "url": "https://github.com/rapidsai/cuxfilter",
+          "version": null
         },
         "dask-cuda": {
           "packages": {
@@ -4890,7 +5095,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/dask-cuda"
+          "url": "https://github.com/rapidsai/dask-cuda",
+          "version": null
         },
         "kvikio": {
           "packages": {
@@ -4913,7 +5119,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/kvikio"
+          "url": "https://github.com/rapidsai/kvikio",
+          "version": null
         },
         "nvforest": {
           "packages": {
@@ -4936,7 +5143,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/nvforest"
+          "url": "https://github.com/rapidsai/nvforest",
+          "version": null
         },
         "nx-cugraph": {
           "packages": {
@@ -4947,7 +5155,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/nx-cugraph"
+          "url": "https://github.com/rapidsai/nx-cugraph",
+          "version": null
         },
         "raft": {
           "packages": {
@@ -4994,7 +5203,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/raft"
+          "url": "https://github.com/NVIDIA/raft",
+          "version": null
         },
         "rapids-cli": {
           "packages": {
@@ -5005,7 +5215,8 @@
               "publishes_prereleases": false
             }
           },
-          "url": "https://github.com/rapidsai/rapids-cli"
+          "url": "https://github.com/rapidsai/rapids-cli",
+          "version": null
         },
         "rapids-dask-dependency": {
           "packages": {
@@ -5016,7 +5227,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapids-dask-dependency"
+          "url": "https://github.com/rapidsai/rapids-dask-dependency",
+          "version": null
         },
         "rapids-logger": {
           "packages": {
@@ -5051,7 +5263,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapidsmpf"
+          "url": "https://github.com/rapidsai/rapidsmpf",
+          "version": null
         },
         "rmm": {
           "packages": {
@@ -5074,7 +5287,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rmm"
+          "url": "https://github.com/rapidsai/rmm",
+          "version": null
         },
         "ucxx": {
           "packages": {
@@ -5131,7 +5345,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cucim"
+          "url": "https://github.com/rapidsai/cucim",
+          "version": null
         },
         "cudf": {
           "packages": {
@@ -5190,7 +5405,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cudf"
+          "url": "https://github.com/NVIDIA/cudf",
+          "version": null
         },
         "cugraph": {
           "packages": {
@@ -5225,11 +5441,13 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph"
+          "url": "https://github.com/rapidsai/cugraph",
+          "version": null
         },
         "cugraph-docs": {
           "packages": {},
-          "url": "https://github.com/rapidsai/cugraph-docs"
+          "url": "https://github.com/rapidsai/cugraph-docs",
+          "version": null
         },
         "cugraph-gnn": {
           "packages": {
@@ -5258,7 +5476,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph-gnn"
+          "url": "https://github.com/rapidsai/cugraph-gnn",
+          "version": null
         },
         "cuml": {
           "packages": {
@@ -5281,7 +5500,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuml"
+          "url": "https://github.com/NVIDIA/cuml",
+          "version": null
         },
         "cuvs": {
           "packages": {
@@ -5322,7 +5542,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuvs"
+          "url": "https://github.com/NVIDIA/cuvs",
+          "version": null
         },
         "cuvs-lucene": {
           "packages": {
@@ -5333,7 +5554,8 @@
               "publishes_prereleases": false
             }
           },
-          "url": "https://github.com/NVIDIA/cuvs-lucene"
+          "url": "https://github.com/NVIDIA/cuvs-lucene",
+          "version": null
         },
         "cuxfilter": {
           "packages": {
@@ -5344,7 +5566,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cuxfilter"
+          "url": "https://github.com/rapidsai/cuxfilter",
+          "version": null
         },
         "dask-cuda": {
           "packages": {
@@ -5355,7 +5578,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/dask-cuda"
+          "url": "https://github.com/rapidsai/dask-cuda",
+          "version": null
         },
         "kvikio": {
           "packages": {
@@ -5378,7 +5602,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/kvikio"
+          "url": "https://github.com/rapidsai/kvikio",
+          "version": null
         },
         "nvforest": {
           "packages": {
@@ -5401,7 +5626,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/nvforest"
+          "url": "https://github.com/rapidsai/nvforest",
+          "version": null
         },
         "nx-cugraph": {
           "packages": {
@@ -5412,7 +5638,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/nx-cugraph"
+          "url": "https://github.com/rapidsai/nx-cugraph",
+          "version": null
         },
         "raft": {
           "packages": {
@@ -5459,7 +5686,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/raft"
+          "url": "https://github.com/NVIDIA/raft",
+          "version": null
         },
         "rapids-cli": {
           "packages": {
@@ -5470,7 +5698,8 @@
               "publishes_prereleases": false
             }
           },
-          "url": "https://github.com/rapidsai/rapids-cli"
+          "url": "https://github.com/rapidsai/rapids-cli",
+          "version": null
         },
         "rapids-dask-dependency": {
           "packages": {
@@ -5481,7 +5710,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapids-dask-dependency"
+          "url": "https://github.com/rapidsai/rapids-dask-dependency",
+          "version": null
         },
         "rapids-logger": {
           "packages": {
@@ -5516,7 +5746,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapidsmpf"
+          "url": "https://github.com/rapidsai/rapidsmpf",
+          "version": null
         },
         "rmm": {
           "packages": {
@@ -5539,7 +5770,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rmm"
+          "url": "https://github.com/rapidsai/rmm",
+          "version": null
         },
         "ucxx": {
           "packages": {
@@ -5596,7 +5828,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cucim"
+          "url": "https://github.com/rapidsai/cucim",
+          "version": null
         },
         "cudf": {
           "packages": {
@@ -5673,7 +5906,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cudf"
+          "url": "https://github.com/NVIDIA/cudf",
+          "version": null
         },
         "cugraph": {
           "packages": {
@@ -5708,11 +5942,13 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph"
+          "url": "https://github.com/rapidsai/cugraph",
+          "version": null
         },
         "cugraph-docs": {
           "packages": {},
-          "url": "https://github.com/rapidsai/cugraph-docs"
+          "url": "https://github.com/rapidsai/cugraph-docs",
+          "version": null
         },
         "cugraph-gnn": {
           "packages": {
@@ -5741,7 +5977,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph-gnn"
+          "url": "https://github.com/rapidsai/cugraph-gnn",
+          "version": null
         },
         "cuml": {
           "packages": {
@@ -5764,7 +6001,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuml"
+          "url": "https://github.com/NVIDIA/cuml",
+          "version": null
         },
         "cuvs": {
           "packages": {
@@ -5805,7 +6043,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuvs"
+          "url": "https://github.com/NVIDIA/cuvs",
+          "version": null
         },
         "cuvs-lucene": {
           "packages": {
@@ -5816,7 +6055,8 @@
               "publishes_prereleases": false
             }
           },
-          "url": "https://github.com/NVIDIA/cuvs-lucene"
+          "url": "https://github.com/NVIDIA/cuvs-lucene",
+          "version": null
         },
         "dask-cuda": {
           "packages": {
@@ -5827,7 +6067,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/dask-cuda"
+          "url": "https://github.com/rapidsai/dask-cuda",
+          "version": null
         },
         "kvikio": {
           "packages": {
@@ -5850,7 +6091,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/kvikio"
+          "url": "https://github.com/rapidsai/kvikio",
+          "version": null
         },
         "nvforest": {
           "packages": {
@@ -5873,7 +6115,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/nvforest"
+          "url": "https://github.com/rapidsai/nvforest",
+          "version": null
         },
         "nx-cugraph": {
           "packages": {
@@ -5884,7 +6127,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/nx-cugraph"
+          "url": "https://github.com/rapidsai/nx-cugraph",
+          "version": null
         },
         "raft": {
           "packages": {
@@ -5931,7 +6175,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/raft"
+          "url": "https://github.com/NVIDIA/raft",
+          "version": null
         },
         "rapids-cli": {
           "packages": {
@@ -5942,7 +6187,8 @@
               "publishes_prereleases": false
             }
           },
-          "url": "https://github.com/rapidsai/rapids-cli"
+          "url": "https://github.com/rapidsai/rapids-cli",
+          "version": null
         },
         "rapids-dask-dependency": {
           "packages": {
@@ -5953,7 +6199,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapids-dask-dependency"
+          "url": "https://github.com/rapidsai/rapids-dask-dependency",
+          "version": null
         },
         "rapids-logger": {
           "packages": {
@@ -5988,7 +6235,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapidsmpf"
+          "url": "https://github.com/rapidsai/rapidsmpf",
+          "version": null
         },
         "rmm": {
           "packages": {
@@ -6011,7 +6259,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rmm"
+          "url": "https://github.com/rapidsai/rmm",
+          "version": null
         },
         "ucxx": {
           "packages": {
@@ -6068,7 +6317,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cucim"
+          "url": "https://github.com/rapidsai/cucim",
+          "version": null
         },
         "cudf": {
           "packages": {
@@ -6145,7 +6395,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cudf"
+          "url": "https://github.com/NVIDIA/cudf",
+          "version": null
         },
         "cugraph": {
           "packages": {
@@ -6180,11 +6431,13 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph"
+          "url": "https://github.com/rapidsai/cugraph",
+          "version": null
         },
         "cugraph-docs": {
           "packages": {},
-          "url": "https://github.com/rapidsai/cugraph-docs"
+          "url": "https://github.com/rapidsai/cugraph-docs",
+          "version": null
         },
         "cugraph-gnn": {
           "packages": {
@@ -6213,7 +6466,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph-gnn"
+          "url": "https://github.com/rapidsai/cugraph-gnn",
+          "version": null
         },
         "cuml": {
           "packages": {
@@ -6236,7 +6490,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuml"
+          "url": "https://github.com/NVIDIA/cuml",
+          "version": null
         },
         "cuvs": {
           "packages": {
@@ -6283,7 +6538,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuvs"
+          "url": "https://github.com/NVIDIA/cuvs",
+          "version": null
         },
         "dask-cuda": {
           "packages": {
@@ -6294,7 +6550,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/dask-cuda"
+          "url": "https://github.com/rapidsai/dask-cuda",
+          "version": null
         },
         "kvikio": {
           "packages": {
@@ -6317,7 +6574,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/kvikio"
+          "url": "https://github.com/rapidsai/kvikio",
+          "version": null
         },
         "nvforest": {
           "packages": {
@@ -6340,7 +6598,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/nvforest"
+          "url": "https://github.com/rapidsai/nvforest",
+          "version": null
         },
         "nx-cugraph": {
           "packages": {
@@ -6351,7 +6610,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/nx-cugraph"
+          "url": "https://github.com/rapidsai/nx-cugraph",
+          "version": null
         },
         "raft": {
           "packages": {
@@ -6398,7 +6658,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/raft"
+          "url": "https://github.com/NVIDIA/raft",
+          "version": null
         },
         "rapids-cli": {
           "packages": {
@@ -6409,7 +6670,8 @@
               "publishes_prereleases": false
             }
           },
-          "url": "https://github.com/rapidsai/rapids-cli"
+          "url": "https://github.com/rapidsai/rapids-cli",
+          "version": null
         },
         "rapids-dask-dependency": {
           "packages": {
@@ -6420,7 +6682,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapids-dask-dependency"
+          "url": "https://github.com/rapidsai/rapids-dask-dependency",
+          "version": null
         },
         "rapids-logger": {
           "packages": {
@@ -6455,7 +6718,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapidsmpf"
+          "url": "https://github.com/rapidsai/rapidsmpf",
+          "version": null
         },
         "rmm": {
           "packages": {
@@ -6478,7 +6742,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rmm"
+          "url": "https://github.com/rapidsai/rmm",
+          "version": null
         },
         "ucxx": {
           "packages": {
@@ -6535,7 +6800,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cucim"
+          "url": "https://github.com/rapidsai/cucim",
+          "version": null
         },
         "cudf": {
           "packages": {
@@ -6612,7 +6878,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cudf"
+          "url": "https://github.com/NVIDIA/cudf",
+          "version": null
         },
         "cugraph": {
           "packages": {
@@ -6647,11 +6914,13 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph"
+          "url": "https://github.com/rapidsai/cugraph",
+          "version": null
         },
         "cugraph-docs": {
           "packages": {},
-          "url": "https://github.com/rapidsai/cugraph-docs"
+          "url": "https://github.com/rapidsai/cugraph-docs",
+          "version": null
         },
         "cugraph-gnn": {
           "packages": {
@@ -6680,7 +6949,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/cugraph-gnn"
+          "url": "https://github.com/rapidsai/cugraph-gnn",
+          "version": null
         },
         "cuml": {
           "packages": {
@@ -6703,7 +6973,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuml"
+          "url": "https://github.com/NVIDIA/cuml",
+          "version": null
         },
         "cuvs": {
           "packages": {
@@ -6750,7 +7021,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/cuvs"
+          "url": "https://github.com/NVIDIA/cuvs",
+          "version": null
         },
         "dask-cuda": {
           "packages": {
@@ -6761,7 +7033,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/dask-cuda"
+          "url": "https://github.com/rapidsai/dask-cuda",
+          "version": null
         },
         "kvikio": {
           "packages": {
@@ -6784,7 +7057,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/kvikio"
+          "url": "https://github.com/rapidsai/kvikio",
+          "version": null
         },
         "nvforest": {
           "packages": {
@@ -6807,7 +7081,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/nvforest"
+          "url": "https://github.com/rapidsai/nvforest",
+          "version": null
         },
         "nx-cugraph": {
           "packages": {
@@ -6818,7 +7093,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/nx-cugraph"
+          "url": "https://github.com/rapidsai/nx-cugraph",
+          "version": null
         },
         "raft": {
           "packages": {
@@ -6865,7 +7141,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/NVIDIA/raft"
+          "url": "https://github.com/NVIDIA/raft",
+          "version": null
         },
         "rapids-cli": {
           "packages": {
@@ -6876,7 +7153,8 @@
               "publishes_prereleases": false
             }
           },
-          "url": "https://github.com/rapidsai/rapids-cli"
+          "url": "https://github.com/rapidsai/rapids-cli",
+          "version": null
         },
         "rapids-dask-dependency": {
           "packages": {
@@ -6887,7 +7165,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapids-dask-dependency"
+          "url": "https://github.com/rapidsai/rapids-dask-dependency",
+          "version": null
         },
         "rapids-logger": {
           "packages": {
@@ -6922,7 +7201,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rapidsmpf"
+          "url": "https://github.com/rapidsai/rapidsmpf",
+          "version": null
         },
         "rmm": {
           "packages": {
@@ -6945,7 +7225,8 @@
               "publishes_prereleases": true
             }
           },
-          "url": "https://github.com/rapidsai/rmm"
+          "url": "https://github.com/rapidsai/rmm",
+          "version": null
         },
         "ucxx": {
           "packages": {

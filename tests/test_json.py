@@ -243,6 +243,8 @@ def test_metadata_encoder(unencoded, encoded):
             "}"
             "},"
             '"url":"https://github.com/example/repo2"'
+            ","
+            '"version":null'
             "}"
             "}"
             "}"
