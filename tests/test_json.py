@@ -82,6 +82,7 @@ def set_cwd(cwd: os.PathLike) -> Generator:
             ),
             {
                 "url": "https://gitlab.example.com/group/repository",
+                "version": None,
                 "packages": {
                     "package1": {
                         "publishes_prereleases": True,
@@ -96,6 +97,17 @@ def set_cwd(cwd: os.PathLike) -> Generator:
                         "has_wheel_package": True,
                     },
                 },
+            },
+        ),
+        (
+            RAPIDSRepository(
+                url="https://github.com/example/ucxx",
+                version="0.52.00",
+            ),
+            {
+                "url": "https://github.com/example/ucxx",
+                "version": "0.52.00",
+                "packages": {},
             },
         ),
         (
@@ -120,10 +132,12 @@ def set_cwd(cwd: os.PathLike) -> Generator:
                 "repositories": {
                     "repo1": {
                         "url": "https://github.com/example/repo1",
+                        "version": None,
                         "packages": {},
                     },
                     "repo2": {
                         "url": "https://github.com/example/repo2",
+                        "version": None,
                         "packages": {
                             "package": {
                                 "publishes_prereleases": True,
@@ -135,6 +149,7 @@ def set_cwd(cwd: os.PathLike) -> Generator:
                     },
                     "_nvidia": {
                         "url": None,
+                        "version": None,
                         "packages": {
                             "proprietary-package": {
                                 "publishes_prereleases": True,
@@ -169,6 +184,7 @@ def set_cwd(cwd: os.PathLike) -> Generator:
                         "repositories": {
                             "repo": {
                                 "url": "https://github.com/example/repo",
+                                "version": None,
                                 "packages": {},
                             },
                         },
@@ -202,6 +218,8 @@ def test_metadata_encoder(unencoded, encoded):
             "}"
             "},"
             '"url":"https://github.com/example/repo1"'
+            ","
+            '"version":"0.39.00"'
             "}"
             "}"
             "}"
@@ -225,6 +243,8 @@ def test_metadata_encoder(unencoded, encoded):
             "}"
             "},"
             '"url":"https://github.com/example/repo2"'
+            ","
+            '"version":null'
             "}"
             "}"
             "}"
@@ -248,6 +268,8 @@ def test_metadata_encoder(unencoded, encoded):
             "}"
             "},"
             '"url":"https://github.com/example/repo1"'
+            ","
+            '"version":"0.39.00"'
             "}"
             "}"
             "}"
@@ -271,6 +293,8 @@ def test_metadata_encoder(unencoded, encoded):
             "}"
             "},"
             '"url":"https://github.com/example/repo2"'
+            ","
+            '"version":null'
             "}"
             "}"
             "}"
@@ -294,6 +318,8 @@ def test_metadata_encoder(unencoded, encoded):
             "}"
             "},"
             '"url":"https://github.com/example/repo1"'
+            ","
+            '"version":"0.39.00"'
             "}"
             "}"
             "},"
@@ -309,6 +335,8 @@ def test_metadata_encoder(unencoded, encoded):
             "}"
             "},"
             '"url":"https://github.com/example/repo2"'
+            ","
+            '"version":null'
             "}"
             "}"
             "}"
@@ -333,7 +361,8 @@ def test_metadata_encoder(unencoded, encoded):
                               "publishes_prereleases": true
                             }
                           },
-                          "url": "https://github.com/example/repo1"
+                          "url": "https://github.com/example/repo1",
+                          "version": "0.39.00"
                         }
                       }
                     }
@@ -364,6 +393,7 @@ def test_main(
                 repositories={
                     "repo1": RAPIDSRepository(
                         url="https://github.com/example/repo1",
+                        version="0.39.00",
                         packages={
                             "package": RAPIDSPackage(),
                         },
@@ -374,6 +404,7 @@ def test_main(
                 repositories={
                     "repo2": RAPIDSRepository(
                         url="https://github.com/example/repo2",
+                        version=None,
                         packages={
                             "package": RAPIDSPackage(),
                         },

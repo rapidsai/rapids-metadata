@@ -13,6 +13,8 @@ The information currently provided by this package consists of:
 - Which RAPIDS packages require a CUDA suffix (`-cu12`, etc.)
 - Which RAPIDS packages require an alpha spec (`>=0.0.0a0`) due to publishing
   nightly binaries
+- A repository's version when it differs from the containing RAPIDS release;
+  otherwise, repository and package versions match the RAPIDS release version
 
 The motivating use case for this project is
 [`pre-commit-hooks`](https://github.com/rapidsai/pre-commit-hooks), but other

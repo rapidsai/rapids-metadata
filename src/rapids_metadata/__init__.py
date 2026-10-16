@@ -164,6 +164,7 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
         ),
         "ucxx": RAPIDSRepository(
             url="https://github.com/rapidsai/ucxx",
+            version="0.39.00",
             packages={
                 "distributed-ucxx": RAPIDSPackage(),
                 "libucxx": RAPIDSPackage(),
@@ -187,6 +188,7 @@ all_metadata.versions["24.08"] = RAPIDSVersion(
 )
 
 all_metadata.versions["24.10"] = deepcopy(all_metadata.versions["24.08"])
+all_metadata.versions["24.10"].repositories["ucxx"].version = "0.40.00"
 all_metadata.versions["24.10"].repositories["cudf"].packages["pylibcudf"] = (
     RAPIDSPackage()
 )
@@ -199,6 +201,7 @@ all_metadata.versions["24.10"].repositories["cuvs"] = RAPIDSRepository(
 )
 
 all_metadata.versions["24.12"] = deepcopy(all_metadata.versions["24.10"])
+all_metadata.versions["24.12"].repositories["ucxx"].version = "0.41.00"
 
 # fmt: off
 del all_metadata.versions["24.12"].repositories["cugraph"].packages["cugraph-dgl"]
@@ -238,6 +241,7 @@ all_metadata.versions["24.12"].repositories["cuvs"].packages["libcuvs-static"] =
 )
 
 all_metadata.versions["25.02"] = deepcopy(all_metadata.versions["24.12"])
+all_metadata.versions["25.02"].repositories["ucxx"].version = "0.42.00"
 all_metadata.versions["25.02"].repositories["cugraph-docs"] = RAPIDSRepository(
     url="https://github.com/rapidsai/cugraph-docs", packages=dict()
 )
@@ -322,8 +326,10 @@ all_metadata.versions["25.02"].repositories["ucxx"].packages["libucxx-tests"] = 
 all_metadata.versions["25.04"] = deepcopy(all_metadata.versions["25.02"])
 all_metadata.versions["25.04"].repositories["rapids-logger"] = RAPIDSRepository(
     url="https://github.com/rapidsai/rapids-logger",
+    version="0.1.1",
     packages={"rapids-logger": RAPIDSPackage(has_cuda_suffix=False)},
 )
+all_metadata.versions["25.04"].repositories["ucxx"].version = "0.43.00"
 all_metadata.versions["25.04"].repositories["ucxx"].packages["ucxx-tests"] = (
     RAPIDSPackage(
         publishes_prereleases=True,
@@ -334,6 +340,7 @@ all_metadata.versions["25.04"].repositories["ucxx"].packages["ucxx-tests"] = (
 )
 
 all_metadata.versions["25.06"] = deepcopy(all_metadata.versions["25.04"])
+all_metadata.versions["25.06"].repositories["ucxx"].version = "0.44.00"
 all_metadata.versions["25.06"].repositories["cugraph-gnn"].packages["libwholegraph"] = (
     RAPIDSPackage(has_wheel_package=True)
 )
@@ -359,11 +366,14 @@ del all_metadata.versions["25.06"].repositories["cuspatial"]
 del all_metadata.versions["25.06"].repositories["cuml"].packages["cuml-cpu"]
 
 all_metadata.versions["25.08"] = deepcopy(all_metadata.versions["25.06"])
+all_metadata.versions["25.08"].repositories["ucxx"].version = "0.45.00"
 del all_metadata.versions["25.08"].repositories["ptxcompiler"]
 del all_metadata.versions["25.08"].repositories["cugraph-gnn"].packages["cugraph-dgl"]
 del all_metadata.versions["25.08"].repositories["_nvidia"]  # Only cubinlinker
 
 all_metadata.versions["25.10"] = deepcopy(all_metadata.versions["25.08"])
+all_metadata.versions["25.10"].repositories["ucxx"].version = "0.46.00"
+all_metadata.versions["25.10"].repositories["rapids-logger"].version = "0.2.3"
 del all_metadata.versions["25.10"].repositories["pynvjitlink"]
 del all_metadata.versions["25.10"].repositories["ucx-py"]
 
@@ -380,6 +390,7 @@ all_metadata.versions["25.10"].repositories["cuvs-lucene"] = RAPIDSRepository(
 )
 
 all_metadata.versions["25.12"] = deepcopy(all_metadata.versions["25.10"])
+all_metadata.versions["25.12"].repositories["ucxx"].version = "0.47.00"
 all_metadata.versions["25.12"].repositories["rapids-logger"].packages[
     "rapids-logger"
 ] = RAPIDSPackage(publishes_prereleases=False, has_cuda_suffix=False)
@@ -395,9 +406,11 @@ del (
 )
 
 all_metadata.versions["26.02"] = deepcopy(all_metadata.versions["25.12"])
+all_metadata.versions["26.02"].repositories["ucxx"].version = "0.48.00"
 del all_metadata.versions["26.02"].repositories["cumlprims_mg"]
 
 all_metadata.versions["26.04"] = deepcopy(all_metadata.versions["26.02"])
+all_metadata.versions["26.04"].repositories["ucxx"].version = "0.49.00"
 all_metadata.versions["26.04"].repositories["nvforest"] = RAPIDSRepository(
     url="https://github.com/rapidsai/nvforest",
     packages={
@@ -423,8 +436,11 @@ all_metadata.versions["26.04"].repositories["nvforest"] = RAPIDSRepository(
 )
 
 all_metadata.versions["26.06"] = deepcopy(all_metadata.versions["26.04"])
+all_metadata.versions["26.06"].repositories["ucxx"].version = "0.50.00"
 
 all_metadata.versions["26.08"] = deepcopy(all_metadata.versions["26.06"])
+all_metadata.versions["26.08"].repositories["ucxx"].version = "0.51.00"
+all_metadata.versions["26.08"].repositories["rapids-logger"].version = "0.3.0"
 del all_metadata.versions["26.08"].repositories["cuxfilter"]
 
 all_metadata.versions["26.08"].repositories["cudf"].packages["libcudf-streaming"] = (
@@ -453,6 +469,7 @@ all_metadata.versions["26.08"].repositories["cudf"].packages["cudf-streaming"] =
     )
 )
 all_metadata.versions["26.10"] = deepcopy(all_metadata.versions["26.08"])
+all_metadata.versions["26.10"].repositories["ucxx"].version = "0.52.00"
 del all_metadata.versions["26.10"].repositories["cuvs-lucene"]
 
 all_metadata.versions["26.10"].repositories["cuvs"].packages["cuvs-lucene"] = (
@@ -465,3 +482,4 @@ all_metadata.versions["26.10"].repositories["cuvs"].packages["cuvs-lucene"] = (
 )
 
 all_metadata.versions["26.12"] = deepcopy(all_metadata.versions["26.10"])
+all_metadata.versions["26.12"].repositories["ucxx"].version = "0.53.00"
