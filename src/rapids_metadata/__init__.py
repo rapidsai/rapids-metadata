@@ -483,3 +483,12 @@ all_metadata.versions["26.10"].repositories["cuvs"].packages["cuvs-lucene"] = (
 
 all_metadata.versions["26.12"] = deepcopy(all_metadata.versions["26.10"])
 all_metadata.versions["26.12"].repositories["ucxx"].version = "0.53.00"
+
+all_metadata.versions["26.12"].repositories["cudf"].packages["cudf-polars-quent"] = (
+    RAPIDSPackage(
+        publishes_prereleases=True,
+        has_cuda_suffix=False,
+        has_conda_package=True,
+        has_wheel_package=True,
+    )
+)
