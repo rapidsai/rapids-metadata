@@ -24,6 +24,7 @@ def get_rapids_version(
 ) -> str:
     from packaging.version import InvalidVersion, Version
 
+    directory = os.path.abspath(directory)
     while not os.path.samefile(directory, os.path.dirname(directory)):
         try:
             with open(os.path.join(directory, version_file)) as f:

@@ -40,3 +40,23 @@ def test_get_rapids_version(tmp_path, dirname, version):
             rapids_version.get_rapids_version(abs_dir)
     else:
         assert rapids_version.get_rapids_version(abs_dir) == version
+
+
+@pytest.mark.parametrize(
+    ["dirname", "version"],
+    [
+        (".", "24.08"),
+        ("./", "24.08"),
+        ("dir2", "24.06"),
+        ("dir2/dir3/", "24.06"),
+    ],
+)
+def test_get_rapids_version_relative_path(tmp_path, monkeypatch, dirname, version):
+    os.makedirs(os.path.join(tmp_path, "dir1/dir2/dir3"))
+    with open(os.path.join(tmp_path, "dir1/VERSION"), "w") as f:
+        f.write("24.08\n")
+    with open(os.path.join(tmp_path, "dir1/dir2/VERSION"), "w") as f:
+        f.write("24.06.00a1\n")
+
+    monkeypatch.chdir(os.path.join(tmp_path, "dir1"))
+    assert rapids_version.get_rapids_version(dirname) == version
