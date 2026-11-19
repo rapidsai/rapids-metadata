@@ -495,3 +495,4 @@ all_metadata.versions["26.12"].repositories["cudf"].packages["cudf-polars-quent"
 
 all_metadata.versions["27.02"] = deepcopy(all_metadata.versions["26.12"])
 all_metadata.versions["27.02"].repositories["ucxx"].version = "0.54.00"
+del all_metadata.versions["27.02"].repositories["nx-cugraph"]

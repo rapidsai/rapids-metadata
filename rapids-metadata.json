@@ -7579,18 +7579,6 @@
           "url": "https://github.com/rapidsai/nvforest",
           "version": null
         },
-        "nx-cugraph": {
-          "packages": {
-            "nx-cugraph": {
-              "has_conda_package": true,
-              "has_cuda_suffix": true,
-              "has_wheel_package": true,
-              "publishes_prereleases": true
-            }
-          },
-          "url": "https://github.com/rapidsai/nx-cugraph",
-          "version": null
-        },
         "raft": {
           "packages": {
             "libraft": {
