@@ -37,7 +37,6 @@ dependencies:
       - output_types: [conda, requirements, pyproject]
         packages:
           - setuptools>=77.0.0
-          - wheel
   checks:
     common:
       - output_types: [conda, requirements]
